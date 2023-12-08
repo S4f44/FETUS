@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 35.71 30.27">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #121f40;
+        stroke-width: 0px;
+      }
+    </style>
+    <symbol id="Nouveau_symbole" data-name="Nouveau symbole" viewBox="0 0 35.71 30.27">
+      <path class="cls-1" d="m4.84,30.07c.29.31.8.25,1.02-.11,2.49-4.01,6.93-6.68,11.99-6.68s9.51,2.67,11.99,6.68c.23.37.75.4,1.04.09,3.26-3.49,5.14-8.28,4.77-13.51C35.03,7.72,27.83.59,19,.04,8.62-.61,0,7.61,0,17.86c0,4.73,1.84,9.02,4.84,12.21ZM17.86,6.25c4.16,0,7.52,3.37,7.52,7.52s-3.37,7.52-7.52,7.52-7.52-3.37-7.52-7.52,3.37-7.52,7.52-7.52Z"/>
+    </symbol>
+  </defs>
+  <g id="Pictogrammes">
+    <use width="35.71" height="30.27" xlink:href="#Nouveau_symbole"/>
+  </g>
+</svg>
