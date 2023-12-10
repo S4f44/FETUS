@@ -48,6 +48,11 @@ p{
     font-size: 20px; 
     color: #121F40;
 }
+.presentation p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px; 
+    color: #FCF9F9;
+}
 
 .button-container {
     display: flex;
@@ -284,7 +289,7 @@ p{
 
 
 
-/******************SECTIONS/MAIN****************/
+/******************SECTIONS/MAIN ACCEUIL****************/
 div.grossesse{
     margin-top : 300px;
     min-height: 50vh;
@@ -337,3 +342,9 @@ section.fruits{
 .fruits .text article.active {
     display: block;
 }
+
+
+
+
+/******************SECTIONS/MAIN TOUT SAVOIR SUR LA GROSSESSE****************/
+
