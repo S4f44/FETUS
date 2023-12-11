@@ -1,0 +1,356 @@
+body {
+    overflow-x: hidden;/*pour pas que les gros symbole dépassent sur la cotés*/
+    /* Dégradé radial en tant que fond */
+    /* background: radial-gradient(circle at top right,#121F40,#121F40,#fff, #8A5576); */
+    /* background-color: aquamarine; */
+    margin-top: 200px;
+    /*display: flex;*/
+    /*align-items: center;
+    justify-content: center;*/
+    background: linear-gradient(to bottom, #121F40 20%, #8B5576 );
+    
+}
+
+
+
+/******************BODY****************/
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+} 
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25pt; 
+    font-weight: 800;
+    letter-spacing: 10pt;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #FCF9F9;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px; 
+    color: #121F40;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18pt; 
+    font-weight: 700;
+    letter-spacing: 2pt;
+    text-transform: uppercase;
+    color: #121F40;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px; 
+    color: #121F40;
+}
+
+.presentation p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px; 
+    color: #FCF9F9;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacement vertical entre les boutons */
+  }
+
+.btnprimaire{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(21, 21, 147, 1);
+    color: #FCF9F9; 
+    font-size: 15pt;
+    text-transform: uppercase;
+    border : none; 
+    border-radius: 30px;
+    padding: 8px 23px;
+    text-decoration: none;
+}
+.btnprimaire:hover{
+    background-color: rgba(21, 21, 147, 0.25);
+    color: #151593;
+}
+
+.btnsecondaire{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #151593; 
+    font-size: 15pt;
+    text-transform: uppercase;
+    border : 1px solid #151593;
+    border-radius: 30px;
+    padding: 8px 23px;
+    text-decoration: none;
+}
+.btnsecondaire:hover{
+    border : 1px solid #FCF9F9;
+}
+.btnsecondaire:active{
+    color:#FCF9F9;
+}
+
+
+
+/******************HEADER NAVBAR****************/
+.navbar {
+    background-color: #121F40;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s, padding 0.3s;
+}
+.navbar-brand img{
+    width: 150px;
+    margin: 30px 40px 30px 40px;
+}
+.navbar-brand {
+    margin-right:0;
+    padding: 0 1em;
+}
+.navbar-nav {
+    align-items:center;
+}
+.navbar-nav li a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13pt;
+    font-weight: 400;
+    color: #FCF9F9;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px 40px 0px 40px;
+    position: relative;
+}
+.navbar-nav li a:hover{
+    color: #FCF9F9;
+}
+.navbar-nav li a::after {
+    content: '';
+    color : #FCF9F9;
+    width: 0;
+    height: 1px;
+    background: #FCF9F9;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s;
+}
+
+.navbar-nav li a:hover::after {
+    width: 100%;
+}
+
+.navbar .navbar-nav .navbar-link {
+    color: #FCF9F9;
+    font-size: 1.1em;
+    padding: 0 1em;
+}
+.navbar-nav li a:active::after {
+    width: 120%;
+}
+
+/* .nav-link img
+    width: 30%;
+} */
+.space-between {
+    margin-right: 100px; 
+}
+.scrolling .navbar-brand img {
+    width: 70px; 
+    margin: 0px 40px 0px 40px;
+}
+
+.scrolling .navbar {
+    padding: 10px 0; 
+}
+
+.scrolling .navbar-nav a {
+    font-family: 'Montserrat', sans-serif;
+	font-size: 13pt;
+    font-weight:400;
+    text-align:center;
+    color: #FCF9F9;
+    text-transform: uppercase;
+    margin: 0px 40px 0px 40px;
+}
+
+
+/******************FOOTER****************/
+
+.logo{
+    width: 250px;
+    margin-top: 70px;
+    opacity: 0.4;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap; /* permettre aux éléments enfants de passer à la ligne suivante si nécessaire */
+}
+.footer ul{
+	list-style: none;
+    line-height: 1.5;
+} 
+.footer{
+	background-color: rgba(255, 255, 255, 0.2);
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-family: 'Montserrat', sans-serif;
+    font-size: 23pt;
+    font-weight: 500;
+    color: #121F40;
+	margin-bottom: 25px;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13pt;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #FCF9F9;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a::after {
+    content: '';
+    width: 0;
+    height: 1px;
+    background: #FCF9F9;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s;
+}
+
+.footer-col ul li a:hover::after {
+    width: 100%;
+}
+
+.footer-col ul li a:active::after {
+    width: 110%;
+}
+
+.footer-col .social-links{
+    margin-right: 20px;
+}
+.social-links {
+    text-align: center;
+}
+
+.social-links a {
+    display: inline-block;
+    margin:10px 10px 10px 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+.social-links img:hover{
+    opacity: 0.7;
+}
+
+/***********************RESPONSIVE**********************/
+@media screen and (max-width: 767px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .navbar-brand img{
+        width: 100px;
+    }
+}
+
+
+/************************FORMULAIRES**********************/
+form {
+    text-align: left;
+    width: auto; /* Largeur du formulaire */
+    
+    
+  }
+  
+  div.formulaire {
+    background-color: rgba(255, 255, 255, 0.3); /* Couleur blanche avec une opacité de 0.7 */
+    padding: 90px 10px; /* Ajout de marge interne pour espacer les éléments du formulaire du bord */
+    border-radius: 300px; /* Coins arrondis pour le formulaire */
+    box-sizing: border-box; /* Inclure le padding et la bordure dans la largeur totale */
+    margin-bottom: 90px;
+  }
+
+ 
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    color: #FCF9F9;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px; 
+   
+  }
+  
+  input {
+    width: 60%;
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: none;
+    border-bottom: 1px solid #151593;
+    background: none;
+    color: rgba(21, 21, 147, 0.25); 
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px; 
+    
+    }
+  
+  
+  
+  
+  select {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 25px;
+    border-radius: 40px;
+  }
+
+  
+/* Style the radio buttons */
+input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  /* Style the selected state of radio buttons */
+  input[type="radio"]:checked + label {
+    font-weight: bold;
+    color: #151593;
+  }
