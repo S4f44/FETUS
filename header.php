@@ -27,16 +27,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="toutsavoir.html">Tout savoir sur<br> la grossesse</a>
+                        <a class="nav-link" href="#">Tout savoir sur<br> la grossesse</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="conseils.html">Conseils</a>
+                        <a class="nav-link" href="#">Conseils</a>
                     </li>
                     <!-- ESPACE AVANT LE LOGO -->
                     <li class="nav-item space-between"></li>
 
                     <!-- LOGO (CENTRÉ) -->
-                    <a class="navbar-brand d-none d-lg-block mx-auto" href="index.html">
+                    <a class="navbar-brand d-none d-lg-block mx-auto" href="#">
                         <img src="assets/img/logo.svg" alt="logo FetUs">
                     </a>
 
@@ -44,10 +44,10 @@
                     <li class="nav-item space-between"></li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="monsuivi.html">Mon suivi</a>
+                        <a class="nav-link" href="#">Mon suivi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="mesobjectifs.html">Mes objectifs</a>
+                        <a class="nav-link" href="#">Mes objectifs</a>
                     </li>
                 </ul>
             </div>
