@@ -67,6 +67,15 @@
           </div>
           <div class="col-md-7">
             <div class="text js-text">
+
+                    <?php if (have_posts()): ?>
+                      <h1>Mes articles</h1>
+                              <!-- C'est ici qu'on pourra afficher nos articles -->
+                          <?php else: ?>
+                      <h1>Aucun articles disponible pour le moment</h1>
+                          <?php endif; ?>
+                          
+                          
               <article class="active" data-index="step-1">
                 <h3>Petits pois</h3>
                 <p>

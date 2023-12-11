@@ -25,6 +25,9 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
+
+            <?php wp_nav_menu(['theme_location' => 'header']); ?>
+
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="toutsavoir.html">Tout savoir sur<br> la grossesse</a>
@@ -36,8 +39,8 @@
                     <li class="nav-item space-between"></li>
 
                     <!-- LOGO (CENTRÉ) -->
-                    <a class="navbar-brand d-none d-lg-block mx-auto" href="index.html">
-                        <img src="assets/img/logo.svg" alt="logo FetUs">
+                    <a class="navbar-brand d-none d-lg-block mx-auto" href="<?php echo home_url('/'); ?>">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="Logo"> 
                     </a>
 
                     <!-- ESPACE APRÈS LE LOGO -->
