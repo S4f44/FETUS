@@ -74,8 +74,6 @@
                           <?php else: ?>
                       <h1>Aucun articles disponible pour le moment</h1>
                           <?php endif; ?>
-                          
-                          
               <article class="active" data-index="step-1">
                 <h3>Petits pois</h3>
                 <p>
