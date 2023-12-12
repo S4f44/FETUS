@@ -7,7 +7,7 @@
               <div class="row">
                 <div class="footer-col">
                   <a class="d-inline-flex align-items-center mb-2 text-body-emphasis" href="/" >
-                    <img class="logo" src="assets/img/logo.svg" alt="logo FetUs">
+                    <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="logo FetUs">
                   </a>
                 </div>
     
@@ -32,10 +32,10 @@
                 <div class="footer-col">
                   <h4>Suivez-nous</h4>
                   <div class="social-links">
-                    <a href="404.php"><img src="assets/img/x.svg" alt="X"></a>
-                    <a href="404.php"><img src="assets/img/youtube.svg" alt="youtube"></i></a>
-                    <a href="404.php"><img src="assets/img/instagram.svg" alt="instagram"></a>
-                    <a href="404.php"><img src="assets/img/facebook.svg" alt="facebook"></a>
+                    <a href="404.php"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/x.svg" alt="X"></a>
+                    <a href="404.php"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/youtube.svg" alt="youtube"></i></a>
+                    <a href="404.php"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/instagram.svg" alt="instagram"></a>
+                    <a href="404.php"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook.svg" alt="facebook"></a>
                   </div>
                 </div>
               </div>

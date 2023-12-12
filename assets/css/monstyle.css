@@ -4,7 +4,7 @@ body {
     /* Dégradé radial en tant que fond */
     /* background: radial-gradient(circle at top right,#121F40,#121F40,#fff, #8A5576); */
     /* background-color: aquamarine; */
-    background: linear-gradient(to bottom, #121F40 10%, #FCF9F9 60%, #8A5576 100%);
+    background: linear-gradient(to bottom, #121F40 20%, #FCF9F9 , #8A5576 );
     /* Ajustez les couleurs selon vos préférences */
     /* Vous pouvez également ajuster d'autres propriétés du dégradé radial */
     /* Pour assurer que le dégradé occupe toute la hauteur de la page */
@@ -13,6 +13,8 @@ body {
     /*display: flex;*/
     /*align-items: center;
     justify-content: center;*/
+    background-repeat: no-repeat;
+    
 }
 
 /******************BODY****************/
@@ -21,6 +23,21 @@ body {
 	padding:0;
 	box-sizing: border-box;
 } 
+
+.erreur{
+    margin-top :350px;
+    min-height: 50vh;
+}
+.erreur h1 h3 p {
+    margin-top: 50px;
+}
+.erreursvg img{
+    width: 130%;
+    margin-top: 60px;
+    margin-left: 0px;
+    position: relative;
+    overflow: hidden;
+}
 h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 25pt; 
@@ -70,6 +87,7 @@ p{
     border-radius: 30px;
     padding: 8px 23px;
     text-decoration: none;
+    
 }
 .btnprimaire:hover{
     background-color: rgba(21, 21, 147, 0.25);
@@ -283,6 +301,15 @@ p{
     }
     .navbar-brand img{
         width: 100px;
+    }
+    .erreursvg img{
+        width: 100%;
+    }
+    .navbar-brand img{
+        margin: 30px 0px 30px 0px;
+    }
+    .scrolling .navbar-brand img { 
+        margin: 15px 0px 15px 0px;
     }
 }
 
