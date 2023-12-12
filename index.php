@@ -190,10 +190,10 @@
             </div>
             <div class="col-md-6">
               <div class="symbolespapamaman">
-                        <?php
-                        // Chemin vers l'image
-                        $imagePath = "assets/img/femmehomme.svg";
-                        ?>
+                      <?php
+                      // Chemin vers l'image
+                      $imagePath = "assets/img/femmehomme.svg";
+                      ?>
 
                     <img src="<?php echo $imagePath; ?>" alt="Symbole maman et papa">
               </div>
@@ -215,5 +215,8 @@
     </main>
 
 
+
+   
+  
 
 <?php get_footer(); ?>

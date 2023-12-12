@@ -1,4 +1,4 @@
-<<?php get_header(); ?>
+<?php get_header(); ?>
 
 
 
@@ -44,7 +44,11 @@
             </div>
         </section>
     </main> 
-   
+    
 
 
 <?php get_footer(); ?>
+      
+    
+    
+   
