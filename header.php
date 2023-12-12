@@ -36,10 +36,10 @@
 
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="toutsavoir.php">Tout savoir sur<br> la grossesse</a>
+                        <a class="nav-link" href="toutsavoir.html">Tout savoir sur<br> la grossesse</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="conseils.php">Conseils</a>
+                        <a class="nav-link" href="conseils.html">Conseils</a>
                     </li>
                     <!-- ESPACE AVANT LE LOGO -->
                     <li class="nav-item space-between"></li>
@@ -53,10 +53,10 @@
                     <li class="nav-item space-between"></li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="monsuivi.php">Mon suivi</a>
+                        <a class="nav-link" href="monsuivi.html">Mon suivi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="mesobjectifs.php">Mes objectifs</a>
+                        <a class="nav-link" href="mesobjectifs.html">Mes objectifs</a>
                     </li>
                 </ul>
             </div>
