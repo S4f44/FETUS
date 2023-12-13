@@ -50,41 +50,62 @@
       </section> -->
 
       
-<section class="fruits">
+<section>
 
-<div class="container mt-5">
-    <div id="cardCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="card">
-                    <img src="https://placehold.it/300x200" class="card-img-top" alt="Card Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Card 1</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+<div id="fruitCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <?php
+        $fruits = array(
+            array(
+                'img' => 'pttpois.svg',
+                'alt' => 'Petits pois',
+                'title' => 'Petits pois',
+                'content' => '4 semaines : petit pois Le blastocyste s\'implante dans l\'utérus. Poids : Environ 0,004 gramme (4 milligrammes). Taille : Environ 0,1 mm.'
+            ),
+            array(
+                'img' => 'framboise.svg',
+                'alt' => 'Framboise',
+                'title' => 'Framboise',
+                'content' => '8 semaines : framboise On considère généralement que la grossesse commence à partir de la semaine de retard des règles. Poids : Environ 1 gramme. Taille : Environ 1,6 cm.'
+            ),
+            array(
+                'img' => 'kiwi.svg',
+                'alt' => 'Kiwi',
+                'title' => 'Kiwi',
+                'content' => '12 semaines : kiwi Fin du premier trimestre. Poids : Environ 14 grammes. Taille : Environ 6,3 cm.'
+            ),
+            // Ajoutez d'autres éléments de fruit avec des données différentes si nécessaire
+        );
+
+        foreach ($fruits as $index => $fruit) :
+        ?>
+            <div class="carousel-item <?php echo $index === 0 ? 'active' : ''; ?>">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md mb-3 d-flex">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo $fruit['img']; ?>" alt="<?php echo $fruit['alt']; ?>" class="mx-auto d-block">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="text">
+                                <h3><?php echo $fruit['title']; ?></h3>
+                                <p><?php echo $fruit['content']; ?></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="card">
-                    <img src="https://placehold.it/300x200" class="card-img-top" alt="Card Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Card 2</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more carousel items with different cards as needed -->
-        </div>
-        <a class="carousel-control-prev" href="#cardCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#cardCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+        <?php endforeach; ?>
     </div>
+    <a class="carousel-control-prev" href="#fruitCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#fruitCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
 </div>
+
 
 </section>
 
