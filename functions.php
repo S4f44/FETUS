@@ -27,3 +27,13 @@ function montheme_menu_link_class($attrs) {
 
 add_filter('nav_menu_css_class', 'montheme_menu_class');
 add_filter('nav_menu_link_attributes', 'montheme_menu_link_class');
+
+function my_theme_enqueue_styles() {
+  // Chargement de jQuery depuis Google CDN
+  wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', array(), null, true);
+
+  // Chargement du script Bootstrap JavaScript
+  wp_enqueue_script('bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js', array('jquery'), null, true);
+}
+
+add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');

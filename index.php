@@ -52,46 +52,152 @@
       
 <!-- <section class="fruits">
 
-<div class="container mt-5">
-    <div id="cardCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="card">
-                    <img src="https://placehold.it/300x200" class="card-img-top" alt="Card Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Card 1</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+<div id="fruitCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">-->
+        <?php
+        $fruits = array(
+            array(
+                'img' => 'pttpois.svg',
+                'alt' => 'Petits pois',
+                'title' => 'Petits pois',
+                'content' => '<strong>4 semaines</strong> : Le blastocyste s\'implante dans l\'utérus. <br> <strong>Poids :</strong> Environ 0,004 gramme (4 milligrammes).  <br> <strong>Taille :</strong> Environ 0,1 mm.'
+            ),
+            array(
+                'img' => 'framboise.svg',
+                'alt' => 'Framboise',
+                'title' => 'Framboise',
+                'content' => '<strong>8 semaines :</strong> On considère généralement que la grossesse commence à partir de la semaine de retard des règles. <br>  <strong> Poids</strong> : Environ 1 gramme.  <br> <strong>Taille :</strong> Environ 1,6 cm.'
+            ),
+            array(
+                'img' => 'kiwi.svg',
+                'alt' => 'Kiwi',
+                'title' => 'Kiwi',
+                'content' => '<strong>12 semaines :</strong> Fin du premier trimestre.   <br>  <strong>Poids :</strong> Environ 14 grammes.  <br>  <strong>Taille</strong> : Environ 6,3 cm.'
+            ),
+            array( 
+              'img' => 'poire.svg',
+              'alt' => 'Poire',
+              'title' => 'Poire',
+              'content' => '<strong>16 semaines :</strong>  Le fœtus a généralement développé des traits faciaux distincts, des doigts et des orteils, et il commence à bouger activement.  <br> <strong>Poids :</strong>  Environ 100 à 150 grammes.  <br> <strong>Taille :</strong> Environ 11 à 12,7 cm '
+          ),
+          array(
+            'img' => 'artichaud.svg',
+            'alt' => 'Artichaud',
+            'title' => 'Artichaud',
+            'content' => '<strong>20 semaines :</strong> Mi-grossesse.   <br> <strong>Poids :</strong> Environ 300 grammes.   <br> <strong>Taille :</strong> Environ 16 cm.'
+        ),
+          array(
+              'img' => 'orange.svg',
+              'alt' => 'Orange',
+              'title' => 'Orange',
+              'content' => '<strong>24 semaines :</strong>Les organes vitaux continuent de se développer, les poumons atteignent un stade où la survie en dehors de l\'utérus est envisageable, bien que la prématurité reste un défi important à ce stade.  <br>  <strong>Poids :</strong> Environ 600 à 700 grammes.   <br> <strong>Taille :</strong> Environ 30 cm. '
+          ),
+          array(
+              'img' => 'chouxfleur.svg',
+              'alt' => 'Chou-fleur',
+              'title' => 'Choux-fleur',
+              'content' => '<strong>28 semaines :</strong> Début du troisième trimestre.   <br> <strong>Poids :</strong> Environ 1 kg.   <br> <strong>Taille :</strong> Environ 35,6 cm.'
+          ),
+          array(
+              'img' => 'coco.svg',
+              'alt' => 'Noix de coco',
+              'title' => 'Noix de coco',
+              'content' => '<strong>32 semaines :</strong> Le fœtus se prépare aux fonctions respiratoires et continue de prendre du poids.   <br> <strong>Poids :</strong> Environ 1,8 kg.   <br> <strong>Taille :</strong> Environ 42 cm.'
+          ),
+          array(
+              'img' => 'ananas.svg',
+              'alt' => 'Ananas',
+              'title' => 'Ananas',
+              'content' => '<strong>36 semaines :</strong> Il adopte généralement une position en vue de l\'accouchement.   <br> <strong> Poids :</strong> Environ 2,6 kg.   <br> <strong>Taille :</strong> Environ 47 cm.'
+          ),
+          array(
+              'img' => 'citrouille.svg',
+              'alt' => 'Citrouille',
+              'title' => 'Citrouille',
+              'content' => '<strong>40 semaines (à terme) :</strong> Il est prêt pour l\'accouchement, démontrant des réflexes développés et un système immunitaire renforcé.   <br> <strong>Poids moyen à la naissance :</strong> Environ 3,4 kg.   <br> <strong>Taille moyenne à la naissance :</strong> Environ 50 cm.'
+          ),
+      );
+      
+       
+
+        foreach ($fruits as $index => $fruit) :
+        ?>
+            <div class="carousel-item <?php echo $index === 0 ? 'active' : ''; ?>">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md mb-3 d-flex">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo $fruit['img']; ?>" alt="<?php echo $fruit['alt']; ?>" class="mx-auto d-block">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="text">
+                                <h3><?php echo $fruit['title']; ?></h3>
+                                <p><?php echo $fruit['content']; ?></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="card">
-                    <img src="https://placehold.it/300x200" class="card-img-top" alt="Card Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Card 2</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-               Add more carousel items with different cards as needed
-        </div>
-        <a class="carousel-control-prev" href="#cardCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#cardCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+        <?php endforeach; ?>
     </div>
-</div>
+
+        <!-- bouton carousel  -->
+            <div class="button-container">
+              <a class="carousel-control-prev" href="#fruitCarousel" role="button" data-slide="prev">
+                  <div class="col-md-3">    
+                  <div class="btnsecondaire">
+                    <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                    <span class="sr-only">Previous</span> 
+                  </div>
+                  </div>
+              </a>
+              <a class="carousel-control-next" href="#fruitCarousel" role="button" data-slide="next">
+                <div class=" col-md-11">
+                <div class="btnsecondaire">
+                    <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                    <span class="sr-only">Next</span>
+                </div>
+                </div>
+              </a>
+            </div>
+
+
+
+ <!-- enlever animation  automatique des boutons  -->
+<!-- <script>
+    jQuery(document).ready(function ($) {
+        // Désactiver l'animation automatique
+        $('#fruitCarousel').carousel({
+            interval: false
+        });
+
+        // Gérer le clic sur le bouton "Previous"
+        $('#fruitCarousel').on('slide.bs.carousel', function (e) {
+            if (e.direction === 'left') {
+                // Animation vers la gauche (Previous)
+                $('#fruitCarousel').carousel('prev');
+            }
+        });
+
+        // Gérer le clic sur le bouton "Next"
+        $('#fruitCarousel').on('slide.bs.carousel', function (e) {
+            if (e.direction === 'right') {
+                // Animation vers la droite (Next)
+                $('#fruitCarousel').carousel('next');
+            }
+        });
+    });
+</script> 
+
 
 </section> -->
 
 
 
 
+
 <!-- 
+    <section class="fruits">
+
     <section class="fruits">
       <div class="container py-3">
         <div class="row">
