@@ -6,7 +6,7 @@
             <div class="col-md-5">
                 <h1>Page introuvable</h1>
                 <h3> Oups ! </h3>
-                    <p> a rien a voir ici retournez a <a href="<?php echo home_url('/'); ?>">la page d'accueil</a> </p>
+                    <p> Il n'y a rien a voir ici retournez à <a href="<?php echo home_url('/'); ?>">la page d'accueil</a> </p>
             </div>
         <div class="col-md-7"> 
             <div class="erreursvg">
