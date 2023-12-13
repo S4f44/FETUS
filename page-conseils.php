@@ -1,8 +1,5 @@
 <?php get_header(); ?>
 
-
-
-
   <!--------------------MAIN------------------>
   <section class="presentation">
     <div class="container text-center">
@@ -31,7 +28,7 @@
           </div>
           <div class="col-md-4">
             <div class="chiffres">
-                <img src="assets\img\un.svg" alt="Chiffre un">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/un.svg" alt="Chiffre un">
               </div>
           </div>
         </div>
@@ -43,7 +40,7 @@
         <div class="row">
           <div class="col-md-4">
             <div class="chiffresdeux">
-                <img src="assets\img\deux.svg" alt="Chiffre deux">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/deux.svg" alt="Chiffre deux">
               </div>
           </div>
           <div class="col-md-8">
@@ -80,14 +77,12 @@
           </div>
           <div class="col-md-4">
             <div class="chiffres">
-                <img src="assets\img\trois.svg" alt="Chiffre trois">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/trois.svg" alt="Chiffre trois">
               </div>
           </div>
         </div>
     </div>
   </section>
-
-
 
 
 <?php get_footer(); ?>

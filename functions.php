@@ -4,7 +4,6 @@ add_theme_support('title-tag'); // support de mon title tag
 add_theme_support('post-thumbnails'); // support du thumbnail sur mes articles
 add_theme_support('menus'); // support des menus par notre theme
 register_nav_menu('header', 'En tête du menu');
-
 register_nav_menu('footer', 'Pied de page');
 
 

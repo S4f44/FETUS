@@ -3,6 +3,14 @@
 <!------------------FOOTER----------------->
       
 <footer class="footer">
+                      <?php 
+                      wp_nav_menu([
+                      'theme_location' => 'footer', // localisation de mon menu
+                      'container' => false, // permet de retirer mon container
+                      'menu_class' => 'navbar-nav mx-auto' // la classe que je veux dans mon <ul></ul>
+                      ]); 
+                      ?>
+
             <div class="container">
               <div class="row">
                 <div class="footer-col">
@@ -40,8 +48,7 @@
                 </div>
               </div>
             </div>
-         </footer>
-       
+         </footer>       
       
     
     

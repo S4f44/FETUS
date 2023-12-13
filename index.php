@@ -29,28 +29,28 @@
         </div>
       </section>
       
-      <!-- <section class="fruits">
+    <section class="fruits">
         <div class="container text-center">
           <div class="row">
             <div class="col-md-10 offset-md-1 my-5">
               <h2>Les stades de la grossesse</h2>
-              <img src="assets\img\pttpois.svg" alt="petits pois">
-              <img src="assets\img\framboise.svg" alt="framboise">
-              <img src="assets\img\kiwi.svg" alt="kiwi">
-              <img src="assets/img/poire.svg" alt="poire">
-              <img src="assets\img\artichaud.svg" alt="artichaud">
-              <img src="assets\img\orange.svg" alt="orange">
-              <img src="assets\img\chouxfleur.svg" alt="choux fleur">
-              <img src="assets\img\coco.svg" alt="noix de coco">
-              <img src="assets\img\citrouille.svg" alt="citrouille">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/pttpois.svg" alt="petits pois">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/framboise.svg" alt="framboise">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/kiwi.svg" alt="kiwi">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/poire.svg" alt="poire">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/artichaud.svg" alt="artichaud">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/orange.svg" alt="orange">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/chouxfleur.svg" alt="choux fleur">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/coco.svg" alt="noix de coco">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/citrouille.svg" alt="citrouille">
               <a href="#" class="btnprimaire">En savoir plus</a>
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
       
-<section class="fruits">
+<!-- <section class="fruits">
 
 <div class="container mt-5">
     <div id="cardCarousel" class="carousel slide" data-ride="carousel">
@@ -73,7 +73,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Add more carousel items with different cards as needed -->
+               Add more carousel items with different cards as needed
         </div>
         <a class="carousel-control-prev" href="#cardCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -86,44 +86,27 @@
     </div>
 </div>
 
-</section>
+</section> -->
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- 
     <section class="fruits">
       <div class="container py-3">
         <div class="row">
           <div class="col-md mb-3 d-flex">
             <div class="images js-images">        
-              <img data-index="step-1" class="active" src="<?php echo get_template_directory_uri(); ?>/assets/img/pttpois.svg" alt="petits pois">
-              <img data-index="step-2" src="<?php echo get_template_directory_uri(); ?>/assets/img/framboise.svg" alt="framboise">
-              <img data-index="step-3" src="<?php echo get_template_directory_uri(); ?>/assets/img/kiwi.svg" alt="kiwi">
-              <img data-index="step-4" src="<?php echo get_template_directory_uri(); ?>/assets/img/poire.svg" alt="poire">
-              <img data-index="step-5" src="<?php echo get_template_directory_uri(); ?>/assets/img/artichaud.svg" alt="artichaud">
-              <img data-index="step-6" src="<?php echo get_template_directory_uri(); ?>/assets/img/orange.svg" alt="orange">
-              <img data-index="step-7" src="<?php echo get_template_directory_uri(); ?>/assets/img/chouxfleur.svg" alt="choux fleur">
-              <img data-index="step-8" src="<?php echo get_template_directory_uri(); ?>/assets/img/coco.svg" alt="noix de coco">
-              <img data-index="step-9" src="<?php echo get_template_directory_uri(); ?>/assets/img/ananas.svg" alt="Ananas">
-              <img data-index="step-10" src="<?php echo get_template_directory_uri(); ?>/assets/img/citrouille.svg" alt="citrouille">
+              <img data-index="step-1" class="active" src=" //echo get_template_directory_uri(); ?>/assets/img/pttpois.svg" alt="petits pois">
+              <img data-index="step-2" src="// echo get_template_directory_uri(); ?>/assets/img/framboise.svg" alt="framboise">
+              <img data-index="step-3" src=" //echo get_template_directory_uri(); ?>/assets/img/kiwi.svg" alt="kiwi">
+              <img data-index="step-4" src=" //echo get_template_directory_uri(); ?>/assets/img/poire.svg" alt="poire">
+              <img data-index="step-5" src=" //echo get_template_directory_uri(); ?>/assets/img/artichaud.svg" alt="artichaud">
+              <img data-index="step-6" src=" //echo get_template_directory_uri(); ?>/assets/img/orange.svg" alt="orange">
+              <img data-index="step-7" src=" //echo get_template_directory_uri(); ?>/assets/img/chouxfleur.svg" alt="choux fleur">
+              <img data-index="step-8" src=" //echo get_template_directory_uri(); ?>/assets/img/coco.svg" alt="noix de coco">
+              <img data-index="step-9" src=" //echo get_template_directory_uri(); ?>/assets/img/ananas.svg" alt="Ananas">
+              <img data-index="step-10" src=" //echo get_template_directory_uri(); ?>/assets/img/citrouille.svg" alt="citrouille">
               
             </div>
           </div>
@@ -237,7 +220,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
       <section>
         <div class="container text-center">
@@ -275,4 +258,4 @@
 
   
 
-<?php get_footer(); ?>
+<?php get_footer();?>

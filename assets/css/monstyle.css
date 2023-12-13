@@ -351,9 +351,9 @@ section.fruits{
     background-color: #FCF9F9;
 }
 
-/* .fruits img{
-    width: 50%;
-} */
+.fruits img{
+    width: 10%;
+} 
 .fruits .images img {
     display: none;
 }
