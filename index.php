@@ -48,32 +48,89 @@
           </div>
         </div>
       </section> -->
+
+      
+<section class="fruits">
+
+<div class="container mt-5">
+    <div id="cardCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card">
+                    <img src="https://placehold.it/300x200" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 1</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="https://placehold.it/300x200" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more carousel items with different cards as needed -->
+        </div>
+        <a class="carousel-control-prev" href="#cardCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#cardCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <section class="fruits">
       <div class="container py-3">
         <div class="row">
           <div class="col-md mb-3 d-flex">
             <div class="images js-images">        
-              <img data-index="step-1" class="active" src="assets\img\pttpois.svg" alt="petits pois">
-              <img data-index="step-2" src="assets\img\framboise.svg" alt="framboise">
-              <img data-index="step-3" src="assets\img\kiwi.svg" alt="kiwi">
-              <img data-index="step-4" src="assets/img/poire.svg" alt="poire">
-              <img data-index="step-5" src="assets\img\artichaud.svg" alt="artichaud">
-              <img data-index="step-6" src="assets\img\orange.svg" alt="orange">
-              <img data-index="step-7" src="assets\img\chouxfleur.svg" alt="choux fleur">
-              <img data-index="step-8" src="assets\img\coco.svg" alt="noix de coco">
-              <img data-index="step-9" src="assets\img\ananas.svg" alt="Ananas">
-              <img data-index="step-10" src="assets\img\citrouille.svg" alt="citrouille">
+              <img data-index="step-1" class="active" src="<?php echo get_template_directory_uri(); ?>/assets/img/pttpois.svg" alt="petits pois">
+              <img data-index="step-2" src="<?php echo get_template_directory_uri(); ?>/assets/img/framboise.svg" alt="framboise">
+              <img data-index="step-3" src="<?php echo get_template_directory_uri(); ?>/assets/img/kiwi.svg" alt="kiwi">
+              <img data-index="step-4" src="<?php echo get_template_directory_uri(); ?>/assets/img/poire.svg" alt="poire">
+              <img data-index="step-5" src="<?php echo get_template_directory_uri(); ?>/assets/img/artichaud.svg" alt="artichaud">
+              <img data-index="step-6" src="<?php echo get_template_directory_uri(); ?>/assets/img/orange.svg" alt="orange">
+              <img data-index="step-7" src="<?php echo get_template_directory_uri(); ?>/assets/img/chouxfleur.svg" alt="choux fleur">
+              <img data-index="step-8" src="<?php echo get_template_directory_uri(); ?>/assets/img/coco.svg" alt="noix de coco">
+              <img data-index="step-9" src="<?php echo get_template_directory_uri(); ?>/assets/img/ananas.svg" alt="Ananas">
+              <img data-index="step-10" src="<?php echo get_template_directory_uri(); ?>/assets/img/citrouille.svg" alt="citrouille">
+              
             </div>
           </div>
           <div class="col-md-7">
             <div class="text js-text">
 
-                    <?php if (have_posts()): ?>
-                      <h1>Mes articles</h1>
-                              <!-- C'est ici qu'on pourra afficher nos articles -->
-                          <?php else: ?>
-                      <h1>Aucun articles disponible pour le moment</h1>
-                          <?php endif; ?>
+                    
               <article class="active" data-index="step-1">
                 <h3>Petits pois</h3>
                 <p>
@@ -193,7 +250,9 @@
             </div>
             <div class="col-md-6">
               <div class="symbolespapamaman">
-                <img src="assets\img\femmehomme.svg" alt="Symbole maman et papa">
+                      
+
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/femmehomme.svg" alt="Symbole maman et papa">
               </div>
             </div>
           </div>
@@ -211,6 +270,8 @@
         </div>
       </section>
     </main>
+
+
 
   
 
