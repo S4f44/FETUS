@@ -349,6 +349,8 @@ section.newsletter{
 
 section.fruits{
     background-color: #FCF9F9;
+    padding: 100px 30px;
+    
 }
 
 /* .fruits img{
@@ -356,10 +358,13 @@ section.fruits{
 } */
 .fruits .images img {
     display: none;
+    width: 50%;
+    margin: 40px;
 }
 
 .fruits .images img.active {
     display: block;
+    width: 50%;
 }
 
 .fruits .text article {
