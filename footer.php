@@ -14,7 +14,7 @@
             <div class="container">
               <div class="row">
                 <div class="footer-col">
-                  <a class="d-inline-flex align-items-center mb-2 text-body-emphasis" href="/" >
+                  <a class="d-inline-flex align-items-center mb-2 text-body-emphasis" href="<?php echo get_template_directory_uri(); ?>/home" >
                     <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="logo FetUs">
                   </a>
                 </div>
@@ -22,19 +22,19 @@
                 <div class="footer-col">
                   <h4>Général</h4>
                   <ul>
-                    <li><a href="toutsavoir.php">Tout savoir sur la grossesse</a></li>
-                    <li><a href="conseils.php">Conseils</a></li>
-                    <li><a href="monsuivi.php">Mon suivi</a></li>
-                    <li><a href="mesobjectifs.php">Mes objectifs</a></li>
+                    <li><a href="<?php echo get_template_directory_uri(); ?>/toutsavoir">Tout savoir sur la grossesse</a></li>
+                    <li><a href="<?php echo get_template_directory_uri(); ?>/conseils">Conseils</a></li>
+                    <li><a href="<?php echo get_template_directory_uri(); ?>/monsuivi">Mon suivi</a></li>
+                    <li><a href="<?php echo get_template_directory_uri(); ?>/mesobjectifs">Mes objectifs</a></li>
                   </ul>
                 </div>
                 <div class="footer-col">
                   <h4>Outils</h4>
                   <ul>
-                    <li><a href="mentionslegales.php">Mentions légales</a></li>
-                    <li><a href="cookies.php">Cookies</a></li>
-                    <li><a href="connexion.php">Se connecter</a></li>
-                    <li><a href="identification.php">S'enregistrer</a></li>
+                    <li><a href="<?php echo get_template_directory_uri(); ?>/mentionslegales">Mentions légales</a></li>
+                    <li><a href="<?php echo get_template_directory_uri(); ?>/cookies">Cookies</a></li>
+                    <li><a href="<?php echo get_template_directory_uri(); ?>/connexion">Se connecter</a></li>
+                    <li><a href="<?php echo get_template_directory_uri(); ?>/identification">S'enregistrer</a></li>
                   </ul>
                 </div>
                 <div class="footer-col">

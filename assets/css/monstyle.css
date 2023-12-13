@@ -113,6 +113,12 @@ p{
 }
 
 /******************HEADER NAVBAR****************/
+.nav-link[href*="home"] {
+    background-image: url(../img/logo.svg);
+    background-repeat: no-repeat;
+    color: rgba(255,255, 255, 0);
+    margin: 30px 60px 30px 60px;
+  }
 .navbar {
     background-color: #121F40;
     position: fixed;
