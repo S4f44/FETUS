@@ -34,7 +34,7 @@
                     <li><a href="<?php echo get_template_directory_uri(); ?>/mentionslegales">Mentions légales</a></li>
                     <li><a href="<?php echo get_template_directory_uri(); ?>/cookies">Cookies</a></li>
                     <li><a href="<?php echo get_template_directory_uri(); ?>/connexion">Se connecter</a></li>
-                    <li><a href="<?php echo get_template_directory_uri(); ?>/identification">S'enregistrer</a></li>
+                    <li><a href="<?php echo get_template_directory_uri(); ?>/enregistrer">S'enregistrer</a></li>
                   </ul>
                 </div>
                 <div class="footer-col">

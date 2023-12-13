@@ -5,6 +5,8 @@ body {
     /* background: radial-gradient(circle at top right,#121F40,#121F40,#fff, #8A5576); */
     /* background-color: aquamarine; */
     background: linear-gradient(to bottom, #121F40 20%, #FCF9F9 , #8A5576 );
+
+   
     /* Ajustez les couleurs selon vos préférences */
     /* Vous pouvez également ajuster d'autres propriétés du dégradé radial */
     /* Pour assurer que le dégradé occupe toute la hauteur de la page */
