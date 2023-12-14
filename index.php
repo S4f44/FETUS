@@ -3,10 +3,10 @@
 
 <!------------------MAIN----------------->
     <main>
-      <section class="presentation">
+      <section class="grossesse">
         <div class="container text-center">
           <div class="row">
-            <div class="col-md-12 grossesse">
+            <div class="col-md-12 ">
               <h1>La grossesse est une aventure. <br>Commencez la vôtre ici !</h1>
             </div>
           </div>

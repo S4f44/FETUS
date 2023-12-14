@@ -2,7 +2,7 @@
 
 <!------------------MAIN----------------->
 <main>
-    <section class="presentation">
+    <section class="presentationttsav">
       <div class="container text-center">
         <div class="row">
           <div class="col-md-12 grossesse">
@@ -19,16 +19,16 @@
           <div class="row">
             <div class="col-md mb-3 d-flex">
               <div class="images js-images">        
-                <img data-index="step-1" class="active" src="assets\img\pttpois.svg" alt="petits pois">
-                <img data-index="step-2" src="assets\img\framboise.svg" alt="framboise">
-                <img data-index="step-3" src="assets\img\kiwi.svg" alt="kiwi">
-                <img data-index="step-4" src="assets/img/poire.svg" alt="poire">
-                <img data-index="step-5" src="assets\img\artichaud.svg" alt="artichaud">
-                <img data-index="step-6" src="assets\img\orange.svg" alt="orange">
-                <img data-index="step-7" src="assets\img\chouxfleur.svg" alt="choux fleur">
-                <img data-index="step-8" src="assets\img\coco.svg" alt="noix de coco">
-                <img data-index="step-9" src="assets\img\ananas.svg" alt="Ananas">
-                <img data-index="step-10" src="assets\img\citrouille.svg" alt="citrouille">
+                <img data-index="step-1" class="active" src="<?php echo get_template_directory_uri() ?>/assets/img/pttpois.svg" alt="petits pois">
+                <img data-index="step-2" src="<?php echo get_template_directory_uri() ?>/assets/img/framboise.svg" alt="framboise">
+                <img data-index="step-3" src="<?php echo get_template_directory_uri() ?>/assets/img/kiwi.svg" alt="kiwi">
+                <img data-index="step-4" src="<?php echo get_template_directory_uri() ?>/assets/img/poire.svg" alt="poire">
+                <img data-index="step-5" src="<?php echo get_template_directory_uri() ?>/assets/img/artichaud.svg" alt="artichaud">
+                <img data-index="step-6" src="<?php echo get_template_directory_uri() ?>/assets/img/orange.svg" alt="orange">
+                <img data-index="step-7" src="<?php echo get_template_directory_uri() ?>/assets/img/chouxfleur.svg" alt="choux fleur">
+                <img data-index="step-8" src="<?php echo get_template_directory_uri() ?>/assets/img/coco.svg" alt="noix de coco">
+                <img data-index="step-9" src="<?php echo get_template_directory_uri() ?>/assets/img/ananas.svg" alt="Ananas">
+                <img data-index="step-10" src="<?php echo get_template_directory_uri() ?>/assets/img/citrouille.svg" alt="citrouille">
               </div>
             </div>
             <div class="col-md-7">
@@ -149,22 +149,22 @@
                 <div class="accordion" id="accordionExample">
                   <!-- Accordion Item 1 -->
                   <div class="accordion-item">
-                    <h2 class="accordion-header">
+                    <h3 class="accordion-header">
                       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseToxo" aria-expanded="true" aria-controls="collapseToxo">
                         Toxoplasmose (une infection due à un parasite microscopique)
                       </button>
-                    </h2>
+                    </h3>
                     <div id="collapseToxo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                         
                         <!-- Nested Accordion for Subsections -->
                         <div class="accordion" id="subAccordionToxo">
                           <div class="accordion-item">
-                            <h2 class="accordion-header">
+                            <h3 class="accordion-header">
                               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSymptoToxo" aria-expanded="true" aria-controls="collapseSymptoToxo">
                                 Symptômes
                               </button>
-                            </h2>
+                            </h3>
                             <div id="collapseSymptoToxo" class="accordion-collapse collapse" data-bs-parent="#subAccordionToxo">
                               <div class="accordion-body">
                                 <!-- Content for Symptômes -->
@@ -180,11 +180,11 @@
                             </div>
                           </div>
                           <div class="accordion-item">
-                            <h2 class="accordion-header">
+                            <h3 class="accordion-header">
                               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEviterToxo" aria-expanded="true" aria-controls="collapseEviterToxo">
                                 Comment éviter ?
                               </button>
-                            </h2>
+                            </h3>
                             <div id="collapseEviterToxo" class="accordion-collapse collapse" data-bs-parent="#subAccordionToxo">
                               <div class="accordion-body">
                                 <!-- Content for Comment éviter -->
@@ -200,22 +200,22 @@
                 
                   <!-- Accordion Item 2 -->
                   <div class="accordion-item">
-                    <h2 class="accordion-header">
+                    <h3 class="accordion-header">
                       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRub" aria-expanded="true" aria-controls="collapseRub">
                         Rubéole
                       </button>
-                    </h2>
+                    </h3>
                     <div id="collapseRub" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                         
                         <!-- Nested Accordion for Subsections -->
                         <div class="accordion" id="subAccordionRub">
                           <div class="accordion-item">
-                            <h2 class="accordion-header">
+                            <h3 class="accordion-header">
                               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSymptoRub" aria-expanded="true" aria-controls="collapseSymptoRub">
                                 Symptômes
                               </button>
-                            </h2>
+                            </h3>
                             <div id="collapseSymptoRub" class="accordion-collapse collapse" data-bs-parent="#subAccordionRub">
                               <div class="accordion-body">
                                 <!-- Content for Symptômes -->
@@ -230,11 +230,11 @@
                             </div>
                           </div>
                           <div class="accordion-item">
-                            <h2 class="accordion-header">
+                            <h3 class="accordion-header">
                               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEviterRub" aria-expanded="true" aria-controls="collapseEviterRub">
                                 Comment éviter ?
                               </button>
-                            </h2>
+                            </h3>
                             <div id="collapseEviterRub" class="accordion-collapse collapse" data-bs-parent="#subAccordionRub">
                               <div class="accordion-body">
                                 <!-- Content for Comment éviter -->
@@ -250,22 +250,22 @@
                 
                   <!-- Accordion Item 3 -->
                   <div class="accordion-item">
-                    <h2 class="accordion-header">
+                    <h3 class="accordion-header">
                       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDiab" aria-expanded="true" aria-controls="collapseDiab">
                         Diabète gestationnelle
                       </button>
-                    </h2>
+                    </h3>
                     <div id="collapseDiab" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                         
                         <!-- Nested Accordion for Subsections -->
                         <div class="accordion" id="subAccordionDiab">
                           <div class="accordion-item">
-                            <h2 class="accordion-header">
+                            <h3 class="accordion-header">
                               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSymptoDiab" aria-expanded="true" aria-controls="collapseSymptoDiab">
                                 Symptômes
                               </button>
-                            </h2>
+                            </h3>
                             <div id="collapseSymptoDiab" class="accordion-collapse collapse" data-bs-parent="#subAccordionDiab">
                               <div class="accordion-body">
                                 <!-- Content for Symptômes -->
@@ -281,11 +281,11 @@
                             </div>
                           </div>
                           <div class="accordion-item">
-                            <h2 class="accordion-header">
+                            <h3 class="accordion-header">
                               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEviterDiab" aria-expanded="true" aria-controls="collapseEviterDiab">
                                 Comment éviter ?
                               </button>
-                            </h2>
+                            </h3>
                             <div id="collapseEviterDiab" class="accordion-collapse collapse" data-bs-parent="#subAccordionDiab">
                               <div class="accordion-body">
                                 <!-- Content for Comment éviter -->
@@ -313,7 +313,7 @@
                 <h2>Situations où vous devez consulter votre médecin traitant</h2>
               </div>
               <div class="col-md-6">
-                <ul>
+                <ul class="custom-list">
                     <li><strong>Perte de sang vaginales </strong>(abondante ou non). Si le flux est abondant, la femme enceinte peut être en train de faire une hémorragie et risque de perdre le bébé.</li>
                     <li><strong>Douleur intense et soudaine</strong></li>
                     <li>Suite à un <strong>choc</strong> (tombée ou accident par exemple)</li>
@@ -325,12 +325,12 @@
         </div>
       </section>
 
-      <section>
-        <div class="container text-center">
+      <section class="complications">
+        <div class="container">
             <div class="row">
               <div class="col-md-12">
                 <h3>En cas de complications, de questions ou de symptômes inhabituels, nous vous encourageons vivement à consulter votre médecin, gynécologue ou professionnel de la santé pour des conseils personnalisés !</h3><br>
-                <h3>Votre santé et celle de cotre bébé est essentielle !</h3>
+                <h3>Votre santé et celle de votre bébé est essentielle !</h3>
               </div>
             </div>
         </div>
