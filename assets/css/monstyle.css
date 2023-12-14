@@ -113,8 +113,22 @@ p{
 .btnsecondaire:active{
     color:#FCF9F9;
 }
+/*********************CUSTOM LIST************************/
+.custom-list {
+    list-style: none; /* Désactiver les points par défaut */
+    padding-left: 20px; /* Ajouter un décalage à gauche pour l'espace du picto */
+}
+
+.custom-list li::before {
+    content: url(../img/etoile.svg); /* Remplacez par le chemin réel de votre fichier SVG */
+    display: inline-block;
+    width: 18px; /* Ajustez la largeur du picto selon vos besoins */
+    height: 18px; /* Ajustez la hauteur du picto selon vos besoins */
+    margin-right: 8px; /* Ajoutez un espacement entre le picto et le texte */
+}
 
 /******************HEADER NAVBAR****************/
+
 .nav-link[href*="home"] {
     background-image: url(../img/logo.svg);
     background-repeat: no-repeat;
@@ -319,13 +333,38 @@ p{
     .scrolling .navbar-brand img { 
         margin: 15px 0px 15px 0px;
     }
+    h1{
+        font-size: 15pt; 
+        letter-spacing: 5pt;
+        line-height: 1;
+    }
+    h2{
+        font-size: 15px; 
+    }
+    h3{
+        font-size: 10pt; 
+        letter-spacing: 1pt;
+    }
+    p{
+        font-size: 13px; 
+        color: #121F40;
+    }
+    .presentation p{
+        font-size: 25px; 
+    }
+    .btnprimaire{
+        font-size: 12pt; 
+    }
+    .btnsecondaire{
+        font-size: 12pt;
+    }
 }
 
 
 
 
 /******************SECTIONS/MAIN ACCEUIL****************/
-div.grossesse{
+section.grossesse{
     margin-top : 300px;
     min-height: 50vh;
 }
@@ -387,30 +426,55 @@ section.fruits{
 
 
 /******************SECTIONS/MAIN TOUT SAVOIR SUR LA GROSSESSE****************/
-
-.accordionpatho{
+section.presentationttsav{
+    margin-top: 200px;
+    min-height : 60vh;
+}
+section.presentationttsav p{
+    color: #FCF9F9;
+}
+section.accordionpatho{
     margin-top: 100px;
+    display: inline;
+}
+.accordionpatho h2{
+    padding: 60px;
 }
 /* Supprimer le fond de l'accordéon */
 .accordion-item {
     background-color: transparent; 
     border: none; 
-  }
+}
   
 .accordion-button {
     background-color: transparent;  /* Couleur de fond du bouton */
     color: #121F40; /* Couleur du texte du bouton */
     /* border-bottom: 1px solid #121F40; */
-  }
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15pt; 
+    font-weight: 700;
+    letter-spacing: 2pt;
+    text-transform: uppercase;
+}
 
   /* Style pour les zones de contenu de l'accordéon */
+
 .accordion-body {
     background-color: transparent;/* Couleur de fond de la zone de contenu */
     color: #121F40; 
     text-align: left;
-  }
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px; 
+}
+.accordion-button:not(.collapsed) {
+   background-color: transparent;
+   border-color: transparent;
+   color: #121F40;
+}
 
-
+.consultmedecin{
+    margin-top : 150px;
+}
 .consultmedecin ul li{
     text-align: left;
     font-family: 'Poppins', sans-serif;
@@ -420,11 +484,23 @@ section.fruits{
 
 }
 .consult{
-    margin-top : 90px;
+    margin-top : 100px;
+}
+
+.complications{
+    min-height: 30vh;
+    text-align: center;
 }
 
 
   /******************SECTION CONSEILS****************/
+.presentationconseils{
+    margin-top : 200px;
+    min-height: 30vh;
+}
+.presentationconseils p{
+    color:#FCF9F9;
+}
 .txtconseils{
     margin-top: 150px;
 }
@@ -450,100 +526,20 @@ section.fruits{
     
   }
 
+  .deuxiemetri {
+    position: relative;
+    overflow: hidden;
+}
 
-  .chiffres{
+.chiffres {
     width: 140%;
     margin-left: 80px;
     position: relative;
     overflow: hidden;
-  }
-  .chiffresdeux{
+}
+
+.chiffredeux {
     width: 150%;
     position: relative;
     overflow: hidden;
   }
-
-
-
-  /************************** SECTION COOKIES *************************/
-
-  .cookies{
-    margin-top: 300px;
-  }
-
-  .cookies p{
-    color:#121F40;
-    text-align: left;
-    margin-top: 70px;
-    margin-bottom: 100px;
-  }
-
-
-  /************************** Mentions légales *************************/
-.mentions{
-    margin-top: 300px;
-}
-
-.table{
-    width: 100%;
-    color:#FCF9F9;
-}
-
-.tableauinfoml{
-    display: block;
-    
-}
-
-.tableauinfoml th{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15pt; 
-    font-weight: 700;
-    letter-spacing: 2pt;
-    text-transform: uppercase;
-    padding: 10px;
-    text-align: left;
-    display: inline-block;
-    width: 200%;
-}
-
-.tableauinfoml td{
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px; 
-    
-    padding: 10px 100px 10px 100px;
-    text-align: left;
-    margin-left: 100px;
-}
-
-.collecte {
-    display: block;
-}
-
-.collecte p{
- margin-top: 40px;
- margin-bottom: 40px;
-}
-
-  .colinfo{
-    padding: 70px 0px 50px 0px;
-    background-color: #FCF9F9;
-    
-  }
-
-  .colinfo p {
-    margin-top: 40px;
-    margin-bottom: 0px;
-    display: block;
-  }
-  
-  .colinfo ul {
-    margin-bottom: 40px;
-    display: block;
-  }
-
-  .mlfin {
-    padding: 70px 0px 70px 0px;
-  }
-
-
-  
