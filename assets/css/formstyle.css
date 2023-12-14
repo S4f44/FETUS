@@ -14,12 +14,27 @@ body {
 
 
 /******************BODY****************/
+/******************BODY****************/
 *{
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
 } 
 
+.erreur{
+    margin-top :350px;
+    min-height: 50vh;
+}
+.erreur h1 h3 p {
+    margin-top: 50px;
+}
+.erreursvg img{
+    width: 130%;
+    margin-top: 60px;
+    margin-left: 0px;
+    position: relative;
+    overflow: hidden;
+}
 h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 25pt; 
@@ -27,7 +42,7 @@ h1{
     letter-spacing: 10pt;
     line-height: 1.5;
     text-transform: uppercase;
-    color: #FCF9F9;
+    color: white;
 }
 h2{
     font-family: 'Montserrat', sans-serif;
@@ -36,7 +51,7 @@ h2{
 }
 h3{
     font-family: 'Montserrat', sans-serif;
-    font-size: 18pt; 
+    font-size: 15pt; 
     font-weight: 700;
     letter-spacing: 2pt;
     text-transform: uppercase;
@@ -44,7 +59,7 @@ h3{
 }
 p{
     font-family: 'Poppins', sans-serif;
-    font-size: 20px; 
+    font-size: 18px; 
     color: #121F40;
 }
 
@@ -60,16 +75,19 @@ p{
     gap: 10px; /* Espacement vertical entre les boutons */
   }
 
-.btnprimaire{
+  .btnprimaire {
     font-family: 'Montserrat', sans-serif;
     background-color: rgba(21, 21, 147, 1);
-    color: #FCF9F9; 
+    color: #FCF9F9;
     font-size: 15pt;
     text-transform: uppercase;
-    border : none; 
+    border: none;
     border-radius: 30px;
     padding: 8px 23px;
     text-decoration: none;
+    margin-top: 40px; 
+    margin-bottom: 40px; 
+    display: inline-block;
 }
 .btnprimaire:hover{
     background-color: rgba(21, 21, 147, 0.25);
@@ -94,9 +112,13 @@ p{
     color:#FCF9F9;
 }
 
-
-
 /******************HEADER NAVBAR****************/
+.nav-link[href*="home"] {
+    background-image: url(../img/logo.svg);
+    background-repeat: no-repeat;
+    color: rgba(255,255, 255, 0);
+    margin: 30px 60px 30px 60px;
+  }
 .navbar {
     background-color: #121F40;
     position: fixed;
@@ -182,6 +204,7 @@ p{
     text-transform: uppercase;
     margin: 0px 40px 0px 40px;
 }
+
 
 
 /******************FOOTER****************/
@@ -285,7 +308,17 @@ p{
     .navbar-brand img{
         width: 100px;
     }
+    .erreursvg img{
+        width: 100%;
+    }
+    .navbar-brand img{
+        margin: 30px 0px 30px 0px;
+    }
+    .scrolling .navbar-brand img { 
+        margin: 15px 0px 15px 0px;
+    }
 }
+
 
 
 /************************FORMULAIRES**********************/
@@ -334,7 +367,27 @@ form {
     }
   
   
-  
+    .mot-de-passe-oublie, .inscription {
+       
+        text-decoration: none;
+        margin-top: 8px;
+        display: inline-block;
+       
+    }
+
+    .boutonlien{
+         font-family: 'Montserrat', sans-serif;
+        font-size: 8pt; 
+        font-weight: 700;
+        letter-spacing: 2pt;
+        text-transform: uppercase;
+         color: #121F40;
+    }
+    
+    .mot-de-passe-oublie:hover, .inscription:hover {
+        text-decoration: underline;
+    }
+    
   
   select {
     display: block;

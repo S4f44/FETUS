@@ -37,3 +37,24 @@ function my_theme_enqueue_styles() {
 }
 
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
+
+
+
+//////////////////////////FONCTION DU PHP DE LA PAGE CONNEXION //////////////////////////////////
+
+// Fonction pour vérifier les identifiants (exemple avec un tableau en session)
+function isValidCredentials($email, $password) {
+  // Vous devez implémenter cette fonction pour vérifier les identifiants
+  // Stockez vos identifiants de manière sécurisée, par exemple dans une base de données
+  // Cette démo utilise un tableau en session (ne pas utiliser en production)
+  $users = isset($_SESSION['/']) ? $_SESSION['/'] : [];
+
+  // Parcourez les utilisateurs enregistrés
+  foreach ($users as $user) {
+      if ($user['email'] === $email && $user['password'] === $password) {
+          return true; // Identifiants valides
+      }
+  }
+
+  return false; // Identifiants invalides
+}
