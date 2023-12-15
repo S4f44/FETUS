@@ -89,7 +89,7 @@
                 <label for="email">Enter your email:</label>
                 <input type="email" id="email" name="email" placeholder="@gmail.be">
 
-                     <div class="col-md-2 offset-md-5 "><a href="formulaire.html" class="btnprimaire">Suivant</a> </div>
+                     <div class="col-md-2 offset-md-5 "><a href="<?php echo get_template_directory_uri(); ?>/formulaire" class="btnprimaire">Suivant</a> </div>
 
                     </form> 
 

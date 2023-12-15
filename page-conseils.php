@@ -4,7 +4,7 @@
   <section class="presentationconseils">
     <div class="container text-center">
       <div class="row">
-        <div class="col-md-12 grossesse">
+        <div class="col-md-12">
           <h1>Conseils</h1>
           <p>Parcourez cette page avec nous pour découvrir des conseils pratiques et des informations essentielles qui feront de votre parcours vers la parentalité une expérience épanouissante et sereine.</p>
         </div>
@@ -20,7 +20,7 @@
               <h2>Premier trimestre</h2><br>
               <ul class="custom-list">
                   <li>Ménager la femme enceinte</li><br>
-                  <li>Le partenaire peut prendre en charge certaines tâches ménagères, comme la cuisine, en raison de la sensibilité accrue aux odeurs.Éviter les déclencheurs olfactifs pour minimiser les nausées et l'hypersensibilité.</li><br>
+                  <li>Le partenaire peut prendre en charge certaines tâches ménagères, comme la cuisine, en raison de la sensibilité accrue aux odeurs. Éviter les déclencheurs olfactifs pour minimiser les nausées et l'hypersensibilité.</li><br>
                   <li>Créer un environnement calme et apaisant pour atténuer la fatigue et favoriser le bien-être.</li><br>
                   <li>Comprendre les effets des hormones telles que l'HCG, l'œstrogène et la progestérone sur les nausées et la fatigue</li><br>
               </ul>

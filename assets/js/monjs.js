@@ -23,3 +23,60 @@ $(function() {
         $(stepSelector, ".js-images, .js-text").addClass("active");
     });
 });
+
+////////////////////////////TO DO LIST MES OBJECTIFS ///////////////////////////////////
+// function addTask() {
+//     var newTask = document.getElementById('new-task').value;
+//     var deadline = document.getElementById('deadline').value;
+//     var tasksList = document.getElementById('tasks');
+
+//     if (newTask !== '' && deadline !== '') {
+//         var listItem = document.createElement('li');
+//         listItem.innerHTML = `<input type="checkbox" onclick="toggleTask(this)"> <strong>${newTask}</strong> - Deadline: ${deadline}`;
+//         tasksList.appendChild(listItem);
+
+//         // Réinitialiser les champs
+//         document.getElementById('new-task').value = '';
+//         document.getElementById('deadline').value = '';
+//     } else {
+//         alert('Veuillez remplir tous les champs.');
+//     }
+// }
+
+// function toggleTask(checkbox) {
+//     var listItem = checkbox.parentNode;
+//     if (checkbox.checked) {
+//         listItem.style.textDecoration = 'line-through';
+//     } else {
+//         listItem.style.textDecoration = 'none';
+//     }
+// }
+function addTask() {
+    var newTask = document.getElementById('new-task').value;
+    var deadline = document.getElementById('deadline').value;
+    var tasksList = document.getElementById('tasks');
+
+    if (newTask !== '' && deadline !== '') {
+        var listItem = document.createElement('li');
+        listItem.innerHTML = `<input type="checkbox" onclick="toggleTask(this)"> <strong>${newTask}</strong> - Deadline: ${deadline}`;
+        
+        // Ajoutez une classe pour les tâches de l'utilisateur
+        listItem.classList.add('user-task');
+        
+        tasksList.appendChild(listItem);
+
+        // Réinitialiser les champs
+        document.getElementById('new-task').value = '';
+        document.getElementById('deadline').value = '';
+    } else {
+        alert('Veuillez remplir tous les champs.');
+    }
+}
+function toggleTask(checkbox) {
+    var listItem = checkbox.parentNode;
+    if (checkbox.checked) {
+        listItem.classList.add('done');
+    } else {
+        listItem.classList.remove('done');
+    }
+}

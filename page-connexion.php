@@ -113,7 +113,7 @@ $_SESSION['heloise'] = [
                         <button type="submit" class="btnprimaire">Se connecter</button>
                     </div>
                     <div class="col-md-12 text-center mt-2 bontonlien">
-                        <a href="mot_de_passe_oublie.php" class="mot-de-passe-oublie">Mot de passe oublié ?</a> / <a href="inscription.php" class="inscription">S'inscrire</a>
+                        <a href="mot_de_passe_oublie.php" class="mot-de-passe-oublie">Mot de passe oublié ?</a> / <a href="<?php echo get_template_directory_uri(); ?>/enregistrer" class="inscription">S'inscrire</a>
                     </div>
 
                 </form>

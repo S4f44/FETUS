@@ -244,7 +244,7 @@ p{
 } 
 .footer{
 	background-color: rgba(255, 255, 255, 0.2);
-    padding: 70px 0;
+    padding: 50px 0 20px 0;
 }
 .footer-col{
    width: 25%;
@@ -339,7 +339,7 @@ p{
         line-height: 1;
     }
     h2{
-        font-size: 15px; 
+        font-size: 18px; 
     }
     h3{
         font-size: 10pt; 
@@ -357,6 +357,10 @@ p{
     }
     .btnsecondaire{
         font-size: 12pt;
+    }
+    .accordion-button {
+        font-size: 10pt; 
+        letter-spacing: 1pt;
     }
 }
 
@@ -383,7 +387,6 @@ div.roleparents{
 
 section.newsletter{
     min-height: 40vh;
-
 }
 
 .symbolespapamaman {
@@ -493,7 +496,7 @@ section.accordionpatho{
 }
 
 
-  /******************SECTION CONSEILS****************/
+  /******************PAGE CONSEILS****************/
 .presentationconseils{
     margin-top : 200px;
     min-height: 30vh;
@@ -530,6 +533,11 @@ section.accordionpatho{
     position: relative;
     overflow: hidden;
 }
+.deuxiemetri img{
+    width: 150%;
+    position: relative;
+    overflow: hidden;
+}
 
 .chiffres {
     width: 140%;
@@ -538,8 +546,103 @@ section.accordionpatho{
     overflow: hidden;
 }
 
-.chiffredeux {
+/* .chiffredeux {
     width: 150%;
     position: relative;
     overflow: hidden;
+  } */
+
+section.accordionnutrition{
+    margin-top: 100px;
+    display: inline;
+
+}
+  /******************PAGE MES OBJECTIF ****************/
+section.presentationobjectifs{
+    margin-top: 200px;
+    min-height: 40vh;
+}
+
+#task-list {
+    width: auto;
+    margin: 0 auto;
+    display: inline;
+}
+#task-list h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#tasks ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+li.done {
+    text-decoration: line-through;
+}
+
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 30px;
+}
+  
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15pt; 
+    font-weight: 700;
+    letter-spacing: 2pt;
+    text-transform: uppercase;
+    color: #121F40;
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+   
   }
+  
+  input {
+    width: 60%;
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: none;
+    border-bottom: 1px solid #151593;
+    background: none;
+    color: rgba(21, 21, 147, 0.25); 
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px; 
+}
+/* Ajoutez ces styles pour personnaliser les nouvelles tâches */
+#tasks li.user-task {
+    text-align: left;
+}
+#tasks li.user-task {
+    width: 60%;
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: none;
+    border-bottom: 1px solid #151593;
+    background: none;
+    color: #121F40;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px; 
+    list-style: none;
+}
+
+#tasks li.user-task.done {
+    color: rgba(21, 21, 147, 0.25); 
+}
+
