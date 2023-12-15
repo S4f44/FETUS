@@ -12,8 +12,6 @@ body {
 }
 
 
-
-/******************BODY****************/
 /******************BODY****************/
 *{
 	margin:0;
@@ -392,12 +390,27 @@ form {
             color: #FCF9F9; /* Couleur du texte au survol pour les labels des radios */
         }
     
+        input[type="radio"] {
+            margin-right: 5px; /* Espacement à droite de la case à cocher */
+            background-image: url(../img/btnradio.svg);
+            border: none;
+           
+        }
         
-  
+        input[type="radio"]:checked {
+            margin-right: 5px; /* Espacement à droite de la case à cocher */
+            background-image: url(../img/btnradiocoche.svg);
+            border: none;
+           
+        }
 
+       
             /* Styles pour les cases à cocher */
     input[type="checkbox"] {
         margin-right: 5px; /* Espacement à droite de la case à cocher */
+        background-image: url(../img/checkbox.svg);
+        border: none;
+       
     }
 
     /* Styles pour le libellé des cases à cocher */
@@ -411,9 +424,7 @@ form {
 
     /* Style pour les cases à cocher lorsqu'elles sont cochées */
     input[type="checkbox"]:checked {
-        background-color: #007BFF; /* Couleur de fond lorsqu'elles sont cochées */
-        border-color: #007BFF; /* Couleur de la bordure lorsqu'elles sont cochées */
-        color: #fff; /* Couleur du texte lorsqu'elles sont cochées */
+        background-image: url(../img/checkboxcheck.svg);
     }
 
     .mot-de-passe-oublie, 

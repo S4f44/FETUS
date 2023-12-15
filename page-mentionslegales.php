@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-<section class="presentation">
+<section class="presentationml">
     <div class="container text-center">
       <div class="row">
         
-        <h1 class="col-md-12 mentions">Mentions légales</h1>
+        <h1 class="col-md-12">Mentions légales</h1>
        
       </div>
     </div>
@@ -17,32 +17,34 @@
           <div class="container text-center">
                     <div class="row">
                       <div class="col-md-10 offset-md-2">
+                     
                         
-                        <table>
-                          <tr>
-                              <th>Nom de la société</th>
-                              <td>Fetus SRL</td>
-                          </tr>
-                          <tr>
-                              <th>Forme juridique</th>
-                              <td>SRL (société à responsabilité limitée), personne morale qui a une responsabilité à ce qu’elle propose)</td>
-                          </tr>
-                          <tr>
-                              <th>Adresse postale</th>
-                              <td>Rue de la poste 111, 1030 Bruxelles</td>
-                          </tr>
-                          <tr>
-                              <th>E-mail</th>
-                              <td>hello@fetus.be</td>
-                          </tr>
-                          <tr>
-                              <th>Téléphone</th>
-                              <td>04 88 38 45 03</td>
-                          </tr>
-                          <tr>
-                              <th>Numéro BCE</th>
-                              <td>BE346 789 987</td>
-                          </tr>
+                      <table>
+                      <table>
+                        <tr class="custom-tr">
+                          <th class="custom-th col-md-2 offset-md-2">Nom de la société</th>
+                          <td class="custom-td col-md-3 ">Fetus SRL</td>
+                        </tr>
+                        <tr class="custom-tr">
+                          <th class="custom-th col-md-2 offset-md-2">Forme juridique</th>
+                          <td class="custom-td col-md-3">SRL (société à responsabilité limitée)</td>
+                        </tr>
+                        <tr class="custom-tr">
+                          <th class="custom-th col-md-2 offset-md-2">Adresse postale</th>
+                          <td class="custom-td col-md-3 ">Rue de la poste 111, 1030 Bruxelles</td>
+                        </tr>
+                        <tr class="custom-tr">
+                          <th class="custom-th col-md-2 offset-md-2">E-mail</th>
+                          <td class="custom-td col-md-3 ">hello@fetus.be</td>
+                        </tr>
+                        <tr class="custom-tr">
+                          <th class="custom-th col-md-2 offset-md-2">Téléphone</th>
+                          <td class="custom-td col-md-3 ">04 88 38 45 03</td>
+                        </tr>
+                        <tr class="custom-tr">
+                          <th class="custom-th col-md-2 offset-md-2">Numéro BCE</th>
+                          <td class="custom-td col-md-3 ">BE346 789 987</td>
+                        </tr>
                       </table>
 
                       </div>

@@ -57,7 +57,7 @@ h1{
     letter-spacing: 10pt;
     line-height: 1.5;
     text-transform: uppercase;
-    color: white;
+    color:#FCF9F9;
 }
 h2{
     font-family: 'Montserrat', sans-serif;
@@ -747,3 +747,47 @@ label {
     color: rgba(21, 21, 147, 0.25); 
 }
 
+
+
+/***************************************MENTIONS L2GALES****************************/
+section.presentationml{
+    margin-top: 300px;
+    min-height: 40vh;
+}
+
+table {
+    border-collapse: collapse; 
+    width: 100%;
+    display: block;
+    /* margin: 20px 0px; */
+}
+
+
+
+.custom-th {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15pt;
+    font-weight: 700;
+    letter-spacing: 2pt;
+    text-transform: uppercase;
+    color:#FCF9F9;
+    text-align: left;
+    
+}
+
+.custom-td {
+    text-align: left;
+    color:#FCF9F9; /* Text color */
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.custom-tr {
+    margin: 20px 0px;
+}
+
+.colinfo {
+    background-color: #FCF9F9;
+    padding: 60px 0px 70px 0px;
+    margin: 10px 0px 70px 0px;
+}
