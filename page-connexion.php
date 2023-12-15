@@ -110,7 +110,9 @@ $_SESSION['heloise'] = [
                     <input class="offset-md-3" type="password" id="password" name="password" placeholder="Votre mot de passe">
 
                     <div class="col-md-12 text-center mt-4">
+                        <a href= "<?php echo get_template_directory_uri(); ?>/monsuivi">
                         <button type="submit" class="btnprimaire">Se connecter</button>
+                        </a>
                     </div>
                     <div class="col-md-12 text-center mt-2 bontonlien">
                         <a href="mot_de_passe_oublie.php" class="mot-de-passe-oublie">Mot de passe oublié ?</a> / <a href="<?php echo get_template_directory_uri(); ?>/enregistrer" class="inscription">S'inscrire</a>

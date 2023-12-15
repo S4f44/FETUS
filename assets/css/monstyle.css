@@ -2,9 +2,11 @@
 body {
     overflow-x: hidden;/*pour pas que les gros symbole dépassent sur la cotés*/
     /* Dégradé radial en tant que fond */
-    /* background: radial-gradient(circle at top right,#121F40,#121F40,#fff, #8A5576); */
+    /* background: radial-gradient(circle at top right,#121F40,#fff, #8A5576);
+    background: radial-gradient(circle at top left,#121F40,#fff, #8A5576); */
     /* background-color: aquamarine; */
-    background: linear-gradient(to bottom, #121F40 10%, #FCF9F9 , #8A5576 );
+
+    /* background: linear-gradient(to bottom, #121F40 10%, #FCF9F9 , #8A5576 ); */
 
    
     /* Ajustez les couleurs selon vos préférences */
@@ -16,6 +18,14 @@ body {
     /*align-items: center;
     justify-content: center;*/
     background-repeat: no-repeat;
+   
+    background: radial-gradient(circle at bottom left, transparent, #FCF9F9, #121F40), /* Bleu en haut à gauche */
+                radial-gradient(circle at bottom right, #8A5576, transparent), /* Rose en haut à droite */
+                radial-gradient(circle at 75% 50%, #8A5576, transparent), /* Rose au milieu à droite */
+                radial-gradient(circle at bottom left, #8A5576, transparent), /* Rose en bas à gauche */
+                radial-gradient(circle at bottom right, #8A5576, transparent); /* Rose en bas à droite */
+    background-size: 100%; /* Ajuste la taille des cercles pour qu'ils couvrent la moitié de l'écran */
+    background-position: top left, top right, 75% 50%, bottom left, bottom right;
     
 }
 
@@ -112,6 +122,9 @@ p{
 }
 .btnsecondaire:active{
     color:#FCF9F9;
+}
+a:focus{
+    outline: none !important;
 }
 /*********************CUSTOM LIST************************/
 .custom-list {
@@ -403,9 +416,9 @@ section.fruits{
     
 }
 
-.fruits img{
+/* .fruits img{
     width: 10%;
-} 
+}  */
 .fruits .images img {
     display: none;
     width: 50%;
@@ -424,8 +437,94 @@ section.fruits{
 .fruits .text article.active {
     display: block;
 }
-
-
+.data-index p{
+    text-align: left;
+}
+.btnfruits ul {
+    display: flex; /* utilisation flexbox pour aligner verticalement les éléments */
+    align-items: flex-end;
+}
+.btnfruits li{
+    margin: 0 5px;
+}
+/*arrière-plan des liens actifs */
+.nav-link.active {
+    background-color: transparent !important; /* Rend l'arrière-plan transparent */
+    color: #121F40 !important; /* Définit la couleur du texte (changez #000 selon vos besoins) */
+}
+.nav-link{
+    color:#121F40;
+}
+.nav-link:hover{
+    color:#8A5576;
+}
+.nav-link img:hover{
+    opacity: 0.5;
+    transition: opacity 0.2s ease-in-out; 
+    filter: brightness(1.2);
+}
+/************************CAROUSEL PETITES IMAGES**********************/
+.pttpois{
+    width: 70%;
+}
+.framboise{
+    width: 50%;
+}
+.kiwi{
+    width: 75%;
+}
+.poire{
+    width: 50%;
+}
+.artichaud{
+    width: 70%;
+}
+.orange{
+    width: 125%;
+}
+.choufleur{
+    width: 100%;
+}
+.coco{
+    width: 110%;
+}
+.ananas{
+    width: 100%;
+}
+.citrouille{
+    width: 200%;
+}
+/**********************CAROUSEL GRANDES IMAGES********************/
+.grpttpois img{
+    width: 10%;
+}
+.grframboise img{
+    width: 10%;
+}
+.grkiwi{
+    width: 10%;
+}
+.grpoire{
+    width: 10%;
+}
+.grartichaud{
+    width: 10%;
+}
+.grorange{
+    width: 10%;
+}
+.grchoufleur{
+    width: 10%;
+}
+.grcoco{
+    width: 10%;
+}
+.grananas{
+    width: 10%;
+}
+.grcitrouille{
+    width: 10%;
+}
 
 
 /******************SECTIONS/MAIN TOUT SAVOIR SUR LA GROSSESSE****************/
@@ -552,11 +651,13 @@ section.accordionpatho{
     overflow: hidden;
   } */
 
-section.accordionnutrition{
+/* section.accordionnutrition{
     margin-top: 100px;
+    margin-bottom: 100px;
     display: inline;
 
-}
+}  */
+
   /******************PAGE MES OBJECTIF ****************/
 section.presentationobjectifs{
     margin-top: 200px;

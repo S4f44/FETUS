@@ -15,26 +15,13 @@
     </section>
 
     <section class="fruits">
-        <div class="container py-3">
+        <div class="container text-center py-3">
           <div class="row">
-            <div class="col-md mb-3 d-flex">
-              <div class="images js-images">        
-                <img data-index="step-1" class="active" src="<?php echo get_template_directory_uri() ?>/assets/img/pttpois.svg" alt="petits pois">
-                <img data-index="step-2" src="<?php echo get_template_directory_uri() ?>/assets/img/framboise.svg" alt="framboise">
-                <img data-index="step-3" src="<?php echo get_template_directory_uri() ?>/assets/img/kiwi.svg" alt="kiwi">
-                <img data-index="step-4" src="<?php echo get_template_directory_uri() ?>/assets/img/poire.svg" alt="poire">
-                <img data-index="step-5" src="<?php echo get_template_directory_uri() ?>/assets/img/artichaud.svg" alt="artichaud">
-                <img data-index="step-6" src="<?php echo get_template_directory_uri() ?>/assets/img/orange.svg" alt="orange">
-                <img data-index="step-7" src="<?php echo get_template_directory_uri() ?>/assets/img/chouxfleur.svg" alt="choux fleur">
-                <img data-index="step-8" src="<?php echo get_template_directory_uri() ?>/assets/img/coco.svg" alt="noix de coco">
-                <img data-index="step-9" src="<?php echo get_template_directory_uri() ?>/assets/img/ananas.svg" alt="Ananas">
-                <img data-index="step-10" src="<?php echo get_template_directory_uri() ?>/assets/img/citrouille.svg" alt="citrouille">
-              </div>
-            </div>
-            <div class="col-md-7">
+            <h2>Les différents stades de la grossesse</h2>
+            <div class="col-md-4 offset-md-2">
               <div class="text js-text">
                 <article class="active" data-index="step-1">
-                  <h3>Petits pois</h3>
+                  <h3>Petit pois</h3>
                   <p>
                     4 semaines : petit pois
                     Le blastocyste s'implante dans l'utérus.
@@ -88,9 +75,9 @@
                   </p>
                 </article>
                 <article data-index="step-7">
-                  <h3>Choux-fleur</h3>
+                  <h3>Chou-fleur</h3>
                   <p>
-                    28 semaines : choux fleur 
+                    28 semaines : chou-fleur 
                     Début du troisième trimestre.
                     Poids : Environ 1 kg.
                     Taille : Environ 35,6 cm.
@@ -117,29 +104,106 @@
                 <article data-index="step-10">
                   <h3>Citrouille</h3>
                   <p>
-                    40 semaines (à terme) : citrouille 
-                    il est prêt pour l'accouchement, démontrant des réflexes développés et un système immunitaire renforcé.
+                    40 semaines (à terme) : citrouille <br>
                     Poids moyen à la naissance : Environ 3,4 kg.
                     Taille moyenne à la naissance : Environ 50 cm.
+                    il est prêt pour l'accouchement, démontrant des réflexes développés et un système immunitaire renforcé.
+                    
                   </p>
                 </article>
-                </div>
-              <ul class="flex-column nav nav-pills links js-links">
-                <li class="nav-item"><a class="nav-link active" data-index="step-1" href="#">4 sem.</a></li>
-                <li class="nav-item"><a class="nav-link" data-index="step-2" href="#">8 sem.</a></li>
-                <li class="nav-item"><a class="nav-link" data-index="step-3" href="#">12 sem.</a></li>
-                <li class="nav-item"><a class="nav-link" data-index="step-4" href="#">16 sem.</a></li>
-                <li class="nav-item"><a class="nav-link" data-index="step-5" href="#">20 sem.</a></li>
-                <li class="nav-item"><a class="nav-link" data-index="step-6" href="#">24 sem.</a></li>
-                <li class="nav-item"><a class="nav-link" data-index="step-7" href="#">28 sem.</a></li>
-                <li class="nav-item"><a class="nav-link" data-index="step-8" href="#">32 sem.</a></li>
-                <li class="nav-item"><a class="nav-link" data-index="step-9" href="#">36 sem.</a></li>
-                <li class="nav-item"><a class="nav-link" data-index="step-10" href="#">40 sem.</a></li>
+              </div>
+            </div>
+
+            <div class="col-md-4 offset-md-1">
+              <div class="images js-images">        
+                <img data-index="step-1" class="active" src="<?php echo get_template_directory_uri() ?>/assets/img/pttpois.svg" alt="petit pois" class="grpttpois">
+                <img data-index="step-2" src="<?php echo get_template_directory_uri() ?>/assets/img/framboise.svg" alt="framboise" class="grframboise">
+                <img data-index="step-3" src="<?php echo get_template_directory_uri() ?>/assets/img/kiwi.svg" alt="kiwi" class="grkiwi">
+                <img data-index="step-4" src="<?php echo get_template_directory_uri() ?>/assets/img/poire.svg" alt="poire" class="grpoire">
+                <img data-index="step-5" src="<?php echo get_template_directory_uri() ?>/assets/img/artichaud.svg" alt="artichaud" class="grartichaud">
+                <img data-index="step-6" src="<?php echo get_template_directory_uri() ?>/assets/img/orange.svg" alt="orange" class="grorange">
+                <img data-index="step-7" src="<?php echo get_template_directory_uri() ?>/assets/img/chouxfleur.svg" alt="choux fleur" class="grchoufleur">
+                <img data-index="step-8" src="<?php echo get_template_directory_uri() ?>/assets/img/coco.svg" alt="noix de coco" class="grcoco">
+                <img data-index="step-9" src="<?php echo get_template_directory_uri() ?>/assets/img/ananas.svg" alt="Ananas" class="grananas">
+                <img data-index="step-10" src="<?php echo get_template_directory_uri() ?>/assets/img/citrouille.svg" alt="citrouille"class="grcitrouille">
+              </div>
+            </div>
+          </div>
+        </div> 
+
+      <div class="container text-center py-3">
+        <div class="row">
+          <div class="col-md-10 offset-md-1 btnfruits">
+            <div class="text js-text">  
+              <ul class="flex-row nav nav-pills links js-links">
+
+                <li class="nav-item"><a class="nav-link active" data-index="step-1" href="#">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/pttpois.svg" alt="petits pois" class="pttpois"><br>
+                    4 sem.
+                  </a>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" data-index="step-2" href="#">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/framboise.svg" alt="framboise" class="framboise"><br>
+                    8 sem.
+                  </a>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" data-index="step-3" href="#">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/kiwi.svg" alt="kiwi" class="kiwi"><br>
+                    12 sem.
+                  </a>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" data-index="step-4" href="#">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/poire.svg" alt="poire" class="poire"><br>
+                    16 sem.
+                  </a>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" data-index="step-5" href="#">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/artichaud.svg" alt="artichaud" class="artichaud"><br>
+                    20 sem.
+                  </a>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" data-index="step-6" href="#">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/orange.svg" alt="orange" class="orange"><br>
+                    24 sem.
+                  </a>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" data-index="step-7" href="#">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/chouxfleur.svg" alt="choux fleur" class="choufleur"><br>
+                    28 sem.
+                  </a>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" data-index="step-8" href="#">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/coco.svg" alt="noix de coco" class="coco"><br>
+                    32 sem.
+                  </a>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" data-index="step-9" href="#">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/ananas.svg" alt="Ananas" class="ananas"><br>
+                    36 sem.
+                  </a>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" data-index="step-10" href="#">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/citrouille.svg" alt="citrouille" class="citrouille"><br>
+                    40 sem.
+                  </a>
+                </li>
+
               </ul>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+
 
       <section class="accordionpatho">
         <div class="container text-center">
@@ -157,7 +221,6 @@
                     <div id="collapseToxo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                         
-                        <!-- Nested Accordion for Subsections -->
                         <div class="accordion" id="subAccordionToxo">
                           <div class="accordion-item">
                             <h3 class="accordion-header">
@@ -167,7 +230,7 @@
                             </h3>
                             <div id="collapseSymptoToxo" class="accordion-collapse collapse" data-bs-parent="#subAccordionToxo">
                               <div class="accordion-body">
-                                <!-- Content for Symptômes -->
+                                <!-- contenu symptomes -->
                                 <ol>
                                   <li>Symptômes semblables à la grippe : Fièvre, maux de tête, fatigue, douleurs musculaires.</li>
                                   <li>Enflure des ganglions lymphatiques : Surtout au niveau du cou.</li>
@@ -187,13 +250,13 @@
                             </h3>
                             <div id="collapseEviterToxo" class="accordion-collapse collapse" data-bs-parent="#subAccordionToxo">
                               <div class="accordion-body">
-                                <!-- Content for Comment éviter -->
+                                <!-- contenu comment éviter -->
                                 <p>Bien se laver les mains, bien cuir les aliments que vous mangez, laver correctement vos ustensiles de cuisine, ne pas nettoyer la litière de votre chat si vous en avez un.</p>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <!-- End of Nested Accordion for Subsections -->
+                        <!--fin accordion item 1 -->
                       </div>
                     </div>
                   </div>
@@ -208,7 +271,7 @@
                     <div id="collapseRub" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                         
-                        <!-- Nested Accordion for Subsections -->
+
                         <div class="accordion" id="subAccordionRub">
                           <div class="accordion-item">
                             <h3 class="accordion-header">
@@ -218,7 +281,7 @@
                             </h3>
                             <div id="collapseSymptoRub" class="accordion-collapse collapse" data-bs-parent="#subAccordionRub">
                               <div class="accordion-body">
-                                <!-- Content for Symptômes -->
+                                <!-- contenu symptomes -->
                                 <ol>
                                   <li>Éruption cutanée : Une éruption cutanée légère apparaît souvent en premier, généralement sur le visage, puis se propage au reste du corps.</li>
                                   <li>Ganglions enflés : Les ganglions lymphatiques, en particulier ceux derrière les oreilles et dans le cou, peuvent devenir enflés et douloureux.</li>
@@ -237,13 +300,13 @@
                             </h3>
                             <div id="collapseEviterRub" class="accordion-collapse collapse" data-bs-parent="#subAccordionRub">
                               <div class="accordion-body">
-                                <!-- Content for Comment éviter -->
+                                <!-- contenu comment éviter -->
                                 <p>Éviter le contact avec les petits enfants</p>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <!-- End of Nested Accordion for Subsections -->
+                        <!-- fin accordion item 2 -->
                       </div>
                     </div>
                   </div>
@@ -258,7 +321,6 @@
                     <div id="collapseDiab" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                         
-                        <!-- Nested Accordion for Subsections -->
                         <div class="accordion" id="subAccordionDiab">
                           <div class="accordion-item">
                             <h3 class="accordion-header">
@@ -268,7 +330,7 @@
                             </h3>
                             <div id="collapseSymptoDiab" class="accordion-collapse collapse" data-bs-parent="#subAccordionDiab">
                               <div class="accordion-body">
-                                <!-- Content for Symptômes -->
+                                <!-- contenu symptomes -->
                                 <ol>
                                   <li>Polyurie : Augmentation de la fréquence des mictions (uriner plus fréquemment).</li>
                                   <li>Polydipsie : Augmentation de la soif.</li>
@@ -288,13 +350,13 @@
                             </h3>
                             <div id="collapseEviterDiab" class="accordion-collapse collapse" data-bs-parent="#subAccordionDiab">
                               <div class="accordion-body">
-                                <!-- Content for Comment éviter -->
+                                <!-- contenu comment éviter -->
                                 <p>Surveiller votre alimentation, sans pour autant vous priver. La prise de poids idéale pendant la grossesse n’existe pas. Elle va dépendre de votre IMC (indice de masse corporelle).</p>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <!-- End of Nested Accordion for Subsections -->
+                        <!--fin accordion item 3 -->
                       </div>
                     </div>
                   </div>
