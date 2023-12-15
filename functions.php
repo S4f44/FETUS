@@ -58,3 +58,5 @@ function isValidCredentials($email, $password) {
 
   return false; // Identifiants invalides
 }
+
+

@@ -365,9 +365,58 @@ form {
     font-size: 20px; 
     
     }
+
+    input:hover {
+        color: #151593; /* Couleur du texte au survol */
+        border-bottom: 1px solid #FCF9F9; /* Bordure du bas au survol */
+        }
+
+    .custom-radio-input {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px; 
+        color: #121F40;
+    }       
+    
+    .custom-radio-label {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px; 
+        color:#FCF9F9; 
+    }
+        
+        .custom-radio-input:hover {
+            color: #151593; /* Couleur du texte au survol pour les radios */
+        }
+        
+        .custom-radio-label:hover {
+            color: #FCF9F9; /* Couleur du texte au survol pour les labels des radios */
+        }
+    
+        
   
-  
-    .mot-de-passe-oublie, .inscription {
+
+            /* Styles pour les cases à cocher */
+    input[type="checkbox"] {
+        margin-right: 5px; /* Espacement à droite de la case à cocher */
+    }
+
+    /* Styles pour le libellé des cases à cocher */
+    .form-check-label {
+        font-size: 16px;
+        color:#121F40;
+        margin-left: 5px; /* Espacement à gauche du libellé */
+        margin-top: 50px;
+        
+    }
+
+    /* Style pour les cases à cocher lorsqu'elles sont cochées */
+    input[type="checkbox"]:checked {
+        background-color: #007BFF; /* Couleur de fond lorsqu'elles sont cochées */
+        border-color: #007BFF; /* Couleur de la bordure lorsqu'elles sont cochées */
+        color: #fff; /* Couleur du texte lorsqu'elles sont cochées */
+    }
+
+    .mot-de-passe-oublie, 
+    .inscription {
        
         text-decoration: none;
         margin-top: 8px;
@@ -389,21 +438,35 @@ form {
     }
     
   
-  select {
-    display: block;
-    margin: 0 auto;
-    padding: 10px 25px;
-    border-radius: 40px;
-  }
-
-  
-/* Style the radio buttons */
-input[type="radio"] {
-    margin-right: 5px;
-  }
-  
-  /* Style the selected state of radio buttons */
-  input[type="radio"]:checked + label {
-    font-weight: bold;
-    color: #151593;
-  }
+    /*************************BOUTONS POUR AJOUTER PHOTO****************/
+    .file-upload-label {
+        display: block;
+        cursor: pointer;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 90px 10px;
+        border-radius: 300px;
+        box-sizing: border-box;
+        margin-bottom: 90px;
+    }
+    
+    .file-upload-input {
+        display: none;
+    }
+    
+    .upload-icon {
+        background-image: url('chemin/vers/votre/image.png');
+        background-size: contain;
+        width: 25px; /* Ajustez la largeur souhaitée */
+        height: 25px; /*Ajustez la hauteur souhaitée */
+        display: inline-block;
+        transition: transform 0.5s ease; /* Ajustement de la transition */
+    }
+    
+    .file-upload-label:hover .upload-icon {
+        background-size: 120%; /* Ajustez la taille agrandie selon vos besoins */
+        transform: scale(1.2); /* Ajustez la valeur de l'échelle selon vos besoins */
+    }
+    
+    
+   
