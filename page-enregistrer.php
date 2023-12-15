@@ -61,44 +61,152 @@
 
 <!------------------MAIN----------------->
    <main>
-    <section>
-        <div class="container text-center">
-            <div class="row">
-              <div class="col-md-10 offset-md-1 formulaire">
-                <form action="/action_page.php">
+
+   <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Récupération des données du formulaire
+    $firstname = $_POST["firstname"];
+    $lastname = $_POST["lastname"];
+    $gender = isset($_POST["gender"]) ? $_POST["gender"] : "";
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+    
+    // Initialisation des variables d'erreur
+    $emailError = '';
+    $passwordError = '';
+
+    // Vérification de la validité de l'adresse e-mail
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL) || !preg_match('/@(.*\.(be|fr|com))$/', $email)) {
+        $emailError = 'color: red;';
+    }
+
+    // Vérification de la longueur minimale du mot de passe
+    if (strlen($password) < 8) {
+        $passwordError = 'color: red;';
+    }
+
+    // Traitement de la photo de profil
+    $target_dir = "uploads/";
+    $target_file = $target_dir . basename($_FILES["profile-pic"]["name"]);
+    move_uploaded_file($_FILES["profile-pic"]["tmp_name"], $target_file);
+
+    // Exemple d'affichage des données (remplacez cela par votre logique métier)
+    echo "Nom: $firstname $lastname <br>";
+    echo "Genre: $gender <br>";
+    echo "Email: $email <br>";
+    echo "Mot de passe: $password <br>";
+    echo "Photo de profil: $target_file <br>";
+}
+?>
+
+<section>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 formulaire">
+                <form action="/page-monsuivi.php"  action="/page-mesobjectifs.php"  action="/page-formulaire.php" action="/page-connexion.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
 
                     <h1 class="col-md-6 offset-md-3">Identification</h1>
 
-                    <label for="fname" class="col-md-6 offset-md-3">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name.."> 
-                
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name.."> 
-                
-                    <label>
-                      <input type="radio" name="options" value="femme"> <p>Femme</p>
-                    </label>
-                    <label>
-                      <input type="radio" name="options" value="homme"> <p>Homme</p> 
-                    </label>
-                    <label>
-                      <input type="radio" name="options" value="autre"> <p>Autre</p>
-                    </label>
+                    <div class="form-group">
+                        <label for="profile-pic" class="col-md-2 offset-md-5 file-upload-label">
+                            <!-- Image de fond pour le bouton -->
+                            <div class="upload-icon text-center"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/ajouterqc.svg" alt="Ajouter une photo de profil"></div>
+                            
+                        </label>
+                        <input type="file" id="profile-pic" name="profile-pic" class="file-upload-input">
+                    </div>
 
 
-                <label for="email">Enter your email:</label>
-                <input type="email" id="email" name="email" placeholder="@gmail.be">
 
-                     <div class="col-md-2 offset-md-5 "><a href="formulaire.html" class="btnprimaire">Suivant</a> </div>
+                    <div class="form-group">
+                        <label for="fname" class="col-md-6 offset-md-3">Nom</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Ton nom.." >
+                    </div>
 
-                    </form> 
+                    <div class="form-group">
+                        <label for="lname">Prénom</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Ton prénom" >
+                    </div>
 
-                      
+                    <!-- Ajout de la checklist pour le genre -->
+                    <div class="form-group row">
+                        <label class="col-md-3">Genre:</label>
+                        <div class="col-md-6 offset-md-4">
+                            <div class="form-check form-check-inline custom-radio">
+                                <input type="radio" id="femmeRadio" name="gender" value="femme" class="form-check-input custom-radio-input">
+                                <label for="femmeRadio" class="form-check-label custom-radio-label">Femme</label>
+                            </div>
+                            <div class="form-check form-check-inline custom-radio">
+                                <input type="radio" id="hommeRadio" name="gender" value="homme" class="form-check-input custom-radio-input">
+                                <label for="hommeRadio" class="form-check-label custom-radio-label">Homme</label>
+                            </div>
+                            <div class="form-check form-check-inline custom-radio">
+                                <input type="radio" id="autreRadio" name="gender" value="autre" class="form-check-input custom-radio-input">
+                                <label for="autreRadio" class="form-check-label custom-radio-label">Autre</label>
+                            </div>
+                        </div>
+                    </div>
 
-                </div>
-                </div>
+
+                    <!-- Ajout de la classe "error" si l'adresse e-mail n'est pas valide -->
+                    <div class="form-group">
+                        <label for="email" class="col-md-6 offset-md-3" style="<?php echo isset($emailError) ? $emailError : ''; ?>">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Entrez votre e-mail"  required>
+                    </div>
+
+                    <!-- Ajout de la classe "error" si le mot de passe est trop court -->
+                    <div class="form-group">
+                        <label for="password" class="col-md-6 offset-md-3" style="<?php echo isset($passwordError) ? $passwordError : ''; ?>">Mot de passe:</label>
+                        <input type="password" id="password" name="password" placeholder="Entrer votre mot de passe"  required>
+                    </div>
+
+
+                    <div class="col-md-8 offset-md-3 form-group">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="motivationCheckbox" name="motivationCheckbox">
+                            <label class="form-check-label" for="motivationCheckbox">Je souhaite recevoir de la motivation par mail durant la semaine</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="termsCheckbox" name="termsCheckbox" required>
+                            <label class="form-check-label" for="termsCheckbox">J'accepte les termes et les conditions d'utilisation</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 offset-md-4">
+        
+                        <a href="<?php echo get_template_directory_uri(); ?> /page-formulaire.php" class="btnprimaire">Suivant</a>
+                    
+                    </div>
+
+                </form>
+
+                <script>
+                    function validateForm() {
+                        // Vérification de la validité des champs
+                        var email = document.getElementById('email').value;
+                        var password = document.getElementById('password').value;
+
+                        if (!validateEmail(email) || password.length < 8) {
+                            alert('Veuillez remplir tous les champs correctement.');
+                            return false;
+                        }
+
+                        // Si tout est valide, permet la soumission du formulaire
+                        return true;
+                    }
+
+                    function validateEmail(email) {
+                        // Fonction de validation d'adresse e-mail (ajustez selon vos besoins)
+                        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                        return emailRegex.test(email);
+                    }
+                </script>
+
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+
     </main> 
     
 
