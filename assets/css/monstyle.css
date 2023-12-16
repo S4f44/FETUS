@@ -334,6 +334,10 @@ a:focus{
         width: 50%;
         margin-bottom: 30px;
     }
+
+ 
+ }
+ 
     .navbar-brand img{
         width: 100px;
     }
@@ -375,7 +379,10 @@ a:focus{
         font-size: 10pt; 
         letter-spacing: 1pt;
     }
-}
+    .chiffres{
+        overflow: hidden;
+    }
+
 
 
 
@@ -790,4 +797,24 @@ table {
     background-color: #FCF9F9;
     padding: 60px 0px 70px 0px;
     margin: 10px 0px 70px 0px;
+}
+
+
+/****************************************COOKIES********************************/
+section.presentationcookies{
+    margin-top: 300px;
+    margin-bottom: 100px;
+    min-height: 40vh;
+    
+    
+}
+
+section.presentationcookies p{
+    text-align: left;
+    margin: 30px 0px;
+}
+
+section.presentationcookies h1{
+    text-align: center;
+    margin: 100px 0px;
 }
