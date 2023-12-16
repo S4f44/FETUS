@@ -69,75 +69,45 @@
 
                     <h1 class="col-md-6 offset-md-3">Formulaire</h1>
 
-                    <div class="form-group">
-                        <label for="profile-pic" class="col-md-2 offset-md-5 file-upload-label">
-                            <!-- Image de fond pour le bouton -->
-                            <div class="upload-icon text-center"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/ajouterqc.svg" alt="Ajouter une photo de profil"></div>
-                            
-                        </label>
-                        <input type="file" id="profile-pic" name="profile-pic" class="file-upload-input">
-                    </div>
-
-
-
-                    <div class="form-group">
-                        <label for="fname" class="col-md-6 offset-md-3">Nom</label>
-                        <input type="text" id="fname" name="firstName" placeholder="Ton nom.." >
-                    </div>
-
-                    <div class="form-group">
-                        <label for="lname">Prénom</label>
-                        <input type="text" id="lname" name="lastName" placeholder="Ton prénom" >
-                    </div>
 
                     <!-- Ajout de la checklist pour le genre -->
                     <div class="form-group row">
-                        <label class="col-md-3">Genre:</label>
+                        <label class="col-md-3">Qui êtes-vous?</label>
                         <div class="col-md-6 offset-md-4">
                             <div class="form-check form-check-inline custom-radio">
-                                <input type="radio" id="femmeRadio" name="gender" value="femme" class="form-check-input custom-radio-input">
-                                <label for="femmeRadio" class="form-check-label custom-radio-label">Femme</label>
+                                <input type="radio" id="futuremam" name="quietesvous" value="futuremam" class="form-check-input custom-radio-input">
+                                <label for="futuremam" class="form-check-label custom-radio-label">La future maman</label>
                             </div>
                             <div class="form-check form-check-inline custom-radio">
-                                <input type="radio" id="hommeRadio" name="gender" value="homme" class="form-check-input custom-radio-input">
-                                <label for="hommeRadio" class="form-check-label custom-radio-label">Homme</label>
-                            </div>
-                            <div class="form-check form-check-inline custom-radio">
-                                <input type="radio" id="autreRadio" name="gender" value="autre" class="form-check-input custom-radio-input">
-                                <label for="autreRadio" class="form-check-label custom-radio-label">Autre</label>
+                                <input type="radio" id="futurpa" name="quietesvous" value="futurpa" class="form-check-input custom-radio-input">
+                                <label for="futurpa" class="form-check-label custom-radio-label">Le futur papa</label>
                             </div>
                         </div>
                     </div>
 
 
-                    <!-- Ajout de la classe "error" si l'adresse e-mail n'est pas valide -->
                     <div class="form-group">
-                        <label for="email" class="col-md-6 offset-md-3" style="<?php echo isset($emailError) ? $emailError : ''; ?>">E-mail:</label>
-                        <input type="email" id="email" name="email" placeholder="Entrez votre e-mail"  required>
+                        <label for="semaines" class="col-md-6 offset-md-3">À combien de semaines vous ou votre partenaire êtes-vous?</label>
+                        <select id="semaines" name="semaines" class="col-md-6 offset-md-3">
+                            <option value="1-4">1-4 semaines</option>
+                            <option value="5-7">5-7 semaines</option>
+                            <option value="8-11">8-11 semaines</option>
+                            <option value="12-15">12-15 semaines</option>
+                            <option value="16-19">16-19 semaines</option>
+                            <option value="20-23">20-23 semaines</option>
+                            <option value="24-27">24-27 semaines</option>
+                            <option value="28-31">28-31 semaines</option>
+                            <option value="32-35">32-35 semaines</option>
+                            <option value="36-40">36-40 semaines</option>
+                        </select>
                     </div>
+                   
 
-                    <!-- Ajout de la classe "error" si le mot de passe est trop court -->
-                    <div class="form-group">
-                        <label for="password" class="col-md-6 offset-md-3" style="<?php echo isset($passwordError) ? $passwordError : ''; ?>">Mot de passe:</label>
-                        <input type="password" id="password" name="password" placeholder="Entrer votre mot de passe"  required>
-                    </div>
-
-
-                    <div class="col-md-8 offset-md-3 form-group">
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="motivationCheckbox" name="motivationCheckbox">
-                            <label class="form-check-label" for="motivationCheckbox">Je souhaite recevoir de la motivation par mail durant la semaine</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="termsCheckbox" name="termsCheckbox" required>
-                            <label class="form-check-label" for="termsCheckbox">J'accepte les termes et les conditions d'utilisation</label>
-                        </div>
-                    </div>
 
                     <div class="col-md-4 offset-md-4">
         
                         <!-- <a href="<?php// echo get_template_directory_uri(); ?> /page-formulaire.php" class="btnprimaire">Suivant</a> -->
-                        <a href="#" class="btnprimaire">Suivant</a>
+                        <a href="#" class="btnprimaire">Valider</a>
                     
                     </div>
 

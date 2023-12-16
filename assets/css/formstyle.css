@@ -480,5 +480,38 @@ form {
         transform: scale(1.2); /* Ajustez la valeur de l'échelle selon vos besoins */
     }
     
-    
+
+    /****************************************FORMULAIRE*****************************************/
+  
+   /* Ajouter ce style pour personnaliser le sélecteur */
+select[name="semaines"] {
+    font-family: 'Poppins', sans-serif; /* Utiliser la police Poppins */
+    background-color: #FCF9F9; /* Fond blanc */
+    color: #121F40; /* Couleur du texte (noir dans cet exemple) */
+    padding: 10px 30px 10px 30px; /* Ajouter un peu d'espace intérieur pour un meilleur aspect */
+    border: 4px solid #FCF9F9; /* Ajouter une bordure pour une délimitation */
+    border-radius: 50px; /* Ajouter des coins arrondis */
+}
+
+/* Ajouter ce style pour personnaliser la flèche du sélecteur (car elle peut ne pas être stylisable dans tous les navigateurs) */
+select[name="semaines"]::-ms-expand {
+    display: block;
+  margin: 0px 10px;
+}
+
+select[name="semaines"]::after {
+    content: '\25BC'; /* Ajouter une flèche vers le bas pour les navigateurs qui supportent l'élément après */
+    font-size: 18px;
+    position: absolute;
+    margin-right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Si vous souhaitez styliser les options du sélecteur */
+select[name="semaines"] option {
+    font-family: 'Poppins', sans-serif; /* Utiliser la police Poppins pour les options */
+    background-color: #FCF9F9; /* Fond blanc pour les options */
+    color: #151593; /* Couleur du texte pour les options (noir dans cet exemple) */
+}
    
