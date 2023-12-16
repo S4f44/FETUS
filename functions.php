@@ -1,7 +1,7 @@
 <?php
 
 add_theme_support('title-tag'); // support de mon title tag
-add_theme_support('post-thumbnails'); // support du thumbnail sur mes articles
+add_theme_support('post-thumbnails'); // Ajouter la prise en charge des images mises en avant
 add_theme_support('menus'); // support des menus par notre theme
 register_nav_menu('header', 'En tête du menu');
 register_nav_menu('footer', 'Pied de page');
@@ -92,6 +92,80 @@ function create_account(){
 	}
 }
 
+//////////////////////CUSTOM POST CONSEILS/////////////////////////
+function create_custom_posts() {
+	register_post_type('conseilsun', [
+        'labels' => ['name' => 'Conseils premier trimestre'],
+        'public' => true,
+        'show_in_rest' => true,
+        'support' => ['thumbnails']
+    ]);
+	register_post_type('conseilsdeux', [
+        'labels' => ['name' => 'Conseils deuxième trimestre'],
+        'public' => true,
+        'show_in_rest' => true,
+        'support' => ['thumbnails']
+    ]);
+	register_post_type('conseilstrois', [
+        'labels' => ['name' => 'Conseils troisième trimestre'],
+        'public' => true,
+        'show_in_rest' => true,
+        'support' => ['thumbnails']
+    ]);
+}
+add_action('init', 'create_custom_posts');
+
+
+
+
+/////////////FORMULAIRE INSCRIPTION/////////////////////////
+function formulaire_inscription_personnalise() {
+    ?>
+    <form id="inscription-form" action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="post">
+        <input type="hidden" name="action" value="inscription_utilisateur">
+
+        <label for="genre">Genre :</label>
+        <select name="genre" id="genre">
+            <option value="futur_maman">Futur Maman</option>
+            <option value="futur_papa">Futur Papa</option>
+        </select>
+
+        <label for="stade_grossesse">Stade de grossesse :</label>
+        <select name="stade_grossesse" id="stade_grossesse">
+            <option value="trimestre1">Premier trimestre</option>
+            <option value="trimestre2">Deuxième trimestre</option>
+            <option value="trimestre3">Troisième trimestre</option>
+        </select>
+
+        <?php wp_nonce_field( 'inscription_nonce', 'inscription_nonce' ); ?>
+
+        <input type="submit" value="S'inscrire">
+    </form>
+    <?php
+}
+add_shortcode( 'inscription_form', 'formulaire_inscription_personnalise' );
+
+// Gérer l'enregistrement des utilisateurs
+function inscription_utilisateur() {
+    if (isset($_POST['inscription_nonce']) && wp_verify_nonce($_POST['inscription_nonce'], 'inscription_nonce')) {
+        // Récupérer et traiter les données du formulaire
+        $genre = sanitize_text_field($_POST['genre']);
+        $stade_grossesse = sanitize_text_field($_POST['stade_grossesse']);
+
+        // Stocker les données dans la session
+        $_SESSION['donnees_formulaire'] = $genre . '_' . $stade_grossesse;
+
+        // Rediriger vers la page de suivi après l'inscription
+        wp_redirect(home_url('/page-monsuivi/'));
+        exit();
+    }
+}
+
+add_action( 'admin_post_nopriv_inscription_utilisateur', 'inscription_utilisateur' );
+add_action( 'admin_post_inscription_utilisateur', 'inscription_utilisateur' );
+
+
+
 
 ///////////////////POUR CACHER LA BARRE D OPTION WORDPRESS//////////////////////
 function tf_check_user_role( $roles ) {
@@ -113,7 +187,7 @@ function tf_check_user_role( $roles ) {
 		$response = true;
 	}
 
-	// je retourne le résulatat 
+	// je retourne le résultat 
 	return $response;
 }
 $roles = [ 'contributor' ];

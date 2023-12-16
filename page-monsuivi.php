@@ -16,12 +16,26 @@ get_header(); // J'importe mon header
 $donnees_formulaire = isset($_SESSION['donnees_formulaire']) ? $_SESSION['donnees_formulaire'] : '';
 
 // Affichez le contenu en fonction des données du formulaire
-if ($donnees_formulaire === 'valeur_condition_1') {
-    echo '<p>Contenu spécifique pour la valeur_condition_1</p>';
-} elseif ($donnees_formulaire === 'valeur_condition_2') {
-    echo '<p>Contenu spécifique pour la valeur_condition_2</p>';
+if (strpos($donnees_formulaire, 'futur_maman_trimestre1') !== false) {
+    echo '<p>Contenu spécifique pour Futur Maman au Premier trimestre</p>';
+} elseif (strpos($donnees_formulaire, 'futur_maman_trimestre2') !== false) {
+    echo '<p>Contenu spécifique pour Futur Maman au Deuxième trimestre</p>';
+} elseif (strpos($donnees_formulaire, 'futur_maman_trimestre3') !== false) {
+    echo '<p>Contenu spécifique pour Futur Maman au Troisième trimestre</p>';
+} elseif (strpos($donnees_formulaire, 'futur_papa_trimestre1') !== false) {
+    echo '<p>Contenu spécifique pour Futur Papa au Premier trimestre</p>';
+} elseif (strpos($donnees_formulaire, 'futur_papa_trimestre2') !== false) {
+    echo '<p>Contenu spécifique pour Futur Papa au Deuxième trimestre</p>';
+} elseif (strpos($donnees_formulaire, 'futur_papa_trimestre3') !== false) {
+    echo '<p>Contenu spécifique pour Futur Papa au Troisième trimestre</p>';
 } else {
     echo '<p>Contenu par défaut</p>';
 }
+
+
+
+// $user = wp_get_current_user();
+// var_dump($user);
+
 
 get_footer(); // J'importe mon pied de page

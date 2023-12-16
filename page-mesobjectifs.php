@@ -1,8 +1,6 @@
-<?php get_header(); ?>
-
 <?php
 /* Template Name: MesObjectifsPage */
-get_header();
+
 
 if (!is_user_logged_in()) {
     wp_redirect(home_url() . "/login/");
@@ -10,8 +8,8 @@ if (!is_user_logged_in()) {
 }
 
 $user = wp_get_current_user();
+get_header();
 ?>
-
 
 
     <section class="presentationobjectifs">

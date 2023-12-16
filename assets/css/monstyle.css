@@ -636,11 +636,11 @@ section.accordionpatho{
     position: relative;
     overflow: hidden;
 }
-.deuxiemetri img{
+/* .deuxiemetri img{
     width: 150%;
     position: relative;
     overflow: hidden;
-}
+} */
 
 .chiffres {
     width: 140%;
@@ -649,11 +649,11 @@ section.accordionpatho{
     overflow: hidden;
 }
 
-/* .chiffredeux {
-    width: 150%;
+.chiffresdeux {
+    width: 140%;
     position: relative;
     overflow: hidden;
-  } */
+  } 
 
 /* section.accordionnutrition{
     margin-top: 100px;

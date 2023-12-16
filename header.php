@@ -1,9 +1,15 @@
+
+<!----DECONNEXION----><br><br><br><br><br><br>
+<?php if (is_user_logged_in()): // si je suis connecté ?>
+  <a href="<?php echo wp_logout_url(); // lien généré par wordpress pour déconnexion ?>">Déconnexion</a>
+<?php endif; ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="<?php  bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FetUs</title>
+    <title><?php  bloginfo('title-tag'); ?></title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/monstyle.css">
@@ -55,10 +61,5 @@
         </div>
     </nav>  
 
-    <div class="container"> 
+    <!-- <div class="container">  -->
 </header>
-
-<!----DECONNEXION---->
-<?php if (is_user_logged_in()): // si je suis connecté ?>
-  <a href="<?php echo wp_logout_url(); // lien généré par wordpress pour déconnexion ?>">Déconnexion</a>
-<?php endif; ?>
