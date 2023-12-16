@@ -87,7 +87,7 @@
 
 
                     <div class="form-group">
-                        <label for="semaines" class="col-md-6 offset-md-3">À combien de semaines vous ou votre partenaire êtes-vous?</label>
+                        <label for="semaines" class="col-md-6 offset-md-3">Indiquez le nombre de semaines de grossesse que vous ou votre partenaire avez atteint:</label>
                         <select id="semaines" name="semaines" class="col-md-6 offset-md-3">
                             <option value="1-4">1-4 semaines</option>
                             <option value="5-7">5-7 semaines</option>
