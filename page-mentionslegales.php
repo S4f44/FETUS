@@ -82,7 +82,7 @@
                 <p class="col-md-10 offset-md-1">Nous collectons et traitons les données suivantes :</p>
 
                 <div class="col-md-6 offset-md-2">
-                    <ul>
+                    <ul class="custom-list">
                       <li>Nom</li>
                       <li>Prénom</li>
                       <li>Adresse mail</li>
@@ -96,7 +96,7 @@
                 <p class="col-md-10 offset-md-1">Nous utiliserons les informations que nous collectons à votre sujet aux fins suivantes :</p>
                 
                 <div class="col-md-6 offset-md-2">
-                      <ul>
+                      <ul class="custom-list">
                         <li>Création de compte utilisateur personnalisé</li>
                         <li>Enregistrement de votre stade de grossesse </li>
                         <li>Administration</li>

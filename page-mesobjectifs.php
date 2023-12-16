@@ -1,11 +1,24 @@
 <?php get_header(); ?>
 
+<?php
+/* Template Name: MesObjectifsPage */
+get_header();
+
+if (!is_user_logged_in()) {
+    wp_redirect(home_url() . "/login/");
+    exit;
+}
+
+$user = wp_get_current_user();
+?>
+
+
 
     <section class="presentationobjectifs">
         <div class="container text-center">
         <div class="row">
             <div class="col-md-12">
-            <h1>Mes objectifs</h1>
+            <h1>Mes objectifs, <?php echo esc_html($user->user_login); ?>:</h1>
             <p>Chaque défi atteint est un pas de plus vers une parentalité épanouissante ! Vous avez ça en vous ! <br> Remplissez cette liste d'objectifs afin de ne rien oublier </p>
             </div>
         </div>
@@ -35,5 +48,7 @@
 </section>
 
 
+</div>
 
 <?php get_footer(); ?>
+

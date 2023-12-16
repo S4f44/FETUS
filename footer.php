@@ -33,8 +33,10 @@
                   <ul>
                     <li><a href="<?php echo get_template_directory_uri(); ?>/mentionslegales">Mentions légales</a></li>
                     <li><a href="<?php echo get_template_directory_uri(); ?>/cookies">Cookies</a></li>
-                    <li><a href="<?php echo get_template_directory_uri(); ?>/connexion">Se connecter</a></li>
-                    <li><a href="<?php echo get_template_directory_uri(); ?>/enregistrer">S'enregistrer</a></li>
+                    <!-- <li><a href="<?php echo get_template_directory_uri(); ?>/connexion">Se connecter</a></li> -->
+                    <li><a href="<?php echo get_template_directory_uri(); ?>/login">Se connecter</a></li>
+                    <!-- <li><a href="<?php echo get_template_directory_uri(); ?>/enregistrer">S'enregistrer</a></li> -->
+                    <li><a href="<?php echo get_template_directory_uri(); ?>/register">S'enregistrer</a></li>
                   </ul>
                 </div>
                 <div class="footer-col">
@@ -60,11 +62,6 @@
       
     
   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="assets\js\monjs.js"></script>
-    </body>
-    </html>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/monjs.js"></script>

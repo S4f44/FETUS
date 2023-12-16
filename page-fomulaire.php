@@ -64,7 +64,8 @@
     <div class="container text-center">
         <div class="row">
             <div class="col-md-10 offset-md-1 formulaire">
-                <form action="/page-monsuivi.php"  action="/page-mesobjectifs.php"  action="/page-formulaire.php" action="/page-connexion.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+                <!-- <form action="/page-monsuivi.php"  action="/page-mesobjectifs.php"  action="/page-formulaire.php" action="/page-connexion.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm()"> -->
+                <form action="/form-process.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
 
                     <h1 class="col-md-6 offset-md-3">Formulaire</h1>
 
@@ -81,12 +82,12 @@
 
                     <div class="form-group">
                         <label for="fname" class="col-md-6 offset-md-3">Nom</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Ton nom.." >
+                        <input type="text" id="fname" name="firstName" placeholder="Ton nom.." >
                     </div>
 
                     <div class="form-group">
                         <label for="lname">Prénom</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Ton prénom" >
+                        <input type="text" id="lname" name="lastName" placeholder="Ton prénom" >
                     </div>
 
                     <!-- Ajout de la checklist pour le genre -->
@@ -135,7 +136,8 @@
 
                     <div class="col-md-4 offset-md-4">
         
-                        <a href="<?php echo get_template_directory_uri(); ?> /page-formulaire.php" class="btnprimaire">Suivant</a>
+                        <!-- <a href="<?php// echo get_template_directory_uri(); ?> /page-formulaire.php" class="btnprimaire">Suivant</a> -->
+                        <a href="#" class="btnprimaire">Suivant</a>
                     
                     </div>
 
