@@ -279,6 +279,24 @@
 </section>
 
 
+<section>
+<div class="container text-center">
+        <div class="row">
+            <div class="col-md-12 lovemessage ">
+
+            <p>À toutes les personnes qui traversent des moments délicats au cours de cette période cruciale de développement, 
+              sachez que chaque parcours de grossesse est unique, avec ses propres défis, mais sachez aussi que <strong> vous n'êtes pas seul(e)s ! </strong>
+              Les professionnels de la santé sont là pour vous guider et vous soutenir tout au long de ce voyage. Prenez le temps de vous entourer de <strong>vos proches, </strong>
+              trouvez du réconfort dans votre réseau de soutien, et rappelez-vous que <strong>votre force et votre résilience sont admirables </strong>. Vous méritez tout le soutien et l'amour pendant cette période, 
+              et nous croyons en votre capacité à surmonter les difficultés. <strong>Restez fort(e)s </strong>, prenez soin de vous et continuez à avancer avec la certitude que l'espoir et le soutien vous accompagnent. <p> 
+
+            </div>
+        </div>
+ </div>
+</section>
+
+
+
 
 
   
