@@ -241,12 +241,25 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-md-6 offset-md-3 my-5">
-              <p>Inscrivez-vous à notre newsletter afin de recevoir<br> nos conseils par e-mail !</p>
+
+              <p>Pour recevoir de la motivation afin de trouver le courage de remplir vos objectifs, inscrivez vous à la newsletter </p>
+
+              <input type="email" id="email" name="email" placeholder="Entrez votre e-mail"  required>
+
               <a href="#" class="btnprimaire">S'inscrire à la newsletter</a>
+
             </div>
           </div>
         </div>
       </section>
+
+
+      <button class="scrollToTopBtn" onclick="scrollToTop()"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/flechehaut.svg" alt="scrolltotop"></button>
+
+
+
+
+
     </main>
 
 

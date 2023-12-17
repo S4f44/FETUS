@@ -14,6 +14,7 @@
       </div>
     </section>
 
+     
     <section class="fruits">
         <div class="container text-center py-3">
           <div class="row">
@@ -22,6 +23,13 @@
               <div class="text js-text">
                 <article class="active" data-index="step-1">
                   <h3>Petit pois</h3>
+                  <p> 4 semaines</p>
+                  <p class="pt">  
+                    <strong>Poids :</strong> Environ 0,004 gramme (4 milligrammes).<br>
+                    <strong>Taille :</strong> Environ 0,1 mm.
+                  </p> 
+                  <p> La quatrième semaine marque le début de l'organogenèse, où les premiers tissus et organes du fœtus commencent à se former à partir des trois feuillets embryonnaires. Le blastocyste s'implante dans l'utérus. </p>
+                 
                   <p> 4 semaines</p>
                   <p class="pt">  
                     <strong>Poids :</strong> Environ 0,004 gramme (4 milligrammes).<br>
@@ -56,10 +64,20 @@
                     <strong>Taille :</strong> Environ 11 à 12,7 cm. 
                   </p>
                   <p>Le fœtus a généralement développé des traits faciaux distincts, des doigts et des orteils, et il commence à bouger activement. </p>
+                  <p>16 semaines </p>
+                  <p class="pt">   
+                    <strong>Poids :</strong> Environ 100 à 150 grammes. <br>
+                    <strong>Taille :</strong> Environ 11 à 12,7 cm. 
+                  </p>
+                  <p>Le fœtus a généralement développé des traits faciaux distincts, des doigts et des orteils, et il commence à bouger activement. </p>
                 </article>
                 <article data-index="step-5">
                   <h3>artichaud</h3>
                   <p>
+                    20 semaines </p>
+                    <p class="pt">   
+                    <strong> Poids :</strong> Environ 300 grammes. <br>
+                    <strong>Taille :</strong> Environ 16 cm. 
                     20 semaines </p>
                     <p class="pt">   
                     <strong> Poids :</strong> Environ 300 grammes. <br>
@@ -74,6 +92,11 @@
                     <strong>Poids :</strong> Environ 600 à 700 grammes. <br>
                     <strong>Taille :</strong> Environ 30 cm. </p>     
                   <p>Les organes vitaux continuent de se développer, les poumons atteignent un stade où la survie en dehors de l'utérus est envisageable, bien que la prématurité reste un défi important à ce stade. </p>
+                  <p>24 semaines </p>
+                  <p class="pt">  
+                    <strong>Poids :</strong> Environ 600 à 700 grammes. <br>
+                    <strong>Taille :</strong> Environ 30 cm. </p>     
+                  <p>Les organes vitaux continuent de se développer, les poumons atteignent un stade où la survie en dehors de l'utérus est envisageable, bien que la prématurité reste un défi important à ce stade. </p>
                 </article>
                 <article data-index="step-7">
                   <h3>Chou-fleur</h3>
@@ -81,11 +104,22 @@
                   <p class="pt">   
                     <strong>Poids :</strong> Environ 1 kg. <br>
                     <strong>Taille :</strong> Environ 35,6 cm. 
+                  <p>28 semaines </p>
+                  <p class="pt">   
+                    <strong>Poids :</strong> Environ 1 kg. <br>
+                    <strong>Taille :</strong> Environ 35,6 cm. 
                   </p>
+                  <p>  La vingt-huitième semaine marque <strong> le début du troisième trimestre,</strong> avec une croissance rapide et le début de la régulation thermique.</p>
                   <p>  La vingt-huitième semaine marque <strong> le début du troisième trimestre,</strong> avec une croissance rapide et le début de la régulation thermique.</p>
                 </article>
                 <article data-index="step-8">
                   <h3>Noix de coco</h3>
+                  <p> 32 semaines </p>
+                  <p class="pt"> 
+                    <strong> Poids : </strong>Environ 1,8 kg. <br>
+                    <strong> Taille :</strong> Environ 42 cm. 
+                  </p>
+                  <p>Le fœtus se prépare aux fonctions respiratoires et continue de prendre du poids. Il prend une position tête en bas en préparation de l'accouchement, et ses mouvements peuvent être plus perceptibles.</p>
                   <p> 32 semaines </p>
                   <p class="pt"> 
                     <strong> Poids : </strong>Environ 1,8 kg. <br>
@@ -99,7 +133,12 @@
                   <p class="pt">  
                     <strong>Poids : </strong>Environ 2,6 kg. <br>
                     <strong>Taille :</strong> Environ 47 cm. 
+                  <p>36 semaines </p>
+                  <p class="pt">  
+                    <strong>Poids : </strong>Environ 2,6 kg. <br>
+                    <strong>Taille :</strong> Environ 47 cm. 
                   </p>
+                  <p>Le bébé atteint la maturité presque complète, avec une prise de poids rapide en préparation de la naissance.</p>
                   <p>Le bébé atteint la maturité presque complète, avec une prise de poids rapide en préparation de la naissance.</p>
                 </article>
                 <article data-index="step-10">
@@ -397,6 +436,10 @@
             </div>
         </div>
       </section>
+
+
+
+      <button class="scrollToTopBtn" onclick="scrollToTop()"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/flechehaut.svg" alt="scrolltotop"></button>
 
 </main>
 

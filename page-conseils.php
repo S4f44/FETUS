@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+
   <!--------------------MAIN------------------>
 <main>
   <section class="presentationconseils">
@@ -296,7 +297,7 @@
  </div>
 </section>
 
-
+<button class="scrollToTopBtn" onclick="scrollToTop()"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/flechehaut.svg" alt="scrolltotop"></button>
 
 </main>
 

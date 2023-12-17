@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<main>
 
 <section class="presentationcookies">
     
@@ -13,7 +14,7 @@
     
   </section>
 
- 
+</main>
 
 
 

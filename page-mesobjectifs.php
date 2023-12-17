@@ -48,6 +48,9 @@ get_header();
 
 
 </div>
-</main>
+
+<button class="scrollToTopBtn" onclick="scrollToTop()"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/flechehaut.svg" alt="scrolltotop"></button>
+
+
 <?php get_footer(); ?>
 

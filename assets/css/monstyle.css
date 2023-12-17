@@ -126,6 +126,25 @@ p{
 a:focus{
     outline: none !important;
 }
+
+.scrollToTopBtn {
+    display: flex; 
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #151593;
+    border : 1px solid #151593;
+    border-radius: 30px;
+    padding: 25px 20px;
+    cursor: pointer;
+    
+}
+
+.scrollToTopBtn img{
+    width: 20px;
+
+}
+
 /*********************CUSTOM LIST************************/
 .custom-list {
     list-style: none; /* Désactiver les points par défaut */
@@ -439,6 +458,19 @@ a:focus{
     }
     section.formulaire div{
         min-height: 10vh;;
+    }
+    
+    .scrollToTopBtn {
+        padding: 20px 15px;
+    }
+    
+    .scrollToTopBtn img{
+        width: 20px;
+        
+    }
+    .scrollToTopBtn img{
+        width: 15px;
+        
     }
  }
 
@@ -781,7 +813,7 @@ label {
   input {
     width: 60%;
     padding: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     margin-left: 20%;
     margin-right: 20%;
     border: none;
@@ -791,6 +823,10 @@ label {
     font-family: 'Poppins', sans-serif;
     font-size: 20px; 
 }
+    input:hover {
+        color: #151593; /* Couleur du texte au survol */
+        border-bottom: 1px solid #FCF9F9; /* Bordure du bas au survol */
+        }
 /* Ajoutez ces styles pour personnaliser les nouvelles tâches */
 #tasks li.user-task {
     text-align: left;

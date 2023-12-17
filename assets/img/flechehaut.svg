@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.72 24.61">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fcf9f9;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Pictogrammes">
+    <g id="flèche_haut" data-name="flèche haut">
+      <path class="cls-1" d="m26.97,1.21c-1.66-1.64-4.34-1.61-5.98.05L.4,22.2c-.55.55-.54,1.45.02,1.99h0c.55.55,1.45.54,1.99-.02L22.02,4.24c1.09-1.11,2.88-1.12,3.99-.03l20.32,19.99c.55.55,1.45.54,1.99-.02h0c.55-.56.54-1.45-.02-1.99L26.97,1.21Z"/>
+    </g>
+  </g>
+</svg>
