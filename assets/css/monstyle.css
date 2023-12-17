@@ -419,7 +419,7 @@ section.newsletter{
 
 section.fruits{
     background-color: #FCF9F9;
-    padding: 100px 30px;
+    padding: 70px 30px;
     
 }
 
@@ -428,13 +428,13 @@ section.fruits{
 }  */
 .fruits .images img {
     display: none;
-    width: 50%;
+    /* width: 50%; */
     margin: 40px;
 }
 
 .fruits .images img.active {
     display: block;
-    width: 50%;
+    /* width: 50%; */
 }
 
 .fruits .text article {
@@ -533,6 +533,19 @@ section.fruits{
     width: 10%;
 }
 
+/*****************************ARRANGEMENT DES FRUITS DU CAROUSSEL***************************************/
+.text p {
+margin: 30px 0px;
+
+}
+.fruits h2{
+
+    margin-bottom: 70px;
+}
+
+.pt {
+    text-align: left;
+}
 
 /******************SECTIONS/MAIN TOUT SAVOIR SUR LA GROSSESSE****************/
 section.presentationttsav{
@@ -664,6 +677,13 @@ section.accordionpatho{
     display: inline;
 
 }  */
+
+
+
+.lovemessage {
+    margin-top: 200px;
+    min-height: 20vh;
+}
 
   /******************PAGE MES OBJECTIF ****************/
 section.presentationobjectifs{
