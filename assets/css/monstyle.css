@@ -329,7 +329,7 @@ a:focus{
 }
 
 /***********************RESPONSIVE**********************/
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     .footer-col{
         width: 50%;
         margin-bottom: 30px;
@@ -347,6 +347,9 @@ a:focus{
     .scrolling .navbar-brand img { 
         margin: 15px 0px 15px 0px;
     }
+    .section{
+        min-height: 20vh;
+    } 
     h1{
         font-size: 15pt; 
         letter-spacing: 5pt;
@@ -386,8 +389,8 @@ a:focus{
 
 /******************SECTIONS/MAIN ACCEUIL****************/
 section.grossesse{
-    margin-top : 300px;
-    min-height: 50vh;
+    margin-top : 270px;
+    min-height: 40vh;
 }
 
 section{
@@ -755,8 +758,8 @@ label {
 
 /***************************************MENTIONS L2GALES****************************/
 section.presentationml{
-    margin-top: 300px;
-    min-height: 40vh;
+    margin-top: 200px;
+    min-height: 30vh;
 }
 
 table {
@@ -765,9 +768,6 @@ table {
     display: block;
     /* margin: 20px 0px; */
 }
-
-
-
 .custom-th {
     font-family: 'Montserrat', sans-serif;
     font-size: 15pt;
@@ -776,7 +776,6 @@ table {
     text-transform: uppercase;
     color:#FCF9F9;
     text-align: left;
-    
 }
 
 .custom-td {
@@ -795,11 +794,16 @@ table {
     padding: 60px 0px 70px 0px;
     margin: 10px 0px 70px 0px;
 }
-
+section.tableauinfoml, .collecte, .mlfin {
+    min-height: 40vh;
+}
+.collecte{
+    margin-bottom: 50px;
+}
 
 /****************************************COOKIES********************************/
 section.presentationcookies{
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 100px;
     min-height: 40vh;
     

@@ -1,8 +1,5 @@
 
-<!----DECONNEXION----><br><br><br><br><br><br>
-<?php if (is_user_logged_in()): // si je suis connecté ?>
-  <a href="<?php echo wp_logout_url(); // lien généré par wordpress pour déconnexion ?>">Déconnexion</a>
-<?php endif; ?>
+
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -59,7 +56,12 @@
                 
             </div>
         </div>
-    </nav>  
-
-    <!-- <div class="container">  -->
+   
+<!----DECONNEXION----><br><br><br><br><br>
+<?php if (is_user_logged_in()): // si je suis connecté ?>
+  <a href="<?php echo wp_logout_url(); // lien généré par wordpress pour déconnexion ?>">Déconnexion</a>
+<?php endif; ?>
+  </nav> 
+  
+    <div class="container"> 
 </header>
