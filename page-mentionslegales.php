@@ -33,7 +33,7 @@
                 </tr>
                 <tr class="custom-tr">
                   <th class="custom-th col-md-2 offset-md-2">E-mail</th>
-                  <td class="custom-td col-md-3 ">hello@fetus.be</td>
+                  <td class="custom-td col-md-3 ">fetusisfsc@gmail.com</td>
                 </tr>
                 <tr class="custom-tr">
                   <th class="custom-th col-md-2 offset-md-2">Téléphone</th>
@@ -91,11 +91,10 @@
                 </ul>
             </div>
 
-            <div class="col-md-7 offset-md-2">
+            <div class="col-md-10 offset-md-1">
               <h3>Comment nous utilisons vos informations</h3>
+              <p >Nous utiliserons les informations que nous collectons à votre sujet aux fins suivantes :</p>
             </div>
-
-            <p class="col-md-10 offset-md-1">Nous utiliserons les informations que nous collectons à votre sujet aux fins suivantes :</p>
             
             <div class="col-md-6 offset-md-2">
                   <ul class="custom-list">
@@ -118,8 +117,7 @@
       <section class="mlfin">
         <div class="container text-left">
           <div class="row">
-
-                <p>Si vous avez des questions ou des préoccupations concernant le traitement de vos informations veuillez nous contacter par email à l’adresse hello@fetus.be. Nous traiterons vos préoccupations conformément à la loi en vigueur. <br> <br> <br></p>
+                <p>Si vous avez des questions ou des préoccupations concernant le traitement de vos informations veuillez nous contacter par email à l’adresse <strong>fetusisfsc@gmail.com</strong>. Nous traiterons vos préoccupations conformément à la loi en vigueur. <br> <br> <br></p>
 
                 <blockquote class="container text-center">
                   <p>© FetUs, tous les droits réservés</p>

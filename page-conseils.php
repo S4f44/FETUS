@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
   <!--------------------MAIN------------------>
+<main>
   <section class="presentationconseils">
     <div class="container text-center">
       <div class="row">
@@ -297,7 +298,7 @@
 
 
 
-
+</main>
 
   
 <?php get_footer(); ?>

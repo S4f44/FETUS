@@ -1,3 +1,4 @@
+
 <?php
 /* Template Name: MesObjectifsPage */
 
@@ -11,7 +12,7 @@ $user = wp_get_current_user();
 get_header();
 ?>
 
-
+<main>
     <section class="presentationobjectifs">
         <div class="container text-center">
         <div class="row">
@@ -25,16 +26,16 @@ get_header();
 
 <section class="objectifs">
     <div id="task-list" class="container text-center">
-        <h2>Mes buts à atteindre</h2>
+        <!-- <h2>Mes buts à atteindre</h2> -->
         <ul id="tasks"></ul>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-5 offset-md-1">
                 
                 <label for="new-task">Mes buts à atteindre :</label>
                 <input type="text" id="new-task" placeholder="Objectif 1"/>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <label for="deadline">Date :</label>
                 <input type="date" id="deadline" />
             </div>
@@ -47,6 +48,6 @@ get_header();
 
 
 </div>
-
+</main>
 <?php get_footer(); ?>
 

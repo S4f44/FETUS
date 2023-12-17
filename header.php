@@ -35,15 +35,16 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
 
-            <a class="navbar-brand d-lg-none" href="index.php">
+            <a class="navbar-brand d-lg-none" href="<?php echo get_template_directory_uri(); ?>/home">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="logo FetUs">
             </a> 
             
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 
+            <button class="navbar-toggler collapsed mt-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <img class="navbar-toggler-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/burger.svg">
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+
+            <div class="collapse navbar-collapse pt-0" id="navbarNav">
 
             
              <?php wp_nav_menu([
@@ -57,11 +58,11 @@
             </div>
         </div>
    
-<!----DECONNEXION----><br><br><br><br><br>
-<?php if (is_user_logged_in()): // si je suis connecté ?>
-  <a href="<?php echo wp_logout_url(); // lien généré par wordpress pour déconnexion ?>">Déconnexion</a>
-<?php endif; ?>
+    <!----DECONNEXION----><br><br><br><br><br>
+    <?php if (is_user_logged_in()): // si je suis connecté ?>
+    <a href="<?php echo wp_logout_url(); // lien généré par wordpress pour déconnexion ?>">Déconnexion</a>
+    <?php endif; ?>
   </nav> 
-  
+
     <div class="container"> 
 </header>

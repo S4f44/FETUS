@@ -17,7 +17,7 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-md-5 offset-md-1">
-              <p>Optimisez votre expérience en remplissant notre formulaire ! Recevez des conseil personnalisés et des ressources exclusives pour vivre pleinement chaque étape de ce merveilleux voyage.</p>
+              <p>Optimisez votre expérience en remplissant notre formulaire ! Recevez des conseils personnalisés et des ressources exclusives pour vivre pleinement chaque étape de ce merveilleux voyage.</p>
             </div>
             <div class="offset-md-1 col-md-4">
               <div class="button-container">
@@ -33,7 +33,7 @@
         <div class="container text-center py-3">
           <div class="row">
             <h2>Les différents stades de la grossesse</h2>
-            <div class="col-md-4 offset-md-2">
+            <div class="col-md-6 offset-md-1">
               <div class="text js-text">
                 <article class="active" data-index="step-1">
                   <h3>Petit pois</h3>
@@ -52,7 +52,7 @@
                     <strong> Poids :</strong> Environ 1 gramme. <br>
                     <strong> Taille :</strong> Environ 1,6 cm. 
                   </p>
-                   <p> On considère généralement que la grossesse commence à partir de la semaine de retard des règles. L'embryon se transforme en fœtus, avec des membres en développement et des systèmes d'organes en plein essor, y compris le cœur qui bat déjà.</p>
+                   <p>L'embryon se transforme en fœtus, avec des membres en développement et des systèmes d'organes en plein essor, y compris le cœur qui bat déjà.</p>
                 </article>
                 <article data-index="step-3">
                   <h3>Kiwi</h3>
@@ -61,7 +61,7 @@
                     <strong>Poids :</strong> Environ 14 grammes. <br>
                     <strong>Taille :</strong> Environ 6,3 cm.
                   </p> 
-                  <p> Le fœtus atteint<strong> la fin du premier trimestre, </strong> avec des organes génitaux distincts en développement et une ossification débutante.</p>
+                  <p> Le fœtus atteint<strong> la fin du premier trimestre, </strong> avec des organes génitaux distincts en développement et une ossification débutante.</p><br>
                 </article>
                 <article data-index="step-4">
                   <h3>Poire</h3>
@@ -80,7 +80,7 @@
                     <strong> Poids :</strong> Environ 300 grammes. <br>
                     <strong>Taille :</strong> Environ 16 cm. 
                   </p>
-                  <p> <strong>Mi-grossesse</strong>, l'échographie peut révéler le sexe du bébé, tandis que ses sens, tels que l'ouïe, se perfectionnent.</p>
+                  <p> <strong>Mi-grossesse</strong>, l'échographie peut révéler le sexe du bébé, tandis que ses sens, tels que l'ouïe, se perfectionnent.</p><br>
                 </article>
                 <article data-index="step-6">
                   <h3>Orange</h3>
@@ -124,7 +124,7 @@
                     <strong> Poids moyen à la naissance :</strong> Environ 3,4 kg. <br>
                     <strong>Taille moyenne à la naissance :</strong> Environ 50 cm. 
                     </p>
-                    <p><strong> Félicitation !! Votre bébé est probablement déjà venu au monde ! </strong> </p> <p>Si ce n'est pas encore le cas, il est prêt pour <strong>l'accouchement</strong>, démontrant des réflexes développés et un système immunitaire renforcé.</p>
+                    <p><strong> Félicitation !! Votre bébé est probablement déjà venu au monde ! </strong> Si ce n'est pas encore le cas, il est prêt pour <strong>l'accouchement</strong>, démontrant des réflexes développés et un système immunitaire renforcé.</p>
                 </article>
               </div>
             </div>
@@ -230,9 +230,7 @@
             </div>
             <div class="col-md-6">
               <div class="symbolespapamaman">
-                      
-
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/femmehomme.svg" alt="Symbole maman et papa">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/femmehomme.svg" alt="Symbole maman et papa">
               </div>
             </div>
           </div>
