@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<main>
+
 <section class="erreur">
     <div class="container text-center">
         <div class="row">
@@ -16,5 +18,7 @@
     </div>
 </div>
 </section>
+
+</main>
 
 <?php get_footer(); ?>
