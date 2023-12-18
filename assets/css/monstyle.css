@@ -18,12 +18,19 @@ body {
     /*align-items: center;
     justify-content: center;*/
     background-repeat: no-repeat;
-   
-    background: radial-gradient(circle at bottom left, transparent, #FCF9F9, #121F40), /* Bleu en haut à gauche */
-                radial-gradient(circle at bottom right, #8A5576, transparent), /* Rose en haut à droite */
-                radial-gradient(circle at 75% 50%, #8A5576, transparent), /* Rose au milieu à droite */
-                radial-gradient(circle at bottom left, #8A5576, transparent), /* Rose en bas à gauche */
-                radial-gradient(circle at bottom right, #8A5576, transparent); /* Rose en bas à droite */
+
+
+
+    background: linear-gradient(to top, transparent , #121F40 ),
+    /* radial-gradient(circle at top right, white ,#8A5576 ), */
+    radial-gradient(circle at bottom left, #8A5576 25%, transparent),
+    radial-gradient(circle at bottom right, transparent,#121F40 25%);
+
+    /* background: radial-gradient(circle at bottom left, transparent, #FCF9F9, #121F40), Bleu en haut à gauche */
+                /* radial-gradient(circle at bottom right, #8A5576, transparent), Rose en haut à droite */
+                /* radial-gradient(circle at 75% 50%, #8A5576, transparent), Rose au milieu à droite */
+                /* radial-gradient(circle at bottom left, #8A5576, transparent), Rose en bas à gauche */
+                /* radial-gradient(circle at bottom right, #8A5576, transparent); Rose en bas à droite */
     background-size: 100%; /* Ajuste la taille des cercles pour qu'ils couvrent la moitié de l'écran */
     background-position: top left, top right, 75% 50%, bottom left, bottom right;
     
