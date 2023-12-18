@@ -4,7 +4,7 @@ session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Traitez les données du formulaire ici
-    $donnees_formulaire = $_POST['nom_du_champ'];
+    $donnees_formulaire = $_POST['futur_maman_trimestre1'];
     // Stockez les données dans la session
     $_SESSION['donnees_formulaire'] = $donnees_formulaire;
 

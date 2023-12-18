@@ -17,16 +17,17 @@ body {
     /*display: flex;*/
     /*align-items: center;
     justify-content: center;*/
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
    
-    background: radial-gradient(circle at bottom left, transparent, #FCF9F9, #121F40), /* Bleu en haut à gauche */
-                radial-gradient(circle at bottom right, #8A5576, transparent), /* Rose en haut à droite */
-                radial-gradient(circle at 75% 50%, #8A5576, transparent), /* Rose au milieu à droite */
-                radial-gradient(circle at bottom left, #8A5576, transparent), /* Rose en bas à gauche */
-                radial-gradient(circle at bottom right, #8A5576, transparent); /* Rose en bas à droite */
-    background-size: 100%; /* Ajuste la taille des cercles pour qu'ils couvrent la moitié de l'écran */
-    background-position: top left, top right, 75% 50%, bottom left, bottom right;
+    /* background: radial-gradient(circle at bottom left, transparent, #FCF9F9, #121F40), Bleu en haut à gauche */
+                /* radial-gradient(circle at bottom right, #8A5576, transparent), /* Rose en haut à droite */
+                /* radial-gradient(circle at 75% 50%, #8A5576, transparent), Rose au milieu à droite */
+                /* radial-gradient(circle at bottom left, #8A5576, transparent), Rose en bas à gauche */
+                /* radial-gradient(circle at bottom right, #8A5576, transparent); Rose en bas à droite */
+    /* background-size: 100%; Ajuste la taille des cercles pour qu'ils couvrent la moitié de l'écran */
+    /* background-position: top left, top right, 75% 50%, bottom left, bottom right; */
     
+    background: linear-gradient(to bottom, #121F40 2%, #FCF9F9, #8B5576 );
 }
 
 /******************BODY****************/
@@ -88,6 +89,12 @@ p{
     flex-direction: column;
     gap: 10px; /* Espacement vertical entre les boutons */
   }
+.accordion-button, .accordion-button:focus{
+    border: none;
+    outline: none;
+    box-shadow: none !important;
+}
+
 
 .btnprimaire{
     font-family: 'Montserrat', sans-serif;
@@ -99,7 +106,6 @@ p{
     border-radius: 30px;
     padding: 8px 23px;
     text-decoration: none;
-    
 }
 .btnprimaire:hover{
     background-color: rgba(21, 21, 147, 0.25);
@@ -122,6 +128,17 @@ p{
 }
 .btnsecondaire:active{
     color:#FCF9F9;
+}
+.btndeconnexion{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(21, 21, 147, 1);
+    color: #FCF9F9; 
+    font-size: 5pt;
+    text-transform: uppercase;
+    border : none; 
+    border-radius: 30px;
+    padding: 8px 23px;
+    text-decoration: none;
 }
 a:focus{
     outline: none !important;
@@ -850,68 +867,18 @@ label {
     color: rgba(21, 21, 147, 0.25); 
 }
 
-
-
-/***************************************MENTIONS L2GALES****************************/
-section.presentationml{
-    margin-top: 200px;
-    min-height: 30vh;
-}
-
-table {
-    border-collapse: collapse; 
-    width: 100%;
+/***********MON SUIVI CSS**********/
+.file-upload-label {
     display: block;
-    /* margin: 20px 0px; */
-}
-.custom-th {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15pt;
-    font-weight: 700;
-    letter-spacing: 2pt;
-    text-transform: uppercase;
-    color:#FCF9F9;
-    text-align: left;
-}
-
-.custom-td {
-    text-align: left;
-    color:#FCF9F9; /* Text color */
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-}
-
-.custom-tr {
-    margin: 20px 0px;
-}
-
-.colinfo {
-    background-color: #FCF9F9;
-    padding: 60px 0px 70px 0px;
-    margin: 10px 0px 70px 0px;
-}
-section.tableauinfoml, .collecte, .mlfin {
-    min-height: 40vh;
-}
-.collecte{
-    margin-bottom: 50px;
-}
-
-/****************************************COOKIES********************************/
-section.presentationcookies{
-    margin-top: 200px;
-    margin-bottom: 100px;
-    min-height: 40vh;
-    
-    
-}
-
-section.presentationcookies p{
-    text-align: left;
-    margin: 30px 0px;
-}
-
-section.presentationcookies h1{
+    cursor: pointer;
     text-align: center;
-    margin: 100px 0px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 90px 10px;
+    border-radius: 300px;
+    box-sizing: border-box;
+    margin-bottom: 90px;
+}
+
+.file-upload-input {
+    display: none;
 }

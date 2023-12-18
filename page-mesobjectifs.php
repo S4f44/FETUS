@@ -1,10 +1,19 @@
+<?php
+session_start();
+if (!isset($_SESSION['mdp'])) {
+    $url = home_url('/connexion');
+    header("Location: $url");
+    exit();
+}
+?>
+
 
 <?php
 /* Template Name: MesObjectifsPage */
 
 
 if (!is_user_logged_in()) {
-    wp_redirect(home_url() . "/login/");
+    wp_redirect(home_url() . "/connexion");
     exit;
 }
 
@@ -24,33 +33,34 @@ get_header();
         </div>
     </section>
 
-<section class="objectifs">
-    <div id="task-list" class="container text-center">
-        <!-- <h2>Mes buts à atteindre</h2> -->
-        <ul id="tasks"></ul>
-        <div class="row">
-            <div class="col-md-5 offset-md-1">
-                
-                <label for="new-task">Mes buts à atteindre :</label>
-                <input type="text" id="new-task" placeholder="Objectif 1"/>
-            </div>
+    <section class="objectifs">
+        <div id="task-list" class="container text-center">
+            <!-- <h2>Mes buts à atteindre</h2> -->
+            <ul id="tasks"></ul>
+            <div class="row">
+                <div class="col-md-5 offset-md-1">
+                    
+                    <label for="new-task">Mes buts à atteindre :</label>
+                    <input type="text" id="new-task" placeholder="Objectif 1"/>
+                </div>
 
-            <div class="col-md-5">
-                <label for="deadline">Date :</label>
-                <input type="date" id="deadline" />
-            </div>
-            <div class="col-md-2 offset-md-5">
-                <button onclick="addTask()" class="btnprimaire">Ajouter</button>
+                <div class="col-md-5">
+                    <label for="deadline">Date :</label>
+                    <input type="date" id="deadline" />
+                </div>
+                <div class="col-md-2 offset-md-5">
+                    <button onclick="addTask()" class="btnprimaire">Ajouter</button>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 </div>
 
 <button class="scrollToTopBtn" onclick="scrollToTop()"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/flechehaut.svg" alt="scrolltotop"></button>
 
+</main>
 
 <?php get_footer(); ?>
 
