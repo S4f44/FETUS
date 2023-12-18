@@ -29,15 +29,8 @@
                     <strong>Taille :</strong> Environ 0,1 mm.
                   </p> 
                   <p> La quatrième semaine marque le début de l'organogenèse, où les premiers tissus et organes du fœtus commencent à se former à partir des trois feuillets embryonnaires. Le blastocyste s'implante dans l'utérus. </p>
-                 
-                  <p> 4 semaines</p>
-                  <p class="pt">  
-                    <strong>Poids :</strong> Environ 0,004 gramme (4 milligrammes).<br>
-                    <strong>Taille :</strong> Environ 0,1 mm.
-                  </p> 
-                  <p> La quatrième semaine marque le début de l'organogenèse, où les premiers tissus et organes du fœtus commencent à se former à partir des trois feuillets embryonnaires. Le blastocyste s'implante dans l'utérus. </p>
-                 
                 </article>
+
                 <article data-index="step-2">
                   <h3>Framboise</h3>
                   <p>8 semaines </p>
@@ -47,6 +40,7 @@
                   </p>
                    <p>L'embryon se transforme en fœtus, avec des membres en développement et des systèmes d'organes en plein essor, y compris le cœur qui bat déjà.</p>
                 </article>
+
                 <article data-index="step-3">
                   <h3>Kiwi</h3>
                   <p>12 semaines </p>
@@ -56,6 +50,7 @@
                   </p> 
                   <p> Le fœtus atteint<strong> la fin du premier trimestre, </strong> avec des organes génitaux distincts en développement et une ossification débutante.</p><br>
                 </article>
+
                 <article data-index="step-4">
                   <h3>Poire</h3>
                   <p>16 semaines </p>
@@ -64,27 +59,18 @@
                     <strong>Taille :</strong> Environ 11 à 12,7 cm. 
                   </p>
                   <p>Le fœtus a généralement développé des traits faciaux distincts, des doigts et des orteils, et il commence à bouger activement. </p>
-                  <p>16 semaines </p>
-                  <p class="pt">   
-                    <strong>Poids :</strong> Environ 100 à 150 grammes. <br>
-                    <strong>Taille :</strong> Environ 11 à 12,7 cm. 
-                  </p>
-                  <p>Le fœtus a généralement développé des traits faciaux distincts, des doigts et des orteils, et il commence à bouger activement. </p>
                 </article>
+
                 <article data-index="step-5">
                   <h3>artichaud</h3>
-                  <p>
-                    20 semaines </p>
-                    <p class="pt">   
-                    <strong> Poids :</strong> Environ 300 grammes. <br>
-                    <strong>Taille :</strong> Environ 16 cm. 
-                    20 semaines </p>
-                    <p class="pt">   
+                  <p>20 semaines </p>
+                  <p class="pt">   
                     <strong> Poids :</strong> Environ 300 grammes. <br>
                     <strong>Taille :</strong> Environ 16 cm. 
                   </p>
                   <p> <strong>Mi-grossesse</strong>, l'échographie peut révéler le sexe du bébé, tandis que ses sens, tels que l'ouïe, se perfectionnent.</p><br>
                 </article>
+
                 <article data-index="step-6">
                   <h3>Orange</h3>
                   <p>24 semaines </p>
@@ -92,26 +78,17 @@
                     <strong>Poids :</strong> Environ 600 à 700 grammes. <br>
                     <strong>Taille :</strong> Environ 30 cm. </p>     
                   <p>Les organes vitaux continuent de se développer, les poumons atteignent un stade où la survie en dehors de l'utérus est envisageable, bien que la prématurité reste un défi important à ce stade. </p>
-                  <p>24 semaines </p>
-                  <p class="pt">  
-                    <strong>Poids :</strong> Environ 600 à 700 grammes. <br>
-                    <strong>Taille :</strong> Environ 30 cm. </p>     
-                  <p>Les organes vitaux continuent de se développer, les poumons atteignent un stade où la survie en dehors de l'utérus est envisageable, bien que la prématurité reste un défi important à ce stade. </p>
-                </article>
+                  </article>
+
                 <article data-index="step-7">
                   <h3>Chou-fleur</h3>
                   <p>28 semaines </p>
                   <p class="pt">   
                     <strong>Poids :</strong> Environ 1 kg. <br>
                     <strong>Taille :</strong> Environ 35,6 cm. 
-                  <p>28 semaines </p>
-                  <p class="pt">   
-                    <strong>Poids :</strong> Environ 1 kg. <br>
-                    <strong>Taille :</strong> Environ 35,6 cm. 
-                  </p>
-                  <p>  La vingt-huitième semaine marque <strong> le début du troisième trimestre,</strong> avec une croissance rapide et le début de la régulation thermique.</p>
                   <p>  La vingt-huitième semaine marque <strong> le début du troisième trimestre,</strong> avec une croissance rapide et le début de la régulation thermique.</p>
                 </article>
+
                 <article data-index="step-8">
                   <h3>Noix de coco</h3>
                   <p> 32 semaines </p>
@@ -120,27 +97,17 @@
                     <strong> Taille :</strong> Environ 42 cm. 
                   </p>
                   <p>Le fœtus se prépare aux fonctions respiratoires et continue de prendre du poids. Il prend une position tête en bas en préparation de l'accouchement, et ses mouvements peuvent être plus perceptibles.</p>
-                  <p> 32 semaines </p>
-                  <p class="pt"> 
-                    <strong> Poids : </strong>Environ 1,8 kg. <br>
-                    <strong> Taille :</strong> Environ 42 cm. 
-                  </p>
-                  <p>Le fœtus se prépare aux fonctions respiratoires et continue de prendre du poids. Il prend une position tête en bas en préparation de l'accouchement, et ses mouvements peuvent être plus perceptibles.</p>
                 </article>
+
                 <article data-index="step-9">
                   <h3>Ananas</h3>
                   <p>36 semaines </p>
                   <p class="pt">  
                     <strong>Poids : </strong>Environ 2,6 kg. <br>
                     <strong>Taille :</strong> Environ 47 cm. 
-                  <p>36 semaines </p>
-                  <p class="pt">  
-                    <strong>Poids : </strong>Environ 2,6 kg. <br>
-                    <strong>Taille :</strong> Environ 47 cm. 
-                  </p>
-                  <p>Le bébé atteint la maturité presque complète, avec une prise de poids rapide en préparation de la naissance.</p>
                   <p>Le bébé atteint la maturité presque complète, avec une prise de poids rapide en préparation de la naissance.</p>
                 </article>
+
                 <article data-index="step-10">
                   <h3>Citrouille</h3>
                   <p>40 semaines <strong>(à terme)</strong> <p>
