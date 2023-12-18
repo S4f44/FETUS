@@ -99,19 +99,19 @@ $_SESSION['heloise'] = [
     <div class="container text-center">
         <div class="row">
             <div class="col-md-10 offset-md-1 formulaire">
-                <form action="process_login.php" method="post">
+                <form action="<?= home_url('/login'); ?>" method="POST">
 
                     <h1 class="col-md-6 offset-md-3 text-center">Connexion</h1>
 
                     <label for="email">E-mail :</label>
-                    <input class="offset-md-3" type="email" id="email" name="email" placeholder="@gmail.be">
+                    <input class="offset-md-3 custom" type="email" id="email" name="email" placeholder="@gmail.be" required>
 
                     <label for="password">Mot de passe :</label>
-                    <input class="offset-md-3" type="password" id="password" name="password" placeholder="Votre mot de passe">
+                    <input class="offset-md-3" type="password" id="mdp" name="mdp" placeholder="Votre mot de passe" required> 
 
                     <div class="col-md-12 text-center mt-4">
                         <a href= "<?php echo get_template_directory_uri(); ?>/monsuivi">
-                        <button type="submit" class="btnprimaire">Se connecter</button>
+                        <button type="submit" name="envoi" class="btnprimaire">Se connecter</button>
                         </a>
                     </div>
                     <div class="col-md-12 text-center mt-2 bontonlien">

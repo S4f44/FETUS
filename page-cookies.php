@@ -1,4 +1,59 @@
-<?php get_header(); ?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="<?php  bloginfo('charset'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FetUs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/formstyle.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <?php wp_head(); ?>
+
+</head>
+<body  <?php body_class(); ?>> <!--Ajoute des classes CSS dynamiques basées sur les caractéristiques de la page dans WordPress. -->
+        <?php wp_body_open(); ?> <!--Fournit un point d'accroche pour ajouter du contenu juste après la balise d'ouverture <body> dans un thème WordPress. -->
+
+
+      
+<!------------------HEADER----------------->
+
+
+
+<header>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+
+            <a class="navbar-brand d-lg-none" href="index.php">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="logo FetUs">
+            </a> 
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+            
+             <?php wp_nav_menu([
+                'theme_location' => 'header', // localisation de mon menu
+                'container' => false, // permet de retirer mon container
+                'menu_class' => 'navbar-nav mx-auto' // la classe que je veux dans mon <ul></ul>
+             ]); 
+             ?>
+
+                
+            </div>
+        </div>
+    </nav>  
+
+    <div class="container"> 
+</header>
+
 <main>
 
 <section class="presentationcookies">

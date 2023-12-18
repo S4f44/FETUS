@@ -1,4 +1,14 @@
 <?php
+session_start();
+if (!isset($_SESSION['mdp'])) {
+    $url = home_url('/connexion');
+    header("Location: $url");
+    exit();
+}
+?>
+
+
+<?php
 /* Template Name: MonSuiviPage */
 // page-monsuivi.php
 session_start();
@@ -12,6 +22,31 @@ if (!is_user_logged_in()) {
 
 get_header(); // J'importe mon header
 
+
+// wp_login_form();
+?>
+
+<section class="presentationttsav">
+    <div class="container text-center">
+        <div class="row">
+            <h1>Mon suivi</h1>
+                <input type="file" id="profile-pic" name="profile-pic" class="file-upload-input">
+            <div class="col-md-4 my-5">
+                <h3>Nom</h3>
+                <p><?php echo esc_html($user->user_login); ?></p>
+            </div>
+            <div class="col-md-1 my-5">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bebe.svg" alt="image bébé">
+            </div>
+            <div class="col-md-4 my-5">
+                <h3>Futur prénom</h3>
+                <p><?php echo esc_html($user->user_login); ?></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<?php
 // Récupérez les données de la session
 $donnees_formulaire = isset($_SESSION['donnees_formulaire']) ? $_SESSION['donnees_formulaire'] : '';
 

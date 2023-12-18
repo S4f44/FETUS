@@ -2,7 +2,7 @@
 /* Template Name: login-new */ 
 if (is_user_logged_in()) {
   // si je suis déjà connecté je suis redirigé vers la page home
-  wp_redirect(home_url('/page-monsuivi/'));
+  wp_redirect(home_url('/monsuivi'));
 	exit;
 }
 ?>
@@ -79,7 +79,7 @@ if (is_user_logged_in()) {
                         <div class="col-md-12 text-center mt-4">
                             <input type="submit" name="submit" value="Se connecter">
                             <!-- <input type="hidden" name="redirect_to" value="<?php //echo esc_url( home_url('/') ); ?>"> -->
-                            <input type="hidden" name="redirect_to" value="<?php echo esc_url(home_url('/page-monsuivi/')); ?>">
+                            <input type="hidden" name="redirect_to" value="<?php echo esc_url(home_url('/page-monsuivi')); ?>">
                             
                         <div class="col-md-12 text-center mt-2 bontonlien">
                             <a href="mot_de_passe_oublie.php" class="mot-de-passe-oublie">Mot de passe oublié ?</a> / <a href="<?php echo get_template_directory_uri(); ?>/enregistrer" class="inscription">S'inscrire</a>
