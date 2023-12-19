@@ -20,6 +20,43 @@
 //     exit;
 // }
 
+
+/*Mon suivi pag*/
+
+if (!is_user_logged_in()) { // je vérifie si je suis connecté
+    wp_redirect( home_url() . "/login" ); // si pas je redirige vers la page login
+    exit;
+}
+
+$user = wp_get_current_user();
+var_dump($user);
+
+get_header(); // j'importe mon header
+// attention c'est important de faire les redirection avant le header sinon la redirection ne marche pas
+?>
+
+coucou c'est une page privée
+
+<?php 
+    //$user = wp_get_current_user();
+    //
+?>
+  
+  
+  
+<?php
+    // Vérifie si un utilisateur est connecté
+    if (is_user_logged_in()) {
+        // Affiche un message ou un lien spécifique pour les utilisateurs connectés
+        echo '<p>Bienvenue, ' . esc_html(wp_get_current_user()->user_login) . '!</p>';
+    } else {
+        // Affiche un message ou un lien spécifique pour les utilisateurs non connectés
+        echo '<p>Connectez-vous pour accéder à davantage de fonctionnalités.</p>';
+    }
+?>
+  
+  
+
 get_header(); // J'importe mon header
 
 
