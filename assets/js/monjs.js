@@ -119,3 +119,28 @@ function scrollToTop() {
     document.documentElement.scrollTop = 0; // Pour les autres navigateurs
 }
 
+
+/////////////////////////////////////////////DEFILEMENT MOT D'ENCOURAGEMENT MON SUIVI///////////////////////////////////
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Récupérez toutes les balises h3 avec la classe "scrolling-h3"
+    var h3Elements = document.querySelectorAll('.scrolling-h3');
+
+    // Index actuel du titre affiché
+    var currentIndex = 0;
+
+    // Changez le titre toutes les 3 secondes
+    setInterval(function() {
+        // Masquez tous les titres
+        h3Elements.forEach(function(element) {
+            element.style.display = 'none';
+        });
+
+        // Affichez le titre suivant
+        h3Elements[currentIndex].style.display = 'block';
+
+        // Passez au titre suivant
+        currentIndex = (currentIndex + 1) % h3Elements.length;
+    }, 3000);
+});
+

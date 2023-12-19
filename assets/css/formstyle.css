@@ -71,7 +71,7 @@ p{
     display: flex;
     flex-direction: column;
     gap: 10px; /* Espacement vertical entre les boutons */
-  }
+}
 
   .btnprimaire {
     font-family: 'Montserrat', sans-serif;
@@ -116,7 +116,7 @@ p{
     background-repeat: no-repeat;
     color: rgba(255,255, 255, 0);
     margin: 30px 60px 30px 60px;
-  }
+}
 .navbar {
     background-color: #121F40;
     position: fixed;
@@ -297,11 +297,27 @@ p{
     opacity: 0.7;
 }
 
+
 /***********************RESPONSIVE**********************/
 @media screen and (max-width: 767px) {
     .footer-col{
         width: 50%;
         margin-bottom: 30px;
+    }
+    .footer-col h4{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .footer-col ul li a{
+        font-size: 10pt;
+    }
+    .footer-col .logo {
+        width: 150px;
+        margin-top : 0px;
+        margin-left: 23px;
+    }
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 3px;
     }
     .navbar-brand img{
         width: 100px;
@@ -315,6 +331,73 @@ p{
     .scrolling .navbar-brand img { 
         margin: 15px 0px 15px 0px;
     }
+    .section{
+        min-height: 20vh;
+    } 
+    h1{
+        font-size: 15pt; 
+        letter-spacing: 5pt;
+        line-height: 1;
+    }
+    h2{
+        font-size: 18px; 
+    }
+  
+    h3{
+        font-size: 10pt; 
+        letter-spacing: 1pt;
+    }
+    p{
+        font-size: 13px; 
+        color: #121F40;
+    }
+    .presentation p{
+        font-size: 25px; 
+    }
+    .btnprimaire{
+        font-size: 12pt; 
+    }
+    .btnsecondaire{
+        font-size: 12pt;
+    }
+
+    div.formulaire {
+        margin-left: 20px;
+        margin-right: 40px;
+        
+    }
+
+    .chiffres .chiffresdeux{
+        width: auto;
+
+        overflow: hidden;
+    }    
+    div.roleparents{
+        margin-top: 10vh;
+    }
+
+    .customlab{
+        font-size: 18px; 
+        
+    }
+
+    .custom {
+        font-size: 13px;
+    
+    }
+    .mot-de-passe-oublie, 
+    .inscription {
+        font-size: 13px;
+    }
+    .form-check-label{
+        font-size: 13px;
+    }
+    .custom-radio-label{
+        font-size: 13px;
+    }
+    select[name="semaines"]{
+        font-size: 13px;
+    }
 }
 
 
@@ -324,22 +407,21 @@ p{
 form {
     text-align: left;
     width: auto; /* Largeur du formulaire */
-    
-    
-  }
+        
+ }
   
-  div.formulaire {
+ div.formulaire {
     background-color: rgba(255, 255, 255, 0.3); /* Couleur blanche avec une opacité de 0.7 */
     padding: 90px 10px; /* Ajout de marge interne pour espacer les éléments du formulaire du bord */
     border-radius: 300px; /* Coins arrondis pour le formulaire */
     box-sizing: border-box; /* Inclure le padding et la bordure dans la largeur totale */
     margin-bottom: 90px;
-  }
+    }
 
  
   
-  label {
-    display: block;
+label {
+    /* display: flex; */
     margin-bottom: 8px;
     margin-top: 20px;
     color: #FCF9F9;
@@ -347,10 +429,10 @@ form {
     margin-right: 20%;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px; 
-   
-  }
-  
-  input {
+
+    }
+
+input {
     width: 60%;
     padding: 8px;
     margin-bottom: 10px;
@@ -362,124 +444,123 @@ form {
     color: rgba(21, 21, 147, 0.25); 
     font-family: 'Poppins', sans-serif;
     font-size: 20px; 
-    
+
     }
 
-    input:hover {
-        color: #151593; /* Couleur du texte au survol */
-        border-bottom: 1px solid #FCF9F9; /* Bordure du bas au survol */
-        }
+input:hover {
+    color: #151593; /* Couleur du texte au survol */
+    border-bottom: 1px solid #FCF9F9; /* Bordure du bas au survol */
+    }
 
-    .custom-radio-input {
-        font-family: 'Poppins', sans-serif;
-        font-size: 18px; 
+.custom-radio-input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px; 
+    color: #121F40;
+}       
+
+.custom-radio-label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px; 
+    color:#FCF9F9; 
+}
+
+.custom-radio-input:hover {
+    color: #151593; /* Couleur du texte au survol pour les radios */
+}
+
+.custom-radio-label:hover {
+    color: #FCF9F9; /* Couleur du texte au survol pour les labels des radios */
+}
+
+input[type="radio"] {
+    margin-right: 5px; /* Espacement à droite de la case à cocher */
+    background-image: url(../img/btnradio.svg);
+    border: none;
+    
+}
+
+input[type="radio"]:checked {
+    margin-right: 5px; /* Espacement à droite de la case à cocher */
+    background-image: url(../img/btnradiocoche.svg);
+    border: none;
+    
+}
+
+
+        /* Styles pour les cases à cocher */
+input[type="checkbox"] {
+    margin-right: 5px; /* Espacement à droite de la case à cocher */
+    background-image: url(../img/checkbox.svg);
+    border: none;
+    
+}
+
+/* Styles pour le libellé des cases à cocher */
+.form-check-label {
+    font-size: 16px;
+    color:#121F40;
+    margin-left: 5px; /* Espacement à gauche du libellé */
+    margin-top: 50px;
+    
+}
+
+/* Style pour les cases à cocher lorsqu'elles sont cochées */
+input[type="checkbox"]:checked {
+    background-image: url(../img/checkboxcheck.svg);
+}
+
+.mot-de-passe-oublie, 
+.inscription {
+    color: #151593;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+.boutonlien{
+        font-family: 'Montserrat', sans-serif;
+    font-size: 8pt; 
+    font-weight: 700;
+    letter-spacing: 2pt;
+    text-transform: uppercase;
         color: #121F40;
-    }       
-    
-    .custom-radio-label {
-        font-family: 'Poppins', sans-serif;
-        font-size: 16px; 
-        color:#FCF9F9; 
-    }
-        
-        .custom-radio-input:hover {
-            color: #151593; /* Couleur du texte au survol pour les radios */
-        }
-        
-        .custom-radio-label:hover {
-            color: #FCF9F9; /* Couleur du texte au survol pour les labels des radios */
-        }
-    
-        input[type="radio"] {
-            margin-right: 5px; /* Espacement à droite de la case à cocher */
-            background-image: url(../img/btnradio.svg);
-            border: none;
-           
-        }
-        
-        input[type="radio"]:checked {
-            margin-right: 5px; /* Espacement à droite de la case à cocher */
-            background-image: url(../img/btnradiocoche.svg);
-            border: none;
-           
-        }
+}
 
-       
-            /* Styles pour les cases à cocher */
-    input[type="checkbox"] {
-        margin-right: 5px; /* Espacement à droite de la case à cocher */
-        background-image: url(../img/checkbox.svg);
-        border: none;
-       
-    }
+.mot-de-passe-oublie:hover, .inscription:hover {
+    text-decoration: underline;
+}
 
-    /* Styles pour le libellé des cases à cocher */
-    .form-check-label {
-        font-size: 16px;
-        color:#121F40;
-        margin-left: 5px; /* Espacement à gauche du libellé */
-        margin-top: 50px;
-        
-    }
 
-    /* Style pour les cases à cocher lorsqu'elles sont cochées */
-    input[type="checkbox"]:checked {
-        background-image: url(../img/checkboxcheck.svg);
-    }
+/*************************BOUTONS POUR AJOUTER PHOTO****************/
+.file-upload-label {
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 90px 10px;
+    border-radius: 300px;
+    box-sizing: border-box;
+    margin-bottom: 90px;
+}
 
-    .mot-de-passe-oublie, 
-    .inscription {
-       
-        text-decoration: none;
-        margin-top: 8px;
-        display: inline-block;
-       
-    }
+.file-upload-input {
+    display: none;
+}
 
-    .boutonlien{
-         font-family: 'Montserrat', sans-serif;
-        font-size: 8pt; 
-        font-weight: 700;
-        letter-spacing: 2pt;
-        text-transform: uppercase;
-         color: #121F40;
-    }
-    
-    .mot-de-passe-oublie:hover, .inscription:hover {
-        text-decoration: underline;
-    }
-    
-  
-    /*************************BOUTONS POUR AJOUTER PHOTO****************/
-    .file-upload-label {
-        display: block;
-        cursor: pointer;
-        text-align: center;
-        background-color: rgba(255, 255, 255, 0.3);
-        padding: 90px 10px;
-        border-radius: 300px;
-        box-sizing: border-box;
-        margin-bottom: 90px;
-    }
-    
-    .file-upload-input {
-        display: none;
-    }
-    
-    .upload-icon {
-        background-image: url('chemin/vers/votre/image.png');
-        background-size: contain;
-        width: 25px; /* Ajustez la largeur souhaitée */
-        height: 25px; /*Ajustez la hauteur souhaitée */
-        display: inline-block;
-        transition: transform 0.5s ease; /* Ajustement de la transition */
-    }
-    
-    .file-upload-label:hover .upload-icon {
-        background-size: 120%; /* Ajustez la taille agrandie selon vos besoins */
-        transform: scale(1.2); /* Ajustez la valeur de l'échelle selon vos besoins */
-    }
-    
+.upload-icon {
+    background-image: url('/');
+    background-size: contain;
+    width: 25px; /* Ajustez la largeur souhaitée */
+    height: 25px; /*Ajustez la hauteur souhaitée */
+    display: inline-block;
+    transition: transform 0.5s ease; /* Ajustement de la transition */
+}
+
+.file-upload-label:hover .upload-icon {
+    background-size: 120%; /* Ajustez la taille agrandie selon vos besoins */
+    transform: scale(1.2); /* Ajustez la valeur de l'échelle selon vos besoins */
+}
+
 
     /****************************************FORMULAIRE*****************************************/
   

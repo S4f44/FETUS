@@ -74,7 +74,7 @@
 
                     <!-- Ajout de la checklist pour le genre -->
                     <div class="form-group row">
-                        <label class="col-md-3">Qui êtes-vous?</label>
+                        <label class="col-md-3 customlab">Qui êtes-vous?</label>
                         <div class="col-md-6 offset-md-4">
                             <div class="form-check form-check-inline custom-radio">
                                 <input type="radio" id="futuremam" name="quietesvous" value="futuremam" class="form-check-input custom-radio-input">
@@ -89,7 +89,7 @@
 
 
                     <div class="form-group">
-                        <label for="semaines" class="col-md-6 offset-md-3">Indiquez le nombre de semaines de grossesse que vous ou votre partenaire avez atteint:</label>
+                        <label for="semaines" class="col-md-6 offset-md-3 customlab">Indiquez le nombre de semaines de grossesse que vous ou votre partenaire avez atteint:</label>
                         <select id="semaines" name="semaines" class="col-md-6 offset-md-3">
                             <option value="1-4">1-4 semaines</option>
                             <option value="5-7">5-7 semaines</option>
