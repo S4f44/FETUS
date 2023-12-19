@@ -22,21 +22,21 @@
                 <div class="footer-col">
                   <h4>Général</h4>
                   <ul>
-                    <li><a href="<?php echo get_template_directory_uri(); ?>/toutsavoir">Tout savoir sur la grossesse</a></li>
-                    <li><a href="<?php echo get_template_directory_uri(); ?>/conseils">Conseils</a></li>
-                    <li><a href="<?php echo get_template_directory_uri(); ?>/monsuivi">Mon suivi</a></li>
-                    <li><a href="<?php echo get_template_directory_uri(); ?>/mesobjectifs">Mes objectifs</a></li>
+                    <li><a href="<?php echo home_url('/toutsavoir'); ?>">Tout savoir sur la grossesse</a></li>
+                    <li><a href="<?php echo home_url('/conseils'); ?>">Conseils</a></li>
+                    <li><a href="<?php echo home_url('/monsuivi'); ?>">Mon suivi</a></li>
+                    <li><a href="<?php echo home_url('/mesobjectifs'); ?>">Mes objectifs</a></li>
                   </ul>
                 </div>
                 <div class="footer-col">
                   <h4>Outils</h4>
                   <ul>
-                    <li><a href="<?php echo get_template_directory_uri(); ?>/mentionslegales">Mentions légales</a></li>
-                    <li><a href="<?php echo get_template_directory_uri(); ?>/cookies">Cookies</a></li>
-                    <!-- <li><a href="<?php echo get_template_directory_uri(); ?>/connexion">Se connecter</a></li> -->
-                    <li><a href="<?php echo get_template_directory_uri(); ?>/login">Se connecter</a></li>
-                    <!-- <li><a href="<?php echo get_template_directory_uri(); ?>/enregistrer">S'enregistrer</a></li> -->
-                    <li><a href="<?php echo get_template_directory_uri(); ?>/register">S'enregistrer</a></li>
+                    <li><a href="<?php echo home_url('/mentionslegales'); ?>">Mentions légales</a></li>
+                    <li><a href="<?php echo home_url('/cookies'); ?>">Cookies</a></li>
+                    <!-- <li><a href="<?php //echo get_template_directory_uri(); ?>/connexion">Se connecter</a></li> -->
+                    <li><a href="<?php echo home_url('/connexion'); ?>">Se connecter</a></li>
+                    <!-- <li><a href="<?php //echo get_template_directory_uri(); ?>/enregistrer">S'enregistrer</a></li> -->
+                    <li><a href="<?php echo home_url('/enregistrer'); ?>">S'enregistrer</a></li>
                   </ul>
                 </div>
                 <div class="footer-col">
@@ -62,7 +62,7 @@
       
     
   
-                    </div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/monjs.js"></script>

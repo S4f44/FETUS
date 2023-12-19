@@ -1,25 +1,25 @@
 <?php
 session_start();
-if (!isset($_SESSION['mdp'])) {
-    $url = home_url('/connexion');
-    header("Location: $url");
-    exit();
-}
-?>
-
-
-<?php
-/* Template Name: MesObjectifsPage */
-
-
-if (!is_user_logged_in()) {
-    wp_redirect(home_url() . "/connexion");
-    exit;
+/* Template Name: MonObejectifs */
+if (!is_user_logged_in()) { // je vérifie si je suis connecté
+  wp_redirect( home_url() . "/connexion" ); // si pas je redirige vers la page login
+	exit;
 }
 
 $user = wp_get_current_user();
-get_header();
+var_dump($user);
+
+get_header(); // j'importe mon header
+// attention c'est important de faire les redirection avant le header sinon la redirection ne marche pas
 ?>
+
+coucou c'est une page privée
+
+<?php 
+//$user = wp_get_current_user();
+//
+?>
+
 
 <main>
     <section class="presentationobjectifs">

@@ -114,9 +114,22 @@ p{
 .nav-link[href*="home"] {
     background-image: url(../img/logo.svg);
     background-repeat: no-repeat;
-    color: rgba(255,255, 255, 0);
+    color: transparent;
     margin: 30px 60px 30px 60px;
+  }
+.nav-link[href*="home"]:hover {
+    color: transparent;
+    text-decoration: none;
+  }
+.nav-link[href*="home"]::after {
+    display: none;
+  }
+.scrolling .nav-link[href*="home"] {
+    color: transparent;
+    text-decoration: none;
 }
+
+  
 .navbar {
     background-color: #121F40;
     position: fixed;
@@ -300,6 +313,9 @@ p{
 
 /***********************RESPONSIVE**********************/
 @media screen and (max-width: 767px) {
+    .navbar-collapse .nav-link[href*="home"] {
+        display: none;
+    }
     .footer-col{
         width: 50%;
         margin-bottom: 30px;

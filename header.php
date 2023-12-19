@@ -53,7 +53,7 @@
                 'menu_class' => 'navbar-nav mx-auto' // la classe que je veux dans mon <ul></ul>
              ]); 
              ?>
-
+                
               <a href="<?= home_url('/deconnexion'); ?>"><button class="btndeconnexion">Se déconnecter</button></a>  
             </div>
         </div>
@@ -66,5 +66,4 @@
     
   </nav> 
 
-    <div class="container"> 
 </header>

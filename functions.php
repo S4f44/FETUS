@@ -82,9 +82,9 @@ function create_account(){
 		if( !is_wp_error($user_id) ) {
 			// user has been created
 			$user = new WP_User( $user_id );
-			$user->set_role( 'contributor' ); // type d'user que je veux a ce moment la 
+			$user->set_role( 'contributor', 'subscriber' ); // type d'user que je veux a ce moment la 
 			// redirection après connexion
-			wp_redirect(esc_url(home_url('/')));
+			wp_redirect(esc_url(home_url('/formulaire')));
 			exit;
 		} else {
 			//$user_id is a WP_Error object. Manage the error
@@ -190,7 +190,7 @@ function tf_check_user_role( $roles ) {
 	// je retourne le résultat 
 	return $response;
 }
-$roles = [ 'contributor' ];
+$roles = [ 'contributor', 'subscriber' ];
 if ( tf_check_user_role($roles) ) {
 	add_filter('show_admin_bar', '__return_false');
 }

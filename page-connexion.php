@@ -1,3 +1,12 @@
+<?php
+/* Template Name: login */ 
+if (is_user_logged_in()) {
+  // si je suis déjà connecté je suis redirigé vers la page home
+  wp_redirect( home_url('/monsuivi') );
+	exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -63,7 +72,7 @@
    
 
 
- <?php
+<?php
 session_start(); // Démarrer la session si elle n'est pas déjà démarrée
 
 // Vérifier si les identifiants ont été soumis
@@ -117,7 +126,7 @@ $_SESSION['heloise'] = [
                         </a>
                     </div>
                     <div class="col-md-12 text-center mt-2 bontonlien">
-                        <a href="mot_de_passe_oublie.php" class="mot-de-passe-oublie">Mot de passe oublié ?</a> / <a href="<?php echo get_template_directory_uri(); ?>/enregistrer" class="inscription">S'inscrire</a>
+                        <a href="mot_de_passe_oublie.php" class="mot-de-passe-oublie">Mot de passe oublié ?</a> / <a href="<?= home_url('/enregistrer'); ?>" class="inscription">S'inscrire</a>
                     </div>
 
                 </form>

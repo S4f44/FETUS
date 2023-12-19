@@ -23,8 +23,8 @@
             </div>
             <div class="offset-md-1 col-md-4">
               <div class="button-container">
-                <a href="<?php echo get_template_directory_uri(); ?>/enregistrer" class="btnprimaire">remplir le formulaire</a><br>
-                <a href="<?php echo get_template_directory_uri(); ?>/connexion" class="btnsecondaire">Se connecter</a>
+                <a href="<?php echo home_url('/enregistrer'); ?>" class="btnprimaire">remplir le formulaire</a><br>
+                <a href="<?php echo home_url('/connexion'); ?>" class="btnsecondaire">Se connecter</a>
               </div>
             </div>
           </div>

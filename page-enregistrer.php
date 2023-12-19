@@ -55,16 +55,26 @@
         </div>
     </nav>  
 
-    <div class="container"> 
+
 </header>
 
 
+<?php
+/* Template Name: enregistrer */ 
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Le formulaire a été soumis, vous pouvez effectuer des vérifications ici si nécessaire
+    
+    // Redirige vers la page formulaire.php
+    wp_redirect(home_url('/formulaire'));
+    exit;
+}
+?>
 
 <!------------------MAIN----------------->
    <main>
 
-   <?php
+   <!-- ?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Récupération des données du formulaire
     $firstname = $_POST["firstname"];
@@ -99,7 +109,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Mot de passe: $password <br>";
     echo "Photo de profil: $target_file <br>";
 }
-?>
+?> -->
 
 <section>
     <div class="container text-center">
@@ -176,14 +186,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     <div class="col-md-4 offset-md-4">
         
-                    <a href="<?php echo get_template_directory_uri(); ?>/page-formulaire.php" class="btnprimaire">Suivant</a>
+                    <a href="<?php echo home_url('/formulaire'); ?>" class="btnprimaire">Suivant</a>
 
                     
                     </div>
 
                 </form>
 
-                <script>
+                <!-- <script>
                     function validateForm() {
                         // Vérification de la validité des champs
                         var email = document.getElementById('email').value;
@@ -208,19 +218,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Sélection de l'action en fonction des conditions
                             if (condition1) {
-                                this.action = "<?php echo get_template_directory_uri(); ?>/page-monsuivi.php";
+                                this.action = "<?php //echo get_template_directory_uri(); ?>/page-monsuivi.php";
                             } else if (condition2) {
-                                this.action = "<?php echo get_template_directory_uri(); ?>/page-mesobjectifs.php";
+                                this.action = "<?php //echo get_template_directory_uri(); ?>/page-mesobjectifs.php";
                             } else {
                                 // Par défaut, utilisez cette action si aucune condition n'est remplie
-                                this.action = "<?php echo get_template_directory_uri(); ?>/page-formulaire.php";
+                                this.action = "<?php //echo get_template_directory_uri(); ?>/page-formulaire.php";
                             }
 
                             // Vous pouvez également ajouter d'autres logiques de traitement ici si nécessaire
 
                             return true; // Permet la soumission du formulaire
                         });
-                    </script>
+                    </script> -->
 
             </div>
         </div>

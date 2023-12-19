@@ -1,4 +1,4 @@
-<?php
+<!-- ?php
 
 session_start();
 
@@ -16,4 +16,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     wp_redirect(home_url('/'));
     exit;
 }
-
+ -->
