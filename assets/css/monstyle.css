@@ -635,6 +635,17 @@ a:focus{
     .citrouille{
         width: 65%;
     }
+    
+    
+   
+     
+    /********************************************MONSUIVI***************************/
+    
+    .profil{
+        margin: 50px;
+       
+    }
+   
  }
 
 
@@ -672,6 +683,7 @@ section.newsletter{
 section.fruits{
     background-color: #FCF9F9;
     padding: 70px 30px;
+    margin-bottom: 70px;
     
 }
 
@@ -1019,38 +1031,26 @@ label {
     color: rgba(21, 21, 147, 0.25); 
 }
 
-/***********MON SUIVI CSS**********/
-.file-upload-label {
-    display: block;
-    cursor: pointer;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 90px 10px;
-    border-radius: 300px;
-    box-sizing: border-box;
-    margin-bottom: 90px;
+
+
+
+/******************************MON SUIVI**************************************/
+.txtconseilsmonsuivi {
+    margin-top: 70px; 
 }
 
-.file-upload-input {
-    display: none;
+.profil {
+    /* align-content: center; */
+    align-items: center;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 70px ;
+}
+.photoprofil{
+    width: 20%;
 }
 
-
-
-/******************************DEFILEMENT MOT D'ENCOURAGEMENT**************************************/
-
-span.scrolling-span {
-  opacity: 0;
-  transition: opacity 0.5s;
-  position: absolute;
-}
-
-span.visible {
-  opacity: 1 !important;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15pt; 
-  font-weight: 700;
-  letter-spacing: 2pt;
-  text-transform: uppercase;
-  color: #121F40;
+.imagebb {
+    width:20%;
 }

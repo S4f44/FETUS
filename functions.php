@@ -194,3 +194,55 @@ $roles = [ 'contributor', 'subscriber' ];
 if ( tf_check_user_role($roles) ) {
 	add_filter('show_admin_bar', '__return_false');
 }
+
+
+/////////////////////////////////////////////////////////////////CAROUSSEL DE PHRASE
+function custom_carousel_script() {
+    ?>
+    <style>
+        #carousel-container {
+            overflow: hidden;
+
+        }
+
+        .carousel-item {
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15pt; 
+            font-weight: 700;
+            letter-spacing: 2pt;
+            text-transform: uppercase;
+            color: #121F40;
+            display: block;
+            margin-top: 80px;
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let currentIndex = 0;
+            const items = document.querySelectorAll('.carousel-item');
+
+            function showItem(index) {
+                items.forEach(item => item.style.display = 'none');
+                items[index].style.display = 'block';
+            }
+
+            function nextItem() {
+                currentIndex = (currentIndex + 1) % items.length;
+                showItem(currentIndex);
+            }
+
+            // Afficher le premier élément
+            showItem(currentIndex);
+
+            // Changer d'élément toutes les 4 secondes
+            setInterval(nextItem, 7000);
+        });
+    </script>
+    <?php
+}
+
+add_action('wp_footer', 'custom_carousel_script');
+
+
