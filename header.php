@@ -35,7 +35,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
 
-            <a class="navbar-brand d-lg-none" href="<?php echo get_template_directory_uri(); ?>/home">
+            <a class="navbar-brand d-lg-none" href="<?php echo home_url(); ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="logo FetUs">
             </a> 
             

@@ -177,12 +177,21 @@ a:focus{
 }
 
 /******************HEADER NAVBAR****************/
-
+.navbar-collapse .nav-link[href*="home"] {
+    display: none;
+}
 .nav-link[href*="home"] {
     background-image: url(../img/logo.svg);
     background-repeat: no-repeat;
-    color: rgba(255,255, 255, 0);
+    color: transparent;
     margin: 30px 60px 30px 60px;
+  }
+  .nav-link[href*="home"]:hover {
+    color: transparent;
+    text-decoration: none;
+  }
+  .nav-link[href*="home"]::after {
+    display: none;
   }
 .navbar {
     background-color: #121F40;
@@ -484,6 +493,7 @@ a:focus{
     }
     .symbolespapamaman img{
         width: 55vw;
+        opacity: 0.7;
     }
     section.newsletter{
         min-height: 10vh;
