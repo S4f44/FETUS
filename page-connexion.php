@@ -103,11 +103,11 @@ $_SESSION['heloise'] = [
 
                     <h1 class="col-md-6 offset-md-3 text-center">Connexion</h1>
 
-                    <label for="email">E-mail :</label>
+                    <label class="customlab" for="email">E-mail :</label>
                     <input class="offset-md-3 custom" type="email" id="email" name="email" placeholder="@gmail.be" required>
 
-                    <label for="password">Mot de passe :</label>
-                    <input class="offset-md-3" type="password" id="mdp" name="mdp" placeholder="Votre mot de passe" required> 
+                    <label class="customlab" for="password">Mot de passe :</label>
+                    <input class="offset-md-3 custom" type="password" id="mdp" name="mdp" placeholder="Votre mot de passe" required> 
 
                     <div class="col-md-12 text-center mt-4">
                         <a href= "<?php echo get_template_directory_uri(); ?>/monsuivi">

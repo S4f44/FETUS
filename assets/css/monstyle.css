@@ -41,9 +41,13 @@ body {
     margin-top :350px;
     min-height: 50vh;
 }
-.erreur h1 h3 p {
+.erreur h1,
+.erreur h3,
+.erreur p {
     margin-top: 50px;
 }
+
+
 .erreursvg img{
     width: 130%;
     margin-top: 60px;
@@ -763,9 +767,11 @@ margin: 30px 0px;
     margin-bottom: 70px;
 }
 
-.pt {
+.pota {
     text-align: left;
 }
+
+
 
 /******************SECTIONS/MAIN TOUT SAVOIR SUR LA GROSSESSE****************/
 section.presentationttsav{
@@ -851,14 +857,14 @@ section.accordionpatho{
     color: #121F40;
     text-align: left;
     
-  }
+}
 .deuxiemetri ul li{
     font-family: 'Poppins', sans-serif;
     font-size: 18px; 
     color: #121F40;
     text-align: left;
     
-  }
+}
 .troisiemetri ul li{
     font-family: 'Poppins', sans-serif;
     font-size: 18px; 
@@ -882,7 +888,7 @@ section.accordionpatho{
     position: absolute;
     overflow: hidden;
     left: -40px;
-  } 
+} 
 
 /* section.accordionnutrition{
     margin-top: 100px;
@@ -952,7 +958,7 @@ label {
     margin-left: 20%;
     margin-right: 20%;
    
-  }
+}
   
   input {
     width: 60%;
@@ -1008,4 +1014,24 @@ label {
 
 .file-upload-input {
     display: none;
+}
+
+
+
+/******************************DEFILEMENT MOT D'ENCOURAGEMENT**************************************/
+
+span.scrolling-span {
+  opacity: 0;
+  transition: opacity 0.5s;
+  position: absolute;
+}
+
+span.visible {
+  opacity: 1 !important;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15pt; 
+  font-weight: 700;
+  letter-spacing: 2pt;
+  text-transform: uppercase;
+  color: #121F40;
 }
