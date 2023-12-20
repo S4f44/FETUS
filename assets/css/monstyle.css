@@ -644,12 +644,12 @@ a:focus{
         width: 50%;
     }
  
-    .nav-item .nav-link {
+    /* .nav-item .nav-link {
         font-family: 'Poppins', sans-serif;
         font-size: 8px;
         color: #121F40;
         flex-wrap: wrap;
-    }
+    } */
     .btnfruits ul {
         gap: 10px;
     }
