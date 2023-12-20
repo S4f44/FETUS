@@ -13,6 +13,7 @@ get_header(); // j'importe mon header
 // attention c'est important de faire les redirection avant le header sinon la redirection ne marche pas
 ?>
 
+
 <?php 
 //$user = wp_get_current_user();
 //

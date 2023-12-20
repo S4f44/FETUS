@@ -42,18 +42,7 @@ get_header(); // j'importe mon header
 ?>
   
   
-  
-<?php
-    // Vérifie si un utilisateur est connecté
-    if (is_user_logged_in()) {
-        // Affiche un message ou un lien spécifique pour les utilisateurs connectés
-        echo '<p>Bienvenue, ' . esc_html(wp_get_current_user()->user_login) . '!</p>';
-    } else {
-        // Affiche un message ou un lien spécifique pour les utilisateurs non connectés
-        echo '<p>Connectez-vous pour accéder à davantage de fonctionnalités.</p>';
-    }
-?>
-  
+
   
 
 
@@ -181,7 +170,6 @@ get_header(); // j'importe mon header
 
 
 <?php
-
 
 
 // $user = wp_get_current_user();
