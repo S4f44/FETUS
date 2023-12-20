@@ -35,8 +35,8 @@
       
       <section class="fruits">
         <div class="container text-center py-3">
-          <div class="row">
             <h2>Les différents stades de la grossesse</h2>
+          <div class="my-row row">
             <div class="col-md-6 offset-md-1">
               <div class="text js-text">
 

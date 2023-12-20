@@ -416,66 +416,66 @@ a:focus{
     .navbar-brand img{
         margin: 30px 0px 30px 0px;
     }
-    .scrolling .navbar-brand img { 
+    .scrolling .navbar-brand img {
         margin: 15px 0px 15px 0px;
     }
     .section{
         min-height: 20vh;
-    } 
+    }
     h1{
-        font-size: 15pt; 
+        font-size: 15pt;
         letter-spacing: 5pt;
         line-height: 1;
     }
     h2{
-        font-size: 18px; 
+        font-size: 18px;
     }
     h3{
-        font-size: 10pt; 
+        font-size: 10pt;
         letter-spacing: 1pt;
     }
     p{
-        font-size: 13px; 
+        font-size: 13px;
         color: #121F40;
     }
     .presentation p{
-        font-size: 25px; 
+        font-size: 25px;
     }
     .btnprimaire{
-        font-size: 12pt; 
+        font-size: 12pt;
     }
     .btnsecondaire{
         font-size: 12pt;
     }
     /*******************CONSEILS****************/
     .txtconseils {
-        margin-top: 5vw; 
+        margin-top: 5vw;
     }
     .premiertri, .troisiemetri{
-        position: relative; 
+        position: relative;
         overflow: hidden;
-        padding-bottom: 10vw; 
+        padding-bottom: 10vw;
     }
     section .chiffres {
         width: 70vw;
-        margin-left: 5vw; 
-        position: absolute; 
+        margin-left: 5vw;
+        position: absolute;
         top: 5vh;
         left: 35vw;
         z-index: -1;
         overflow: hidden;
     }
-    
+   
     .deuxiemetri {
-        position: relative; 
+        position: relative;
         overflow: hidden;
-        padding-bottom: 10vw; 
+        padding-bottom: 10vw;
     }
-    
+   
     /* Style pour les chiffres derrière les textes */
         section .chiffresdeux {
         width: 80vw;
-        position: absolute; 
+        position: absolute;
         top: 5vh;
         left: -20vw;
         z-index: -1;
@@ -484,9 +484,9 @@ a:focus{
     section.accordionnutrition{
         margin-top: 10vh;
     }
-      
-      
-
+     
+     
+ 
     /******************SYMBOLE PARENTS*************/
     .roleparents {
         position: relative;
@@ -495,7 +495,7 @@ a:focus{
     section div.roleparents{
         margin-top: 10vh;
     }
-    
+   
     .symbolespapamaman {
         margin-left: 0px;
         /* margin-left: 5vw; */
@@ -514,76 +514,84 @@ a:focus{
     div.col-md-6, .symbolespapamaman{
         min-height:2vh;
     }
-
-
+ 
+ 
     /*situation ou vous devez consulter votre medecin TOUT SAVOIR*/
     .consult h2{
         margin-top : 0;
     }
     .consultmedecin .custom-list li{
-        font-size: 13px; 
+        font-size: 13px;
     }
     .custom-list li::before {
         width: 12px; /* Ajustez la largeur du picto selon vos besoins */
-        height: 12px; 
+        height: 12px;
     }
     /*CONSEILS TRIMESTRES*/
     .premiertri .custom-list li{
-        font-size: 13px; 
+        font-size: 13px;
     }
     .deuxiemetri .custom-list li{
-        font-size: 13px; 
+        font-size: 13px;
     }
     .troisiemetri .custom-list li{
-        font-size: 13px; 
+        font-size: 13px;
     }
     /*************ACCORDION TOUT SAVOIR**************/
     .accordionpatho .accordion-item button{
-        font-size: 10pt; 
+        font-size: 10pt;
         letter-spacing: 1pt;
     }
     .accordionpatho .accordion-body{
-        font-size: 13px; 
+        font-size: 13px;
         color: #121F40;
     }
     /*************ACCORDION CONSEILS NUTRITION**************/
     .accordionnutrition .accordion-item button{
-        font-size: 10pt; 
+        font-size: 10pt;
         letter-spacing: 1pt;
     }
     /*********ACCEUIL HOME INDEX*********/
     section.grossesse h1{
         margin-top : 0;
-        
+       
     }
     section.grossesse{
         min-height: 1vh;
     }
-
+ 
     section.formulaire{
         min-height: 10vh;
     }
-    
+   
     .scrollToTopBtn {
         padding: 20px 15px;
     }
-    
+   
     .scrollToTopBtn img{
         width: 20px;
-        
+       
     }
     .scrollToTopBtn img{
         width: 15px;
-        
+       
     }
     /*********************CAROUSEL FRUITS******************/
     .fruits .images img {
         width: 10%;
         margin: 10px;
+        /* display:flex;
+        flex-direction: row-reverse; */
     }
-    
-    .fruits .images img.active {
-        width: 5%;
+    div.my-row.row{
+        display:flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+ 
+   
+    .fruits, .images, .active {
+        align-items: center;
     }
     /*****************AJUSTEMENTS TAILLES GRANDES IMAGES CAROUSEL******************/
     .fruits .images img.grananas {
@@ -605,52 +613,66 @@ a:focus{
         width: 20%;
     }
     /************************CAROUSEL PETITES IMAGES**********************/
-    .pttpois{
+    .btnfruits .nav-item .nav-link .active .pttpois{
         width: 23%;
     }
-    .framboise{
-        width: 16%;
-    }
-    .kiwi{
-        width: 25%;
-    }
-    .poire{
-        width: 16%;
-    }
-    .artichaud{
-        width: 20%;
-    }
-    .orange{
+    .btnfruits .nav-item .nav-link .framboise{
         width: 40%;
     }
-    .choufleur{
+    .btnfruits .nav-item .nav-link .kiwi{
+        width: 50%;
+    }
+    .btnfruits .nav-item .nav-link .poire{
+        width: 35%;
+    }
+    .btnfruits .nav-item .nav-link .artichaud{
+        width: 40%;
+    }
+    .btnfruits .nav-item .nav-link .orange{
+        width: 50%;
+    }
+    .btnfruits .nav-item .nav-link .choufleur{
+        width: 45%;
+    }
+    .btnfruits .nav-item .nav-link .coco{
+        width: 40%;
+    }
+    .btnfruits .nav-item .nav-link .ananas{
         width: 33%;
     }
-    .coco{
-        width: 36%;
+    .btnfruits .nav-item .nav-link .citrouille{
+        width: 50%;
     }
-    .ananas{
-        width: 33%;
+ 
+    .nav-item .nav-link {
+        font-family: 'Poppins', sans-serif;
+        font-size: 8px;
+        color: #121F40;
+        flex-wrap: wrap;
     }
-    .citrouille{
-        width: 65%;
+    .btnfruits ul {
+        gap: 10px;
     }
-    
-    
+ 
+   
+   
    
      
-    /********************************************MONSUIVI***************************/
-    
+    /**************************MONSUIVI***************************/
+   
     .profil{
+        margin: 50px;
         margin: 50px 0px 50px 0px;
         gap: 2px;
         overflow: hidden;
     }
     .photoprofil{
         margin-right: 0px;
+       
     }
    
  }
+ 
 
 
 
@@ -738,6 +760,7 @@ section.fruits{
 .btnfruits ul {
     display: flex; /* utilisation flexbox pour aligner verticalement les éléments */
     align-items: flex-end;
+    justify-content: center;
 }
 .btnfruits li{
     margin: 0 5px;
