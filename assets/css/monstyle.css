@@ -580,10 +580,18 @@ a:focus{
     .fruits .images img {
         width: 10%;
         margin: 10px;
+        /* display:flex;
+        flex-direction: row-reverse; */
     }
+    div.my-row.row{
+        display:flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
     
-    .fruits .images img.active {
-        width: 5%;
+    .fruits, .images, .active {
+        align-items: center;
     }
     /*****************AJUSTEMENTS TAILLES GRANDES IMAGES CAROUSEL******************/
     .fruits .images img.grananas {
@@ -605,41 +613,52 @@ a:focus{
         width: 20%;
     }
     /************************CAROUSEL PETITES IMAGES**********************/
-    .pttpois{
+    .btnfruits .nav-item .nav-link .active .pttpois{
         width: 23%;
     }
-    .framboise{
-        width: 16%;
-    }
-    .kiwi{
-        width: 25%;
-    }
-    .poire{
-        width: 16%;
-    }
-    .artichaud{
-        width: 20%;
-    }
-    .orange{
+    .btnfruits .nav-item .nav-link .framboise{
         width: 40%;
     }
-    .choufleur{
+    .btnfruits .nav-item .nav-link .kiwi{
+        width: 50%;
+    }
+    .btnfruits .nav-item .nav-link .poire{
+        width: 35%;
+    }
+    .btnfruits .nav-item .nav-link .artichaud{
+        width: 40%;
+    }
+    .btnfruits .nav-item .nav-link .orange{
+        width: 50%;
+    }
+    .btnfruits .nav-item .nav-link .choufleur{
+        width: 45%;
+    }
+    .btnfruits .nav-item .nav-link .coco{
+        width: 40%;
+    }
+    .btnfruits .nav-item .nav-link .ananas{
         width: 33%;
     }
-    .coco{
-        width: 36%;
+    .btnfruits .nav-item .nav-link .citrouille{
+        width: 50%;
     }
-    .ananas{
-        width: 33%;
+
+    /* .nav-item .nav-link {
+        font-family: 'Poppins', sans-serif;
+        font-size: 8px; 
+        color: #121F40;
+        flex-wrap: wrap;
+    } */
+    .btnfruits ul {
+        gap: 10px;
     }
-    .citrouille{
-        width: 65%;
-    }
+
     
     
    
      
-    /********************************************MONSUIVI***************************/
+    /**************************MONSUIVI***************************/
     
     .profil{
         margin: 50px;
@@ -734,6 +753,7 @@ section.fruits{
 .btnfruits ul {
     display: flex; /* utilisation flexbox pour aligner verticalement les éléments */
     align-items: flex-end;
+    justify-content: center;
 }
 .btnfruits li{
     margin: 0 5px;
