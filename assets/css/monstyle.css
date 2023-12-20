@@ -88,16 +88,17 @@ p{
     color: #FCF9F9;
 }
 
-.button-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* Espacement vertical entre les boutons */
-  }
 .accordion-button, .accordion-button:focus{
     border: none;
     outline: none;
     box-shadow: none !important;
 }
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacement vertical entre les boutons */
+  }
 
 
 .btnprimaire{
@@ -110,6 +111,9 @@ p{
     border-radius: 30px;
     padding: 8px 23px;
     text-decoration: none;
+    margin-top: 40px; 
+    margin-bottom: 40px; 
+    display: inline-block;
 }
 .btnprimaire:hover{
     background-color: rgba(21, 21, 147, 0.25);

@@ -23,7 +23,9 @@ body {
     margin-top :350px;
     min-height: 50vh;
 }
-.erreur h1 h3 p {
+.erreur h1,
+.erreur h3,
+.erreur p {
     margin-top: 50px;
 }
 .erreursvg img{
@@ -67,6 +69,12 @@ p{
     color: #FCF9F9;
 }
 
+.accordion-button, .accordion-button:focus{
+    border: none;
+    outline: none;
+    box-shadow: none !important;
+}
+
 .button-container {
     display: flex;
     flex-direction: column;
@@ -108,6 +116,47 @@ p{
 }
 .btnsecondaire:active{
     color:#FCF9F9;
+}
+
+.btndeconnexion{
+    background-image: url(../img/deconnexion.svg);
+    background-repeat: no-repeat;
+    width: 100px;
+}
+a:focus{
+    outline: none !important;
+}
+
+.scrollToTopBtn {
+    display: flex; 
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #151593;
+    border : 1px solid #151593;
+    border-radius: 30px;
+    padding: 25px 20px;
+    cursor: pointer;
+    
+}
+
+.scrollToTopBtn img{
+    width: 20px;
+
+}
+
+/*********************CUSTOM LIST************************/
+.custom-list {
+    list-style: none; /* Désactiver les points par défaut */
+    padding-left: 20px; /* Ajouter un décalage à gauche pour l'espace du picto */
+}
+
+.custom-list li::before {
+    content: url(../img/etoile.svg); /* Remplacez par le chemin réel de votre fichier SVG */
+    display: inline-block;
+    width: 18px; /* Ajustez la largeur du picto selon vos besoins */
+    height: 18px; /* Ajustez la hauteur du picto selon vos besoins */
+    margin-right: 8px; /* Ajoutez un espacement entre le picto et le texte */
 }
 
 /******************HEADER NAVBAR****************/
