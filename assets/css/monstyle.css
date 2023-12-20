@@ -134,15 +134,9 @@ p{
     color:#FCF9F9;
 }
 .btndeconnexion{
-    font-family: 'Montserrat', sans-serif;
-    background-color: rgba(21, 21, 147, 1);
-    color: #FCF9F9; 
-    font-size: 5pt;
-    text-transform: uppercase;
-    border : none; 
-    border-radius: 30px;
-    padding: 8px 23px;
-    text-decoration: none;
+    background-image: url(../img/deconnexion.svg);
+    background-repeat: no-repeat;
+    width: 100px;
 }
 a:focus{
     outline: none !important;

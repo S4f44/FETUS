@@ -42,9 +42,16 @@ get_header(); // j'importe mon header
 ?>
   
   
+<style>
+    body{
+        background: linear-gradient(to bottom, #3e567a 5%, #FCF9F9, #121F40 );
+    }
+    .navbar {
+    background-color: #3e567a;
+    }
+</style>
 
   
-
 
 <section class="presentationttsav">
             <div class="container ">
