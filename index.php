@@ -182,7 +182,7 @@
 
       <div class="container text-center py-3">
         <div class="row">
-          <div class="col-md-10 offset-md-1 btnfruits">
+          <div class="btnfruits">
             <div class="text js-text">  
               <ul class="flex-row nav nav-pills links js-links">
 
@@ -192,7 +192,8 @@
                   </a>
                 </li>
 
-                <li class="nav-item"><a class="nav-link" data-index="step-2" href="#">
+                <li class="nav-item">
+                  <a class="nav-link" data-index="step-2" href="#">
                   <img src="<?php echo get_template_directory_uri() ?>/assets/img/framboise.svg" alt="framboise" class="framboise"><br>
                     8 sem.
                   </a>

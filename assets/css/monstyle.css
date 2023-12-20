@@ -643,19 +643,25 @@ a:focus{
     .btnfruits .nav-item .nav-link .citrouille{
         width: 50%;
     }
- 
+    .ananas{
+        width: 33%;
+    }
+    .btnfruits ul {
+        gap: 10px;
+    }
+
     /* .nav-item .nav-link {
         font-family: 'Poppins', sans-serif;
-        font-size: 8px;
+        font-size: 8px; 
         color: #121F40;
         flex-wrap: wrap;
     } */
     .btnfruits ul {
         gap: 10px;
     }
- 
-   
-   
+
+    
+    
    
      
     /**************************MONSUIVI***************************/

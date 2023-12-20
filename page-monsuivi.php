@@ -29,7 +29,7 @@ if (!is_user_logged_in()) { // je vérifie si je suis connecté
 }
 
 $user = wp_get_current_user();
-var_dump($user);
+// var_dump($user);
 
 get_header(); // j'importe mon header
 // attention c'est important de faire les redirection avant le header sinon la redirection ne marche pas
