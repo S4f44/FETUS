@@ -29,7 +29,7 @@
 
 
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container ">
 
             <a class="navbar-brand d-lg-none" href="index.php">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="logo FetUs">
@@ -109,6 +109,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?> -->
 
+<br> <br> <br> <br> <br> <br>
 <section>
     <div class="container text-center">
         <div class="row">
@@ -130,12 +131,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     <div class="form-group">
                         <label for="fname" class="col-md-6 offset-md-3 customlab">Nom</label>
-                        <input type="text" id="fname" class="custom" name="firstname" placeholder="Ton nom.." >
+                        <input type="text" id="fname" class="custom" name="firstname" placeholder="Ton nom..." >
                     </div>
 
                     <div class="form-group">
                         <label for="lname" class="col-md-6 offset-md-3 customlab">Prénom</label>
-                        <input type="text" id="lname" class="custom" name="lastname" placeholder="Ton prénom" >
+                        <input type="text" id="lname" class="custom" name="lastname" placeholder="Ton prénom..." >
                     </div>
 
                     <!-- Ajout de la checklist pour le genre -->
@@ -161,13 +162,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <!-- Ajout de la classe "error" si l'adresse e-mail n'est pas valide -->
                     <div class="form-group">
                         <label for="email" class="col-md-6 offset-md-3 customlab" style="<?php echo isset($emailError) ? $emailError : ''; ?>">E-mail:</label>
-                        <input type="email" id="email" class="custom" name="email" placeholder="Entrez votre e-mail"  required>
+                        <input type="email" id="email" class="custom" name="email" placeholder="Entrez votre e-mail..."  required>
                     </div>
 
                     <!-- Ajout de la classe "error" si le mot de passe est trop court -->
                     <div class="form-group">
                         <label for="password" class="col-md-6 offset-md-3 customlab" style="<?php echo isset($passwordError) ? $passwordError : ''; ?>">Mot de passe:</label>
-                        <input type="password" id="password" class="custom" name="password" placeholder="Entrer votre mot de passe"  required>
+                        <input type="password" id="password" class="custom" name="password" placeholder="Entrer votre mot de passe..."  required>
                     </div>
 
 
@@ -182,7 +183,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         </div>
                     </div>
 
-                    <div class="col-md-4 offset-md-4">
+                    <div class="col-md-4 offset-md-5">
         
                     <a href="<?php echo home_url('/register'); ?>" class="btnprimaire">Suivant</a>
 

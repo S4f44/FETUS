@@ -30,22 +30,30 @@ get_header(); // j'importe mon header
 
 <main>
 
-
-
-    <section class="presentationobjectifs">
+     <section class="presentationobjectifs">
         <div class="container text-center">
             <div class="row">
-                <div class="col-md-12">
-                <h1>Mes objectifs, <?php echo esc_html($user->user_login); ?>:</h1>
-                <p>Chaque défi atteint est un pas de plus vers une parentalité épanouissante ! Vous avez ça en vous ! <br> Remplissez cette liste d'objectifs afin de ne rien oublier </p>
+
+                <div class="col-md-3 offset-md-9  ">
+                    <a href="<?= home_url('/deconnexion'); ?>" >  
+                         <button class=" btndeconnexion ">
+                            Se déconnecter
+                        </button>     
+                    </a>
                 </div>
+
+                <div class="col-md-12">
+                    <h1>Mes objectifs, <?php echo esc_html($user->user_login); ?>:</h1>
+                    <p>Chaque défi atteint est un pas de plus vers une parentalité épanouissante ! Vous avez ça en vous ! <br> Remplissez cette liste d'objectifs afin de ne rien oublier </p>
+                </div>
+                
             </div>
         </div>
     </section>
 
     <section class="objectifs">
         <div id="task-list" class="container text-center">
-            <!-- <h2>Mes buts à atteindre</h2> -->
+            <h2>Mes buts à atteindre</h2> 
             <ul id="tasks"></ul>
             <div class="row">
                 <div class="col-md-5 offset-md-1">

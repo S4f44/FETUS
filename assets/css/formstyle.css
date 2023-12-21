@@ -91,8 +91,8 @@ p{
     border-radius: 30px;
     padding: 8px 23px;
     text-decoration: none;
-    margin-top: 40px; 
-    margin-bottom: 40px; 
+    /* margin-top: 40px; 
+    margin-bottom: 40px;  */
     display: inline-block;
 }
 .btnprimaire:hover{
@@ -110,6 +110,8 @@ p{
     border-radius: 30px;
     padding: 8px 23px;
     text-decoration: none;
+    
+
 }
 .btnsecondaire:hover{
     border : 1px solid #FCF9F9;
@@ -118,15 +120,24 @@ p{
     color:#FCF9F9;
 }
 
-.btndeconnexion {
-    background: none;
-    border: none;
-    width: 50px;
-    margin: 30px;
+div.btndeconnexion{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #151593; 
+    font-size: 13pt;
+    text-decoration: none !important;
+    border : 1px solid #151593;
+    border-radius: 30px;
+    padding: 8px 20px;
+    justify-content: center;
+    display: block;
+    width: auto;
+    align-items: center;
   
-   
+
     
 }
+
 
 a:focus{
     outline: none !important;
@@ -487,6 +498,15 @@ td.custom-td {
     
 }
 
+
+/**********************ENREGISTRER************************/
+.customlab {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
 }
 
 
@@ -543,6 +563,14 @@ input:hover {
     color: #151593; /* Couleur du texte au survol */
     border-bottom: 1px solid #FCF9F9; /* Bordure du bas au survol */
     }
+
+
+/* .customlab {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+} */
 
 .custom-radio-input {
     font-family: 'Poppins', sans-serif;
