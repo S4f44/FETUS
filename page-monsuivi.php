@@ -62,10 +62,19 @@ get_header(); // j'importe mon header
 
                 <!------------BOUTON DECONNEXION------------->
                     
-                <div class="col-md-3 offset-md-9 btndeconnexion ">
-                    <a href="<?= home_url('/deconnexion'); ?>" > <p> Se déconnecter </p>     </a>
+                <div class="col-md-3 offset-md-9  ">
+                    <a href="<?= home_url('/deconnexion'); ?>" >  <button class=" btndeconnexion ">
+                            Se déconnecter
+                        </button>     </a>
 
                 </div>
+                <!-- <div class="col-md-11 offset-md-9">
+                    <a href="<?= home_url('/deconnexion'); ?>">
+                        <button class=" btnsecondaire ">
+                            Se déconnecter
+                        </button>
+                    </a>
+                </div> -->
                 <!------------FIN BOUTON DECONNEXION------------->
 
                 <h1 class="text-center">Mon suivi</h1> <br><br>

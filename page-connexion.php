@@ -120,10 +120,10 @@ get_header();
 
     <br> 
         <label for="log">Adresse e-mail</label>
-        <input type="text" name="log" id="log" value="<?php echo esc_attr( $user_login ); ?>">
+        <input type="text" name="log" id="log" placeholder="Entrer votre adresse mail..." value="<?php echo esc_attr( $user_login ); ?>">
        
-    <label for="pwd">Mot de passe</label>
-        <input type="password" name="pwd" id="pwd">
+        <label for="pwd">Mot de passe</label>
+        <input type="password" name="pwd" id="pwd" placeholder="Entrer votre mot de passe...">
        
         <div class="btnprimaire">
             <input type="submit" name="submit" value="Se connecter">
