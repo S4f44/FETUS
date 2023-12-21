@@ -555,6 +555,14 @@ a:focus{
     .troisiemetri .custom-list li{
         font-size: 13px;
     }
+
+    /*********************INDEX**************/
+    section.presentationttsav{
+        
+        
+    }
+
+
     /*************ACCORDION TOUT SAVOIR**************/
     .accordionpatho .accordion-item button{
         font-size: 10pt;
@@ -573,17 +581,18 @@ a:focus{
     /* section.grossesse{
         min-height: 10vh;
     }*/
-    section.grossesse{
+    /* section.grossesse{
         margin-top: 2vh;
         min-height: 40vh;
-    }
+    } */
     section.grossesse h2{
         margin-top: 10px;
     }
-    section.formulaire{
+    /* section.formulaire{
         min-height: 10vh;
+
     } 
-   
+    */
     .scrollToTopBtn {
         padding: 20px 15px;
     }
@@ -924,8 +933,19 @@ margin: 30px 0px;
 /******************SECTIONS/MAIN TOUT SAVOIR SUR LA GROSSESSE****************/
 section.presentationttsav{
     margin-top: 200px;
-    min-height : 60vh;
+    min-height : 40vh;
+    /* margin-bottom: 70px; */
 }
+section.grossesse{
+    margin-top:  40vh;
+    min-height: 21vh;
+}
+
+section.formulaire{
+    min-height: 30vh;
+    margin-top: 60px;
+} 
+
 section.presentationttsav p{
     color: #FCF9F9;
 }

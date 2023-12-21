@@ -133,6 +133,7 @@ div.btndeconnexion{
     display: block;
     width: auto;
     align-items: center;
+    
   
 
     
@@ -441,6 +442,9 @@ a:focus{
     .btnsecondaire{
         font-size: 12pt;
     }
+    
+   
+
 
     div.formulaire {
         margin-left: 20px;

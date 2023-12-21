@@ -34,19 +34,19 @@ get_header(); // j'importe mon header
         <div class="container text-center">
             <div class="row">
 
-                <div class="col-md-3 offset-md-9  ">
+            <div class="col-md-3 offset-md-9 text-center ">
                     <a href="<?= home_url('/deconnexion'); ?>" >  
                          <button class=" btndeconnexion ">
                             Se déconnecter
                         </button>     
-                    </a>
+                    </a> <br><br><br>
                 </div>
 
                 <div class="col-md-12">
                     <h1>Mes objectifs, <?php echo esc_html($user->user_login); ?>:</h1>
                     <p>Chaque défi atteint est un pas de plus vers une parentalité épanouissante ! Vous avez ça en vous ! <br> Remplissez cette liste d'objectifs afin de ne rien oublier </p>
                 </div>
-                
+
             </div>
         </div>
     </section>

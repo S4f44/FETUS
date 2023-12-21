@@ -49,6 +49,7 @@ get_header(); // j'importe mon header
     .navbar {
     background-color: #3e567a;
     }
+   
 </style>
 
 <main>
@@ -62,19 +63,14 @@ get_header(); // j'importe mon header
 
                 <!------------BOUTON DECONNEXION------------->
                     
-                <div class="col-md-3 offset-md-9  ">
-                    <a href="<?= home_url('/deconnexion'); ?>" >  <button class=" btndeconnexion ">
+                
+                <div class="col-md-3 offset-md-9 text-center ">
+                    <a href="<?= home_url('/deconnexion'); ?>" >  
+                         <button class=" btndeconnexion ">
                             Se déconnecter
-                        </button>     </a>
-
+                        </button>     
+                    </a> <br><br><br>
                 </div>
-                <!-- <div class="col-md-11 offset-md-9">
-                    <a href="<?= home_url('/deconnexion'); ?>">
-                        <button class=" btnsecondaire ">
-                            Se déconnecter
-                        </button>
-                    </a>
-                </div> -->
                 <!------------FIN BOUTON DECONNEXION------------->
 
                 <h1 class="text-center">Mon suivi</h1> <br><br>
