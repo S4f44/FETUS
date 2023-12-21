@@ -184,7 +184,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     <div class="col-md-4 offset-md-4">
         
-                    <a href="<?php echo home_url('/formulaire'); ?>" class="btnprimaire">Suivant</a>
+                    <a href="formulaire" class="btnprimaire">Suivant</a>
 
                     
                     </div>

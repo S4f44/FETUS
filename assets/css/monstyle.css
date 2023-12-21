@@ -550,17 +550,12 @@ a:focus{
         letter-spacing: 1pt;
     }
     /*********ACCEUIL HOME INDEX*********/
-    section.grossesse h1{
-        margin-top : 0;
-       
-    }
-    section.grossesse{
-        min-height: 1vh;
-    }
- 
+    /* section.grossesse{
+        min-height: 10vh;
+    }*/
     section.formulaire{
         min-height: 10vh;
-    }
+    } 
    
     .scrollToTopBtn {
         padding: 20px 15px;
@@ -587,10 +582,15 @@ a:focus{
         align-items: center;
     }
  
-   
-    .fruits, .images, .active {
-        align-items: center;
+    div.my-row.rom, .images, .active img{
+        width:50%;
+        margin-left: auto;
+        margin-right: auto;
     }
+   
+    /* .fruits, .images, .active {
+        align-items: center;
+    } */
     /*****************AJUSTEMENTS TAILLES GRANDES IMAGES CAROUSEL******************/
     .fruits .images img.grananas {
         width: 10%;
@@ -609,6 +609,10 @@ a:focus{
     }
     .fruits .images img.grkiwi {
         width: 20%;
+    }
+    section.fruits h2{
+
+        margin-bottom: 0;
     }
     /************************CAROUSEL PETITES IMAGES**********************/
     .btnfruits .nav-item .nav-link .active .pttpois{
@@ -674,7 +678,32 @@ a:focus{
         margin-right: 0px;
        
     }
-   
+
+    div.carousel-item {
+        font-size: 10pt;
+        letter-spacing: 1pt;
+    }
+
+
+    /*******************MES OBJECTIFS *******************/
+    /* .objectifs label#task-list {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 8pt; 
+    
+    } */
+    section.objectifs, .presentationobjectifs{
+        overflow: hidden;
+    }
+    #task-list label{
+        font-size: 10pt;
+        letter-spacing: 1pt;
+    }
+    #task-list #new-task {
+        font-size: 13px;
+    }
+    #task-list #deadline {
+        font-size: 13px;
+    }
  }
  
 
@@ -682,12 +711,12 @@ a:focus{
 
 /******************SECTIONS/MAIN ACCEUIL****************/
 section.grossesse{
-    margin-top : 45vh;
+    margin-top: 45vh;
     min-height: 40vh;
 }
 
 section{
-    min-height: 70vh;
+    min-height: 50vh;
 }
 section.formulaire{
     min-height: 30vh;
@@ -713,7 +742,7 @@ section.newsletter{
 section.fruits{
     background-color: #FCF9F9;
     padding: 70px 30px;
-    margin-bottom: 70px;
+    margin-bottom: 5vh;
     
 }
 
@@ -826,7 +855,7 @@ margin: 30px 0px;
 }
 .fruits h2{
 
-    margin-bottom: 70px;
+    margin-bottom: 10vh;
 }
 
 .pota {
@@ -972,7 +1001,11 @@ section.accordionnutrition{
 
 section.presentationobjectifs{
     margin-top: 200px;
-    min-height: 40vh;
+    min-height: 35vh;
+}
+.objectifs{
+    min-height: 30vh;
+    text-align: center;
 }
 
 #task-list {
@@ -1071,7 +1104,7 @@ label {
 
 /******************************MON SUIVI**************************************/
 .txtconseilsmonsuivi {
-    margin-top: 70px; 
+    margin-top: 1vh; 
 }
 
 .profil {
@@ -1089,4 +1122,12 @@ label {
 
 .imagebb {
     width:20%;
+}
+div.images.js-images{
+    align-items: center;
+}
+.encouragementcarousel{
+    min-height: 30vh;
+    text-align: center;
+
 }

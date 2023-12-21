@@ -106,37 +106,43 @@ get_header(); // j'importe mon header
 
 
         <section class="fruits">
-                <div class="container text-center py-3">
-            
-                    <h2>Actuellement, votre bébé fait la taille de ...</h2>        
-                <div class="my-row row">
+            <div class="container text-center">
+                <h2>Actuellement, votre bébé fait la taille de ...</h2>        
+                    <div class="my-row row">
+                        <div class="col-md-6 offset-md-1">
+                            <div class="text js-text">
 
-                    <div class="col-md-6 offset-md-1">
-                        <div class="text js-text">
-
-                        <article class="active" data-index="step-1">
-                        <h3>Un petit pois</h3>
-                        <p> 4 semaines</p>
-                        <div class="col-md-7 offset-md-3 pota">
-                            <p>  
-                            <strong>Poids :</strong> Environ 0,004 gramme (4 milligrammes).<br>
-                            <strong>Taille :</strong> Environ 0,1 mm.
-                            </p> 
-                        </div>
-                        <p> La quatrième semaine marque le début de l'organogenèse, où les premiers tissus et organes du fœtus commencent à se former à partir des trois feuillets embryonnaires. Le blastocyste s'implante dans l'utérus. </p>
-                        </article>
+                                <article class="active" data-index="step-1">
+                                    <h3>Un petit pois</h3>
+                                    <p> 4 semaines</p>
+                                        <div class="col-md-7 offset-md-3 pota">
+                                            <p>  
+                                                <strong>Poids :</strong> Environ 0,004 gramme (4 milligrammes).<br>
+                                                <strong>Taille :</strong> Environ 0,1 mm.
+                                            </p> 
+                                        </div>
+                                    <p> La quatrième semaine marque le début de l'organogenèse, où les premiers tissus et organes du fœtus commencent à se former à partir des trois feuillets embryonnaires. Le blastocyste s'implante dans l'utérus. </p>
+                                </article>
                         
+                            </div>
                         </div>
-                    </div>
-
-                        <div class="col-md-4 offset-md-1 my-5">
+          
+                        <div class="col-md-4 offset-md-1">
                             <div class="images js-images">        
                                 <img data-index="step-1" class="active" src="<?php echo get_template_directory_uri() ?>/assets/img/pttpois.svg" alt="petit pois" class="grpttpois">
                             </div>
                         </div>
-<div class="col-md-4 offset-md-4">
+                    </div>
+            </div>
+
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-4 offset-md-4">
                         <a href="<?php echo home_url(); ?>/toutsavoir" class="btnprimaire"> En savoir plus</a>
-</div>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <section class="premiertri">
@@ -159,21 +165,21 @@ get_header(); // j'importe mon header
                 </div>
         </section>
 
-        <section >
-                <div class="container text-center">
-                    <div class="row">
+        <section class="encouragementcarousel">
+            <div class="container text-center">
+                <div class="row">
                     <div class="col-md-12">
-                            <div id="carousel-container">
-                                <div class="carousel-item">Accordez-vous le repos nécessaire. Vous êtes en train de bâtir les fondations de quelque chose d'extraordinaire. Prenez soin de vous.</div>
-                                <div class="carousel-item">Les débuts peuvent sembler un peu tumultueux, mais n'oubliez pas que chaque vague apporte quelque chose de nouveau. Vous naviguez bien.</div>
-                                <div class="carousel-item">Les hauts et les bas des nausées matinales sont comme des virages serrés sur la route de la maternité. Accrochez-vous, vous êtes en plein rodéo !</div>
-                                <div class="carousel-item">Votre première étape est lancée, et c'est une mission spéciale : créer une vie. Continuez à avancer avec détermination.</div>
-                                <div class="carousel-item">Chaque jour est une pierre supplémentaire dans la construction de votre parcours parental.</div>
-                            </div>
+                        <div id="carousel-container">
+                            <div class="carousel-item">Accordez-vous le repos nécessaire. Vous êtes en train de bâtir les fondations de quelque chose d'extraordinaire. Prenez soin de vous.</div>
+                            <div class="carousel-item">Les débuts peuvent sembler un peu tumultueux, mais n'oubliez pas que chaque vague apporte quelque chose de nouveau. Vous naviguez bien.</div>
+                            <div class="carousel-item">Les hauts et les bas des nausées matinales sont comme des virages serrés sur la route de la maternité. Accrochez-vous, vous êtes en plein rodéo !</div>
+                            <div class="carousel-item">Votre première étape est lancée, et c'est une mission spéciale : créer une vie. Continuez à avancer avec détermination.</div>
+                            <div class="carousel-item">Chaque jour est une pierre supplémentaire dans la construction de votre parcours parental.</div>
                         </div>
+                    </div>
                 </div>
-                </div>
-            </section>
+            </div>
+        </section>
 
 
 

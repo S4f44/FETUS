@@ -67,7 +67,8 @@
         <div class="row">
             <div class="col-md-10 offset-md-1 formulaire">
                 <!-- <form action="/page-monsuivi.php"  action="/page-mesobjectifs.php"  action="/page-formulaire.php" action="/page-connexion.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm()"> -->
-                <form action="/form-process.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+                <!-- <form action="/form-process.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm()"> -->
+                    <form>
 
                     <h1 class="col-md-6 offset-md-3">Formulaire</h1>
 
@@ -121,7 +122,7 @@
         </div>
     </div>
 </section>
-    </main> 
+</main> 
 
     
 

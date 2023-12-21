@@ -214,7 +214,7 @@ function custom_carousel_script() {
             text-transform: uppercase;
             color: #121F40;
             display: block;
-            margin-top: 80px;
+            margin-top: 5vh;
         }
     </style>
 
