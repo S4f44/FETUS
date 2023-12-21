@@ -39,7 +39,7 @@ if (is_user_logged_in()) {
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
 
-            <a class="navbar-brand d-lg-none" href="index.php">
+            <a class="navbar-brand d-lg-none" href="home">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="logo FetUs">
             </a> 
             

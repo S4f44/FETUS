@@ -8,6 +8,9 @@
 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/formstyle.css">
 
+    <link rel="icon" href="<?php echo get_template_directory_uri() ?>/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/assets/img/favicon.ico" type="image/x-icon">
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -31,7 +34,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container ">
 
-            <a class="navbar-brand d-lg-none" href="index.php">
+            <a class="navbar-brand d-lg-none" href="home">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="logo FetUs">
             </a> 
             
