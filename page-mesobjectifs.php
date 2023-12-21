@@ -29,6 +29,15 @@ get_header(); // j'importe mon header
 </style>
 
 <main>
+
+                    <a href="<?= home_url('/deconnexion'); ?>">
+                        <button class="btndeconnexion "> Se déconnecter
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/deconnexion.svg" alt="Bouton de déconnexion">
+                        </button>
+                    </a>
+
+
+
     <section class="presentationobjectifs">
         <div class="container text-center">
         <div class="row">

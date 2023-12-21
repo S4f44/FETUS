@@ -140,13 +140,24 @@ p{
 
 
 .btndeconnexion {
-    background: none;
-    border: none;
-    width: 50px;
-    margin: 30px;
-    transform: translateX(-50%);
     
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #151593; 
+    font-size: 15pt;
+    text-transform: uppercase;
+    border : 1px solid #151593;
+    border-radius: 30px;
+    padding: 8px 23px;
+    text-decoration: none;
+    background-color: transparent;
+
 }
+.btndeconnexion:hover {
+    border : 1px solid #FCF9F9;
+    background-color: none;
+}
+
 
 
 

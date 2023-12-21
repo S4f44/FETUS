@@ -51,7 +51,19 @@ get_header(); // j'importe mon header
     }
 </style>
 
-  
+<main>
+<br> <br> <br> <br> <br>
+                <div class="col-md-12 offset-md-10">
+                
+                    <a href="<?= home_url('/deconnexion'); ?>">
+                        <button class=" btnsecondaire ">
+                           
+                        Se déconnecter 
+                        </button>
+                    </a>
+                </div>
+                </div>
+
 
 <section class="presentationttsav">
             <div class="container ">
@@ -175,7 +187,7 @@ get_header(); // j'importe mon header
                 </div>
             </section>
 
-
+</main>
 
 
 <?php
