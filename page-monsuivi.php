@@ -52,28 +52,27 @@ get_header(); // j'importe mon header
 </style>
 
 <main>
-<br> <br> <br> <br> <br>
-                <div class="col-md-12 offset-md-10">
+
                 
+
+
+    <section class="presentationttsav">
+        <div class="container ">
+            <div class="row">
+
+                <!------------BOUTON DECONNEXION------------->
+                    
+                <div class="col-md-11 offset-md-9">
                     <a href="<?= home_url('/deconnexion'); ?>">
                         <button class=" btnsecondaire ">
-                           
-                        Se déconnecter 
+                            Se déconnecter 
                         </button>
                     </a>
                 </div>
-                </div>
+                <!------------FIN BOUTON DECONNEXION------------->
 
-
-<section class="presentationttsav">
-            <div class="container ">
-                <div class="row">
-                    
                 <h1 class="text-center">Mon suivi</h1> <br><br>
-                
-                <div class="profil">
-                
-                    
+                    <div class="profil">
                         
                         <div class="photoprofil">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/heloise.svg" alt="photo de profil">
@@ -81,83 +80,78 @@ get_header(); // j'importe mon header
                     
                     
                         <div class="textprofil">
-                        <h3>Nom</h3>
-                        <p class="offset-md-1">Lopez</p>
+                            <h3>Nom</h3>
+                            <p class="offset-md-1">Lopez</p>
 
-                        <h3>Prénom</h3>
-                        <p class="offset-md-1"><?php echo esc_html($user->user_login); ?></p>
+                            <h3>Prénom</h3>
+                            <p class="offset-md-1"><?php echo esc_html($user->user_login); ?></p>
 
-                        <h3>Stade de la grossesse</h3>
-                        <p class="offset-md-1">4 ième semaine</p>
-                    </div>
+                            <h3>Stade de la grossesse</h3>
+                            <p class="offset-md-1">4 ième semaine</p>
+                        </div>
 
-                
                 
                         <div class="imagebb">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/imagebb.svg" alt="image bebe">
                         </div>
-                    
 
-                    <div class="textbb">
-                
-                        <h3>Futur prénom</h3>
-                        <p class="offset-md-1">-</p>
+                        <div class="textbb">
+                            <h3>Futur prénom</h3>
+                            <p class="offset-md-1">-</p>
 
-                        <h3>Sexe</h3>
-                        <p class="offset-md-1">-</p>
+                            <h3>Sexe</h3>
+                            <p class="offset-md-1">-</p>
+                        </div> 
+
                     </div> 
-                </div> 
-                </div>
             </div>
-           
-
-        </section>
-
+        </div>
+    </section>
 
 
 
 
-        <section class="fruits">
-                <div class="container text-center py-3">
-        
-                    <h2>Actuellement, votre bébé fait la taille d'un(e)... </h2>        
-                <div class="my-row row">
 
-                    <div class="col-md-6 offset-md-1">
-                        <div class="text js-text">
+    <section class="fruits">
+        <div class="container text-center py-3">
+            <h2>Actuellement, votre bébé fait la taille d'un(e)... </h2>        
+            <div class="my-row row">
 
-                                <article class="active" data-index="step-1">
-                                    <h3>Petit pois</h3>
-                                    <p> 4 semaines</p>
-                                        <div class="col-md-7 offset-md-3 pota">
-                                            <p>  
-                                                <strong>Poids :</strong> Environ 0,004 gramme (4 milligrammes).<br>
-                                                <strong>Taille :</strong> Environ 0,1 mm.
-                                            </p> 
-                                        </div>
-                                    <p> La quatrième semaine marque le début de l'organogenèse, où les premiers tissus et organes du fœtus commencent à se former à partir des trois feuillets embryonnaires. Le blastocyste s'implante dans l'utérus. </p>
-                                </article>
-                        
-                            </div>
-                        </div>
-          
-                        <div class="col-md-4 offset-md-1">
-                            <div class="images js-images">        
-                                <img data-index="step-1" class="active" src="<?php echo get_template_directory_uri() ?>/assets/img/pttpois.svg" alt="petit pois" class="grpttpois">
-                            </div>
-                        </div>
-                    </div>
-            </div>
+                <div class="col-md-6 offset-md-1">
+                    <div class="text js-text">
 
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-md-4 offset-md-4">
-                        <a href="<?php echo home_url(); ?>/toutsavoir" class="btnprimaire"> En savoir plus</a>
+                        <article class="active" data-index="step-1">
+                            <h3>Petit pois</h3>
+                            <p> 4 semaines</p>
+                                <div class="col-md-7 offset-md-3 pota">
+                                    <p>  
+                                        <strong>Poids :</strong> Environ 0,004 gramme (4 milligrammes).<br>
+                                        <strong>Taille :</strong> Environ 0,1 mm.
+                                    </p> 
+                                </div>
+                            <p> La quatrième semaine marque le début de l'organogenèse, où les premiers tissus et organes du fœtus commencent à se former à partir des trois feuillets embryonnaires. Le blastocyste s'implante dans l'utérus. </p>
+                        </article>
+                
                     </div>
                 </div>
+    
+                <div class="col-md-4 offset-md-1">
+                    <div class="images js-images">        
+                        <img data-index="step-1" class="active" src="<?php echo get_template_directory_uri() ?>/assets/img/pttpois.svg" alt="petit pois" class="grpttpois">
+                    </div>
+                </div>
+
+            </div>
             </div>
 
-        </section>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4 offset-md-4">
+                    <a href="<?php echo home_url(); ?>/toutsavoir" class="btnprimaire"> En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
         <section class="premiertri">
             <div class="container text-center">
