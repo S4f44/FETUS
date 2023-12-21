@@ -53,7 +53,7 @@ get_header(); // j'importe mon header
 
     <section class="objectifs">
         <div id="task-list" class="container text-center">
-            <h2>Mes buts à atteindre</h2> 
+            <br>
             <ul id="tasks"></ul>
             <div class="row">
                 <div class="col-md-5 offset-md-1">
