@@ -1,11 +1,11 @@
-<?php
+<!-- ?php
 /* Template Name: RegistrationPage */
 if (is_user_logged_in()) {
   wp_redirect( home_url('/monsuivi') );
 	exit;
 }
 // attention c'est important de faire les redirection avant le header sinon la redirection ne marche pas
-?>
+?> -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -66,63 +66,65 @@ if (is_user_logged_in()) {
 
 
 <main>
-<section>
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-md-10 offset-md-1 formulaire">
-                <!-- <form action="/page-monsuivi.php"  action="/page-mesobjectifs.php"  action="/page-formulaire.php" action="/page-connexion.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm()"> -->
-                <!-- <form action="/form-process.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm()"> -->
-                    <form>
+  <section>
+      <div class="container text-center">
+          <div class="row">
 
-                    <h1 class="col-md-6 offset-md-3">Formulaire</h1>
+              <div class="formulaire">
 
+                  <form>
 
-                    <!-- Ajout de la checklist pour le genre -->
-                    <div class="form-group row">
-                        <label class="col-md-3 customlab">Qui êtes-vous?</label>
-                        <div class="col-md-6 offset-md-4">
-                            <div class="form-check form-check-inline custom-radio">
-                                <input type="radio" id="futuremam" name="quietesvous" value="futuremam" class="form-check-input custom-radio-input">
-                                <label for="futuremam" class="form-check-label custom-radio-label">La future maman</label>
-                            </div>
-                            <div class="form-check form-check-inline custom-radio">
-                                <input type="radio" id="futurpa" name="quietesvous" value="futurpa" class="form-check-input custom-radio-input">
-                                <label for="futurpa" class="form-check-label custom-radio-label">Le futur papa</label>
-                            </div>
-                        </div>
-                    </div>
+                      <h1 class="col-md-6 offset-md-3">Formulaire</h1>
 
 
-                    <div class="form-group">
-                        <label for="semaines" class="col-md-6 offset-md-3 customlab">Indiquez le nombre de semaines de grossesse que vous ou votre partenaire avez atteint:</label>
-                        <select id="semaines" name="semaines" class="col-md-6 offset-md-3">
-                            <option value="1-4">1-4 semaines</option>
-                            <option value="5-7">5-7 semaines</option>
-                            <option value="8-11">8-11 semaines</option>
-                            <option value="12-15">12-15 semaines</option>
-                            <option value="16-19">16-19 semaines</option>
-                            <option value="20-23">20-23 semaines</option>
-                            <option value="24-27">24-27 semaines</option>
-                            <option value="28-31">28-31 semaines</option>
-                            <option value="32-35">32-35 semaines</option>
-                            <option value="36-40">36-40 semaines</option>
-                        </select>
-                    </div>
-                   
+                      <!-- Ajout de la checklist pour le genre -->
+                      <div class="form-group row">
+                          <label class="col-md-3 customlab">Qui êtes-vous?</label>
+                          <div class="col-md-6 offset-md-4">
+                              <div class="form-check form-check-inline custom-radio">
+                                  <input type="radio" id="futuremam" name="quietesvous" value="futuremam" class="form-check-input custom-radio-input">
+                                  <label for="futuremam" class="form-check-label custom-radio-label">La future maman</label>
+                              </div>
+                              <div class="form-check form-check-inline custom-radio">
+                                  <input type="radio" id="futurpa" name="quietesvous" value="futurpa" class="form-check-input custom-radio-input">
+                                  <label for="futurpa" class="form-check-label custom-radio-label">Le futur papa</label>
+                              </div>
+                          </div>
+                      </div>
 
 
-                    <div class="col-md-4 offset-md-4">
-                        <!-- <a href="<?php// echo get_template_directory_uri(); ?> /page-formulaire.php" class="btnprimaire">Suivant</a> -->
-                        <a href="<?php echo home_url('/register'); ?>" class="btnprimaire">Valider</a>
-                    </div>
-                </form>
+                      <div class="form-group">
+                          <label for="semaines" class="col-md-6 offset-md-3 customlab">Indiquez le nombre de semaines de grossesse que vous ou votre partenaire avez atteint:</label>
+                          <select id="semaines" name="semaines" class="col-md-6 offset-md-3">
+                              <option value="1-4">1-4 semaines</option>
+                              <option value="5-7">5-7 semaines</option>
+                              <option value="8-11">8-11 semaines</option>
+                              <option value="12-15">12-15 semaines</option>
+                              <option value="16-19">16-19 semaines</option>
+                              <option value="20-23">20-23 semaines</option>
+                              <option value="24-27">24-27 semaines</option>
+                              <option value="28-31">28-31 semaines</option>
+                              <option value="32-35">32-35 semaines</option>
+                              <option value="36-40">36-40 semaines</option>
+                          </select>
+                      </div>
+                    
 
-               
 
-            </div>
-        </div>
-    </div>
-</section>
+                      <!-- <div class="col-md-4 offset-md-4">
+                          <a href="<?php// echo get_template_directory_uri(); ?> /page-formulaire.php" class="btnprimaire">Suivant</a> 
+                          <button><a href="<?php //echo home_url('/connexion'); ?>" class="btnprimaire">Valider</a></button>
+                      </div> -->
+                      <div class="btnprimaire">
+                        <input type="submit" name="submit" value="Valider">
+                        <input type="hidden" name="redirect_to" value="<?php echo esc_url( home_url('/connexion') ); ?>">
+                      </div>
+                  </form>
+              </div>
+
+          </div>
+      </div>
+  </section>
 </main> 
 <?php get_footer(); ?>
 

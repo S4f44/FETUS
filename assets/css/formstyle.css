@@ -445,7 +445,7 @@ a:focus{
     div.formulaire {
         margin-left: 20px;
         margin-right: 40px;
-        
+        overflow: auto;
     }
 
     .chiffres .chiffresdeux{
@@ -524,11 +524,12 @@ form {
     padding: 90px 10px; /* Ajout de marge interne pour espacer les éléments du formulaire du bord */
     border-radius: 300px; /* Coins arrondis pour le formulaire */
     box-sizing: border-box; /* Inclure le padding et la bordure dans la largeur totale */
-    margin-bottom: 90px;
-    }
-    div.col-md-10.offset-md-1.formulaire{
+    margin-bottom: 10vh;
+    margin-top : 20vh;
+}
+    /* div.col-md-10.offset-md-1.formulaire{
         margin: 0;
-    }
+    } */
 
  
   
