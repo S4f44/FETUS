@@ -506,6 +506,9 @@ form {
     box-sizing: border-box; /* Inclure le padding et la bordure dans la largeur totale */
     margin-bottom: 90px;
     }
+    div.col-md-10.offset-md-1.formulaire{
+        margin: 0;
+    }
 
  
   
@@ -760,3 +763,9 @@ section.tableauinfoml, .collecte, .mlfin {
     color:#FCF9F9;
 }
 
+a[href^="mailto"] {
+    color: #121F40; /* Couleur du texte */
+    text-decoration: none; /* Supprime le soulignement */
+    font-weight: bold; /* Poids de la police, si nécessaire */
+    text-decoration: underline;
+}

@@ -111,8 +111,6 @@ p{
     border-radius: 30px;
     padding: 8px 23px;
     text-decoration: none;
-    margin-top: 40px; 
-    margin-bottom: 40px; 
     display: inline-block;
 }
 .btnprimaire:hover{
@@ -513,20 +511,23 @@ a:focus{
         margin-top: 10vh;
     }
    
-    .symbolespapamaman {
+    /* .symbolespapamaman {
         margin-left: 0px;
-        /* margin-left: 5vw; */
+        margin-left: 5vw; 
         position: absolute;
         top: -55vh;
         left: 0;
         z-index: 0;
-    }
+    } */
     .symbolespapamaman img{
-        width: 55vw;
-        opacity: 0.7;
+        /* width: 55vw;
+        opacity: 0.7; */
+        display: none;
     }
+    
     section.newsletter{
         min-height: 10vh;
+        margin-top: 3vh;
     }
     div.col-md-6, .symbolespapamaman{
         min-height:2vh;
@@ -572,6 +573,13 @@ a:focus{
     /* section.grossesse{
         min-height: 10vh;
     }*/
+    section.grossesse{
+        margin-top: 2vh;
+        min-height: 40vh;
+    }
+    section.grossesse h2{
+        margin-top: 10px;
+    }
     section.formulaire{
         min-height: 10vh;
     } 
@@ -599,6 +607,7 @@ a:focus{
         display:flex;
         flex-direction: column-reverse;
         align-items: center;
+        justify-content: center;
         margin: 0px;
     }
  
@@ -765,14 +774,22 @@ section.formulaire{
 div.roleparents{
     margin-top: 50vh;
 }
+div.roleparents img{
+    width: 55vw;
+    left: 85vh;
+    /* top: -100vh; */
+    bottom: 100vh;
+    position: relative;
+    overflow: hidden;
+}
 
 section.newsletter{
     min-height: 40vh;
 }
 
-.symbolespapamaman {
+.symbolespapamaman img{
     width: 55vw;
-    margin-top: 10vh;
+    margin-top: 5vh;
     margin-left: 60px;
     position: relative;
     overflow: hidden;
@@ -967,6 +984,7 @@ section.accordionpatho{
 
 .complications{
     min-height: 30vh;
+    margin-top: 7vh;
     text-align: center;
 }
 

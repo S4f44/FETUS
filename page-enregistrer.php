@@ -60,13 +60,13 @@
 <?php
 /* Template Name: enregistrer */ 
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Le formulaire a été soumis, vous pouvez effectuer des vérifications ici si nécessaire
+// if ($_SERVER["REQUEST_METHOD"] == "POST") {
+//     // Le formulaire a été soumis, vous pouvez effectuer des vérifications ici si nécessaire
     
-    // Redirige vers la page formulaire.php
-    wp_redirect(home_url('/formulaire'));
-    exit;
-}
+//     // Redirige vers la page formulaire.php
+//     wp_redirect(home_url('/formulaire'));
+//     exit;
+// }
 ?>
 
 <!------------------MAIN----------------->
@@ -184,7 +184,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     <div class="col-md-4 offset-md-4">
         
-                    <a href="formulaire" class="btnprimaire">Suivant</a>
+                    <a href="<?php echo home_url('/register'); ?>" class="btnprimaire">Suivant</a>
 
                     
                     </div>

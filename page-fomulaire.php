@@ -55,14 +55,13 @@
         </div>
     </nav>  
 
-    <div class="container"> 
 </header>
 
 
 
 <!------------------MAIN----------------->
-   <main>
-   <section>
+<main>
+<section>
     <div class="container text-center">
         <div class="row">
             <div class="col-md-10 offset-md-1 formulaire">

@@ -177,7 +177,7 @@
       <section class="mlfin">
         <div class="container text-left">
           <div class="row">
-                <p>Si vous avez des questions ou des préoccupations concernant le traitement de vos informations veuillez nous contacter par email à l’adresse <strong>"fetusisfsc@gmail.com"</strong>. Nous traiterons vos préoccupations conformément à la loi en vigueur. <br> <br> <br></p>
+                <p>Si vous avez des questions ou des préoccupations concernant le traitement de vos informations veuillez nous contacter par email à l’adresse <a href="mailto:fetusisfsc@gmail.com"><strong>fetusisfsc@gmail.com</strong></a>. Nous traiterons vos préoccupations conformément à la loi en vigueur. <br> <br> <br></p>
 
                 <blockquote class="container text-center">
                   <p>© FetUs, tous les droits réservés</p>

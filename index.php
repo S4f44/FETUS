@@ -258,7 +258,7 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-md-6 roleparents">
-              <h3>Les parents jouent un rôle essentiel pendant la grossesse en s’offrant un soutien émotionnel l’un l’autre.</h3><br><br><br><br>
+              <h3>Les parents jouent un rôle essentiel pendant la grossesse en s’offrant un soutien émotionnel l’un l’autre.</h3><br><br><br>
               <p>En adoptant des <strong>modes de vie sains </strong>pour favoriser la santé maternelle et fœtale, et en participant activement à 
                 la préparation <strong>physique</strong> et <strong>émotionnelle</strong> de l'arrivée du bébé. </p><br><br>
               <p>La communication ouverte et la collaboration renforcent le lien familial dès les premiers stades du développement du fœtus.</p>
