@@ -13,7 +13,7 @@ get_header();
 <div class="container">
   <br><br><br><br><br><br>
   <form action="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>" method="post">
-        <label for="log">Nom d\'utilisateur ou adresse e-mail</label>
+        <label for="log">Adresse e-mail</label>
         <input type="text" name="log" id="log" value="<?php echo esc_attr( $user_login ); ?>">
        
     <label for="pwd">Mot de passe</label>

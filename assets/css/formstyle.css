@@ -118,11 +118,16 @@ p{
     color:#FCF9F9;
 }
 
-.btndeconnexion{
-    background-image: url(../img/deconnexion.svg);
-    background-repeat: no-repeat;
-    width: 100px;
+.btndeconnexion {
+    background: none;
+    border: none;
+    width: 50px;
+    margin: 30px;
+  
+   
+    
 }
+
 a:focus{
     outline: none !important;
 }
@@ -463,6 +468,25 @@ a:focus{
     select[name="semaines"]{
         font-size: 13px;
     }
+
+
+/************************MENTIONS LEGALES *********************/
+
+th.custom-th {
+    font-size: 10pt; 
+    letter-spacing: 1pt;
+    margin: 0px 30px;
+    flex-wrap: wrap;
+    gap: 20px !important;
+    
+}
+
+td.custom-td {
+    font-size: 13px; 
+    flex-wrap: wrap;
+    
+}
+
 }
 
 
@@ -701,6 +725,7 @@ table {
     text-transform: uppercase;
     color:#FCF9F9;
     text-align: left;
+    flex-wrap: wrap;
 }
 
 .custom-td {
@@ -708,10 +733,13 @@ table {
     color:#FCF9F9; /* Text color */
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .custom-tr {
     margin: 20px 0px;
+    flex-direction: column;
 }
 
 .colinfo {

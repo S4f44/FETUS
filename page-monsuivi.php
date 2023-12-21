@@ -51,7 +51,19 @@ get_header(); // j'importe mon header
     }
 </style>
 
-  
+<main>
+<br> <br> <br> <br> <br>
+                <div class="col-md-12 offset-md-10">
+                
+                    <a href="<?= home_url('/deconnexion'); ?>">
+                        <button class=" btnsecondaire ">
+                           
+                        Se déconnecter 
+                        </button>
+                    </a>
+                </div>
+                </div>
+
 
 <section class="presentationttsav">
             <div class="container ">
@@ -106,14 +118,16 @@ get_header(); // j'importe mon header
 
 
         <section class="fruits">
-            <div class="container text-center">
-                <h2>Actuellement, votre bébé fait la taille de ...</h2>        
-                    <div class="my-row row">
-                        <div class="col-md-6 offset-md-1">
-                            <div class="text js-text">
+                <div class="container text-center py-3">
+        
+                    <h2>Actuellement, votre bébé fait la taille d'un(e)... </h2>        
+                <div class="my-row row">
+
+                    <div class="col-md-6 offset-md-1">
+                        <div class="text js-text">
 
                                 <article class="active" data-index="step-1">
-                                    <h3>Un petit pois</h3>
+                                    <h3>Petit pois</h3>
                                     <p> 4 semaines</p>
                                         <div class="col-md-7 offset-md-3 pota">
                                             <p>  
@@ -153,10 +167,10 @@ get_header(); // j'importe mon header
                         <h2>Quelques conseils à prendre en compte lors de ce premier trimestre </h2><br>
                         
                         <ul class="custom-list">
-                            <li>Ménager la femme enceinte</li><br>
-                            <li>Le partenaire peut prendre en charge certaines tâches ménagères, comme la cuisine, en raison de la sensibilité accrue aux odeurs. Éviter les déclencheurs olfactifs pour minimiser les nausées et l'hypersensibilité.</li><br>
-                            <li>Créer un environnement calme et apaisant pour atténuer la fatigue et favoriser le bien-être.</li><br>
-                            <li>Comprendre les effets des hormones telles que l'HCG, l'œstrogène et la progestérone sur les nausées et la fatigue</li><br>
+                            <li>Accordez vous beaucoup de repos et du temps pour vous !</li><br>
+                            <li>Éviter les déclencheurs olfactifs pour minimiser les nausées et l'hypersensibilité.</li><br>
+                            <li>Restez dans un environnement calme et apaisant pour atténuer la fatigue et favoriser le bien-être.</li><br>
+                            <li>Renseignez vous sur les effets des hormones telles que l'HCG, l'œstrogène et la progestérone sur les nausées et la fatigue.</li><br>
                         </ul>
                         </div>
                         <a href="<?php echo home_url(); ?>/conseil" class="btnprimaire"> Voir plus de conseils</a>
@@ -181,7 +195,7 @@ get_header(); // j'importe mon header
             </div>
         </section>
 
-
+</main>
 
 
 <?php

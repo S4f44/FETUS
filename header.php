@@ -54,7 +54,9 @@
              ]); 
              ?>
                 
-              <a href="<?= home_url('/deconnexion'); ?>"><button class="btndeconnexion">Se déconnecter</button></a>  
+              <!-- <a href="<?= home_url('/deconnexion'); ?>"><button class="btndeconnexion">S</button></a>   -->
+
+                    
             </div>
         </div>
    
