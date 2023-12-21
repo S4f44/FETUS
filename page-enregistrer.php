@@ -29,7 +29,7 @@
 
 
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container ">
 
             <a class="navbar-brand d-lg-none" href="index.php">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="logo FetUs">
