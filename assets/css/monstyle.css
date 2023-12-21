@@ -556,12 +556,7 @@ a:focus{
         font-size: 13px;
     }
 
-    /*********************INDEX**************/
-    section.presentationttsav{
-        
-        
-    }
-
+    
 
     /*************ACCORDION TOUT SAVOIR**************/
     .accordionpatho .accordion-item button{
@@ -934,7 +929,7 @@ margin: 30px 0px;
 section.presentationttsav{
     margin-top: 200px;
     min-height : 40vh;
-    /* margin-bottom: 70px; */
+    margin-bottom: 5vh;
 }
 section.grossesse{
     margin-top:  40vh;

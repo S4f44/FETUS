@@ -2,10 +2,10 @@
 
 <!------------------MAIN----------------->
 <main>
-    <section class="presentationttsav">
+    <section class="presentationttsav py-3">
       <div class="container text-center">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 ">
             <h1>Tout savoir sur<br> la grossesse</h1><br>
             <p>Bienvenue dans le monde captivant de la grossesse, une aventure extraordinaire marquée par neuf mois de transformations et de développements à la fois pour la future maman, le futur papa (ou co-parent) et pour le petit être qui grandit au sein de cette expérience unique.</p><br>
             <p>Au fil de cette aventure partagée, découvrez comment chaque étape contribue au développement tant du futur bébé que de la relation entre les parents</p>

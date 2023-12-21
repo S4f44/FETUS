@@ -66,7 +66,72 @@ if (is_user_logged_in()) {
 
 
 <main>
-  <section>
+ <br> <br> <br>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="formulaire">
+                <form>
+
+                    <h1 class="col-md-12  text-center">Formulaire</h1> <br> <br>
+
+                    <div class="form-group row">
+                        <label class="offset-md-2 customlab" >Qui êtes-vous?</label>
+                        <div class="col-md-12 text-center quietesvous">
+                            <div class="form-check form-check-inline custom-radio">
+                                <input type="radio" id="femmeRadio" name="gender" value="femme" class="form-check-input custom-radio-input">
+                                <label for="femmeRadio" class="form-check-label custom-radio-label">La future maman</label>
+                            </div>
+                            <div class="form-check form-check-inline custom-radio">
+                                <input type="radio" id="hommeRadio" name="gender" value="homme" class="form-check-input custom-radio-input">
+                                <label for="hommeRadio" class="form-check-label custom-radio-label">Le futur papa</label>
+                            </div>
+                            
+                        </div>
+                    </div> 
+
+
+                    <div class="form-group">
+                        <label for="semaines" class="col-md-8 customlab">Indiquez le nombre de semaines de grossesse que vous ou votre partenaire avez atteint:</label><br> <br>
+                        <select id="semaines" name="semaines" >
+                            <option value="1-4">1-4 semaines</option>
+                            <option value="5-7">5-7 semaines</option>
+                            <option value="8-11">8-11 semaines</option>
+                            <option value="12-15">12-15 semaines</option>
+                            <option value="16-19">16-19 semaines</option>
+                            <option value="20-23">20-23 semaines</option>
+                            <option value="24-27">24-27 semaines</option>
+                            <option value="28-31">28-31 semaines</option>
+                            <option value="32-35">32-35 semaines</option>
+                            <option value="36-40">36-40 semaines</option>
+                        </select>
+            <br> <br>
+                    </div>
+                    
+
+                    <div class="col-md-12">
+        
+                    <a href="<?php echo home_url('/connexion'); ?>" class="btnprimaire">Valider</a>
+
+                    
+                    </div>
+
+                </form>
+
+                
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+  <!-- <section>
       <div class="container text-center">
           <div class="row">
 
@@ -77,7 +142,7 @@ if (is_user_logged_in()) {
                       <h1 class="col-md-6 offset-md-3">Formulaire</h1>
 
 
-                      <!-- Ajout de la checklist pour le genre -->
+                    
                       <div class="form-group row">
                           <label class="col-md-3 customlab">Qui êtes-vous?</label>
                           <div class="col-md-6 offset-md-4">
@@ -111,10 +176,7 @@ if (is_user_logged_in()) {
                     
 
 
-                      <!-- <div class="col-md-4 offset-md-4">
-                          <a href="<?php// echo get_template_directory_uri(); ?> /page-formulaire.php" class="btnprimaire">Suivant</a> 
-                          <button><a href="<?php //echo home_url('/connexion'); ?>" class="btnprimaire">Valider</a></button>
-                      </div> -->
+                     
                       <div class="btnprimaire">
                         <input type="submit" name="submit" value="Valider">
                         <input type="hidden" name="redirect_to" value="<?php echo esc_url( home_url('/connexion') ); ?>">
@@ -124,7 +186,11 @@ if (is_user_logged_in()) {
 
           </div>
       </div>
-  </section>
+  </section> -->
+
+
+
+
 </main> 
 <?php get_footer(); ?>
 

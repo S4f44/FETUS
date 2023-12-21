@@ -132,18 +132,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
                     <div class="form-group">
-                        <label for="fname" class="col-md-6 offset-md-3 customlab">Nom</label>
+                        <label for="fname" class="col-md-6 offset-md-2 customlab">Nom</label>
                         <input type="text" id="fname" class="custom" name="firstname" placeholder="Ton nom..." >
                     </div>
 
                     <div class="form-group">
-                        <label for="lname" class="col-md-6 offset-md-3 customlab">Prénom</label>
+                        <label for="lname" class="col-md-6 offset-md-2 customlab">Prénom</label>
                         <input type="text" id="lname" class="custom" name="lastname" placeholder="Ton prénom..." >
                     </div>
 
                     <!-- Ajout de la checklist pour le genre -->
                     <div class="form-group row">
-                        <label class="col-md-6 offset-md-3 customlab" >Genre:</label>
+                        <label class="col-md-6 offset-md-2 customlab" >Genre:</label>
                         <div class="col-md-6 offset-md-4">
                             <div class="form-check form-check-inline custom-radio">
                                 <input type="radio" id="femmeRadio" name="gender" value="femme" class="form-check-input custom-radio-input">
@@ -163,13 +163,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     <!-- Ajout de la classe "error" si l'adresse e-mail n'est pas valide -->
                     <div class="form-group">
-                        <label for="email" class="col-md-6 offset-md-3 customlab" style="<?php echo isset($emailError) ? $emailError : ''; ?>">E-mail:</label>
+                        <label for="email" class="col-md-6 offset-md-2 customlab" style="<?php echo isset($emailError) ? $emailError : ''; ?>">E-mail:</label>
                         <input type="email" id="email" class="custom" name="email" placeholder="Entrez votre e-mail..."  required>
                     </div>
 
                     <!-- Ajout de la classe "error" si le mot de passe est trop court -->
                     <div class="form-group">
-                        <label for="password" class="col-md-6 offset-md-3 customlab" style="<?php echo isset($passwordError) ? $passwordError : ''; ?>">Mot de passe:</label>
+                        <label for="password" class="col-md-6 offset-md-2 customlab" style="<?php echo isset($passwordError) ? $passwordError : ''; ?>">Mot de passe:</label>
                         <input type="password" id="password" class="custom" name="password" placeholder="Entrer votre mot de passe..."  required>
                     </div>
 
@@ -183,9 +183,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <input type="checkbox" class="form-check-input" id="termsCheckbox" name="termsCheckbox" required>
                             <label class="form-check-label" for="termsCheckbox">J'accepte les termes et les conditions d'utilisation</label>
                         </div>
-                    </div>
+                    </div> 
 
-                    <div class="col-md-4 offset-md-5">
+                    <div class="col-md-12 my-5">
         
                     <a href="<?php echo home_url('/register'); ?>" class="btnprimaire">Suivant</a>
 
@@ -194,45 +194,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 </form>
 
-                <!-- <script>
-                    function validateForm() {
-                        // Vérification de la validité des champs
-                        var email = document.getElementById('email').value;
-                        var password = document.getElementById('password').value;
-
-                        if (!validateEmail(email) || password.length < 8) {
-                            alert('Veuillez remplir tous les champs correctement.');
-                            return false; // Ne retournez false que si la validation échoue
-                        }
-
-                        // Si tout est valide, permet la soumission du formulaire
-                        return true;
-                    }
-
                
-                    /////////////////////////garder les données sur le site////////////////////////////////////
-
-                        document.getElementById("myForm").addEventListener("submit", function(event) {
-                            // Récupération des valeurs nécessaires pour décider de l'action
-                            var condition1 = true;  // Mettez ici votre première condition
-                            var condition2 = false; // Mettez ici votre deuxième condition
-
-                            // Sélection de l'action en fonction des conditions
-                            if (condition1) {
-                                this.action = "<?php //echo get_template_directory_uri(); ?>/page-monsuivi.php";
-                            } else if (condition2) {
-                                this.action = "<?php //echo get_template_directory_uri(); ?>/page-mesobjectifs.php";
-                            } else {
-                                // Par défaut, utilisez cette action si aucune condition n'est remplie
-                                this.action = "<?php //echo get_template_directory_uri(); ?>/page-formulaire.php";
-                            }
-
-                            // Vous pouvez également ajouter d'autres logiques de traitement ici si nécessaire
-
-                            return true; // Permet la soumission du formulaire
-                        });
-                    </script> -->
-
             </div>
         </div>
     </div>
