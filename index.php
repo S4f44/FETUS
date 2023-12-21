@@ -254,7 +254,7 @@
       </div>
     </section>
   
-      <section>
+      <section class="symbpm">
         <div class="container text-center">
           <div class="row">
             <div class="col-md-6 roleparents">

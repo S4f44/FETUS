@@ -137,11 +137,19 @@ p{
 .btnsecondaire:active{
     color:#FCF9F9;
 }
-.btndeconnexion{
-    background-image: url(../img/deconnexion.svg);
-    background-repeat: no-repeat;
-    width: 100px;
+
+
+.btndeconnexion {
+    background: none;
+    border: none;
+    width: 50px;
+    margin: 30px;
+    transform: translateX(-50%);
+    
 }
+
+
+
 a:focus{
     outline: none !important;
 }
@@ -206,7 +214,7 @@ a:focus{
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000;
+    z-index: 2000;
     left: 50%;
     transform: translateX(-50%);
     transition: background-color 0.3s, padding 0.3s;
@@ -577,7 +585,7 @@ a:focus{
     /*********************CAROUSEL FRUITS******************/
     .fruits .images img {
         width: 10%;
-        margin: 10px;
+        
         /* display:flex;
         flex-direction: row-reverse; */
     }
@@ -585,16 +593,36 @@ a:focus{
         display:flex;
         flex-direction: column-reverse;
         align-items: center;
+        margin: 0px;
     }
  
-   
+    .nav-link:hover{
+        color:#8A5576;
+    }
+    .nav-link img:hover{
+        opacity: 0.5;
+        transition: opacity 0.2s ease-in-out; 
+        filter: brightness(1.2);
+    }
+   .fruits{
+    margin-top: 40px;
+   }
+
     .fruits, .images, .active {
         align-items: center;
     }
     /*****************AJUSTEMENTS TAILLES GRANDES IMAGES CAROUSEL******************/
+    .fruits .images img.grpttpois {
+        width: 5%;
+    }
+
     .fruits .images img.grananas {
         width: 10%;
     }
+    .fruits .images img.grananas {
+        width: 10%;
+    }
+
     .fruits .images img.grorange {
         width: 23%;
     }
@@ -723,7 +751,7 @@ section.fruits{
 .fruits .images img {
     display: none;
     width: 50%;
-    margin: 40px;
+    margin: 40px 60px;
 }
 
 .fruits .images img.active {
@@ -731,6 +759,7 @@ section.fruits{
     width: 50%;
 }
 /*****************AJUSTEMENTS TAILLES GRANDES IMAGES CAROUSEL******************/
+
 .fruits .images img.grananas {
     width: 35%;
 }
@@ -792,7 +821,7 @@ section.fruits{
     width: 70%;
 }
 .framboise{
-    width: 50%;
+    width: 40%;
 }
 .kiwi{
     width: 75%;
